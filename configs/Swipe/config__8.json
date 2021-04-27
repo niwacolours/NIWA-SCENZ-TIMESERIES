@@ -1,0 +1,15 @@
+{
+  "style": "vertical",
+  "layerState": {
+    "NIWA_SCENZ_TIMESERIES_V02_8005": {
+      "selected": true
+    }
+  },
+  "layer": "NIWA_SCENZ_TIMESERIES_V02_8005",
+  "isZoom": false,
+  "handleColor": "#dadada",
+  "layerMode": "single",
+  "defaultLayers": [],
+  "invertPlacement": false,
+  "isHidePanel": false
+}

@@ -1,0 +1,47 @@
+{
+  "spatialReferences": [
+    {
+      "wkid": "2193",
+      "isDefault": true,
+      "label": "NZGD_2000_New_Zealand_Transverse_Mercator",
+      "alias": "NZGD_2000_New_Zealand_Transverse_Mercator",
+      "outputUnit": "METER",
+      "transformationWkid": "",
+      "transformationLabel": "Transformation name",
+      "transformForward": false,
+      "options": {
+        "sameSRWithMap": true,
+        "isGeographicCS": false,
+        "isGeographicUnit": false,
+        "isProjectedCS": true,
+        "isProjectUnit": true,
+        "spheroidCS": 4167,
+        "defaultUnit": "Meter",
+        "unitRate": 1
+      }
+    },
+    {
+      "wkid": "4326",
+      "isDefault": false,
+      "label": "GCS_WGS_1984",
+      "alias": "GCS_WGS_1984",
+      "outputUnit": "DECIMAL_DEGREES",
+      "transformationWkid": "1151",
+      "transformationLabel": "NZGD_1949_To_WGS_1984",
+      "transformForward": true,
+      "options": {
+        "sameSRWithMap": false,
+        "isGeographicCS": true,
+        "isGeographicUnit": true,
+        "isProjectedCS": false,
+        "isProjectUnit": false,
+        "spheroidCS": 4326,
+        "defaultUnit": "Degree",
+        "unitRate": 1
+      }
+    }
+  ],
+  "decimalPlaces": 3,
+  "addSeparator": true,
+  "displayOrderLonLat": true
+}

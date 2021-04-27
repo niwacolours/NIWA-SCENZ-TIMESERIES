@@ -1,0 +1,21 @@
+{
+  "showTitle": true,
+  "showBasemap": true,
+  "showLegend": true,
+  "expandAllLayersByDefault": false,
+  "contextMenu": {
+    "ZoomTo": true,
+    "Transparency": true,
+    "SetVisibilityRange": true,
+    "EnableOrDisablePopup": true,
+    "ControlLabels": true,
+    "MoveupOrMovedown": true,
+    "OpenAttributeTable": true,
+    "DescriptionOrShowItemDetailsOrDownload": true
+  },
+  "layerOptions": {
+    "NIWA_SCENZ_TIMESERIES_V02_8005": {
+      "display": true
+    }
+  }
+}

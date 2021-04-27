@@ -1,0 +1,28 @@
+{
+  "layerInfos": [
+    {
+      "name": "OceanParameters_PROD_All_TIMESERIES_Children_NZTM",
+      "id": "OceanParameters_PROD_All_TIMESERIES_Children_NZTM_2136",
+      "layer": {
+        "url": "https://gistest.niwa.co.nz/server/rest/services/SCENZ/OceanParameters_PROD_All_TIMESERIES_Children_NZTM/ImageServer"
+      },
+      "show": null,
+      "showAttachments": false,
+      "sortField": "OBJECTID",
+      "isDescending": false
+    }
+  ],
+  "table": {
+    "pageSizeOptions": [
+      25,
+      50,
+      100,
+      1000
+    ]
+  },
+  "hideExportButton": true,
+  "initiallyExpand": false,
+  "filterByMapExtent": true,
+  "allowTextSelection": true,
+  "syncWithLayers": true
+}
