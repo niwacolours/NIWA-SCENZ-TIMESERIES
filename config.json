@@ -78,7 +78,8 @@
         },
         "version": "2.19",
         "id": "widgets_Search_Widget_3",
-        "name": "Search"
+        "name": "Search",
+        "config": "configs/Search/config_widgets_Search_Widget_3.json"
       },
       {
         "uri": "widgets/Coordinate/Widget",
@@ -89,7 +90,8 @@
         },
         "version": "2.19",
         "id": "widgets_Coordinate_Widget_4",
-        "name": "Coordinate"
+        "name": "Coordinate",
+        "config": "configs/Coordinate/config_widgets_Coordinate_Widget_4.json"
       },
       {
         "position": {

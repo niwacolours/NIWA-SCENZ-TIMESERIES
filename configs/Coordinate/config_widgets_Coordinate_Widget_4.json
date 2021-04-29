@@ -7,7 +7,7 @@
       "alias": "NZGD_2000_New_Zealand_Transverse_Mercator",
       "outputUnit": "METER",
       "transformationWkid": "",
-      "transformationLabel": "Transformation name",
+      "transformationLabel": "",
       "transformForward": false,
       "options": {
         "sameSRWithMap": true,
@@ -25,7 +25,7 @@
       "isDefault": false,
       "label": "GCS_WGS_1984",
       "alias": "GCS_WGS_1984",
-      "outputUnit": "DECIMAL_DEGREES",
+      "outputUnit": "Degree",
       "transformationWkid": "1151",
       "transformationLabel": "NZGD_1949_To_WGS_1984",
       "transformForward": true,
