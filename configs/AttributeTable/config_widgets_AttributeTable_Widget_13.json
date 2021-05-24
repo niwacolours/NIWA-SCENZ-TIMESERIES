@@ -2,7 +2,7 @@
   "layerInfos": [
     {
       "name": "NIWA_SCENZ_TIMESERIES_V02",
-      "id": "OceanParameters_PROD_All_TIMESERIES_Children_NZTM_2136",
+      "id": "NIWA_SCENZ_TIMESERIES_V02_7283",
       "layer": {
         "url": "https://gis.niwa.co.nz/server/rest/services/SCENZ/NIWA_SCENZ_TIMESERIES_V02/ImageServer"
       },

@@ -8,7 +8,7 @@
   "allowTurnOffAll": false,
   "filters": [
     {
-      "layerId": "NIWA_SCENZ_TIMESERIES_V02_8005",
+      "layerId": "NIWA_SCENZ_TIMESERIES_V02_7283",
       "url": "https://gis.niwa.co.nz/server/rest/services/SCENZ/NIWA_SCENZ_TIMESERIES_V02/ImageServer",
       "name": "Product",
       "filter": {
@@ -72,7 +72,7 @@
       }
     },
     {
-      "layerId": "NIWA_SCENZ_TIMESERIES_V02_8005",
+      "layerId": "NIWA_SCENZ_TIMESERIES_V02_7283",
       "url": "https://gis.niwa.co.nz/server/rest/services/SCENZ/NIWA_SCENZ_TIMESERIES_V02/ImageServer",
       "name": "Timestep",
       "filter": {
@@ -136,7 +136,7 @@
       }
     },
     {
-      "layerId": "NIWA_SCENZ_TIMESERIES_V02_8005",
+      "layerId": "NIWA_SCENZ_TIMESERIES_V02_7283",
       "url": "https://gis.niwa.co.nz/server/rest/services/SCENZ/NIWA_SCENZ_TIMESERIES_V02/ImageServer",
       "name": "Year",
       "filter": {
@@ -200,7 +200,7 @@
       }
     },
     {
-      "layerId": "NIWA_SCENZ_TIMESERIES_V02_8005",
+      "layerId": "NIWA_SCENZ_TIMESERIES_V02_7283",
       "url": "https://gis.niwa.co.nz/server/rest/services/SCENZ/NIWA_SCENZ_TIMESERIES_V02/ImageServer",
       "name": "Month",
       "filter": {
