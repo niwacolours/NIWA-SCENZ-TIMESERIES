@@ -1,5 +1,5 @@
 {
-  "gistest.niwa.co.nz/server/rest/services/SCENZ/NIWA_SCENZ_TIMESERIES_V02/ImageServer": {
+  "gis.niwa.co.nz/server/rest/services/SCENZ/NIWA_SCENZ_TIMESERIES_V02/ImageServer": {
     "hasOverlap": true,
     "hasNDVI": false,
     "ndvi": false,
