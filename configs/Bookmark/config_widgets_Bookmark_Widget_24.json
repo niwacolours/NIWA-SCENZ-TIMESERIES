@@ -1,0 +1,223 @@
+{
+  "bookmarks2D": [
+    {
+      "displayName": "North Island",
+      "name": "North Island",
+      "extent": {
+        "xmin": 417019.31892742286,
+        "ymin": 4935223.506201603,
+        "xmax": 3058683.0164624117,
+        "ymax": 6402814.449276597,
+        "spatialReference": {
+          "wkid": 2193,
+          "latestWkid": 2193
+        }
+      },
+      "isInWebmap": false,
+      "isSaveLayers": false,
+      "layerOptions": {
+        "NIWA_SCENZ_TIMESERIES_V02_1878": {
+          "selected": true
+        }
+      },
+      "_uID": 25,
+      "isSaveExtent": true
+    },
+    {
+      "displayName": "South Island",
+      "name": "South Island",
+      "extent": {
+        "xmin": 64797.4925894239,
+        "ymin": 4475378.344038106,
+        "xmax": 2706461.190124413,
+        "ymax": 5942969.287113099,
+        "spatialReference": {
+          "wkid": 2193,
+          "latestWkid": 2193
+        }
+      },
+      "isInWebmap": false,
+      "isSaveLayers": false,
+      "layerOptions": {
+        "NIWA_SCENZ_TIMESERIES_V02_1878": {
+          "selected": true
+        }
+      },
+      "_uID": 26,
+      "isSaveExtent": true
+    },
+    {
+      "displayName": "Stewart Island",
+      "name": "Stewart Island",
+      "extent": {
+        "xmin": 1037290.2049416474,
+        "ymin": 4709040.114249389,
+        "xmax": 1367498.1671335923,
+        "ymax": 4892488.982133803,
+        "spatialReference": {
+          "wkid": 2193,
+          "latestWkid": 2193
+        }
+      },
+      "isInWebmap": false,
+      "isSaveLayers": false,
+      "layerOptions": {
+        "NIWA_SCENZ_TIMESERIES_V02_1878": {
+          "selected": true
+        }
+      },
+      "_uID": 27,
+      "isSaveExtent": true
+    },
+    {
+      "displayName": "Resolution Island",
+      "name": "Resolution Island",
+      "extent": {
+        "xmin": 1058784.6084095668,
+        "ymin": 4898457.29559643,
+        "xmax": 1141336.598957589,
+        "ymax": 4944319.512567554,
+        "spatialReference": {
+          "wkid": 2193,
+          "latestWkid": 2193
+        }
+      },
+      "isInWebmap": false,
+      "isSaveLayers": false,
+      "layerOptions": {
+        "NIWA_SCENZ_TIMESERIES_V02_1878": {
+          "selected": true
+        }
+      },
+      "_uID": 28,
+      "isSaveExtent": true
+    },
+    {
+      "displayName": "D'Urville Island",
+      "name": "D'Urville Island",
+      "extent": {
+        "xmin": 1590939.19933086,
+        "ymin": 5431299.81977228,
+        "xmax": 1756043.1804267613,
+        "ymax": 5523024.253714447,
+        "spatialReference": {
+          "wkid": 2193,
+          "latestWkid": 2193
+        }
+      },
+      "isInWebmap": false,
+      "isSaveLayers": false,
+      "layerOptions": {
+        "NIWA_SCENZ_TIMESERIES_V02_1878": {
+          "selected": true
+        }
+      },
+      "_uID": 29,
+      "isSaveExtent": true
+    },
+    {
+      "displayName": "Great Barrier Island",
+      "name": "Great Barrier Island",
+      "extent": {
+        "xmin": 1731124.7092058468,
+        "ymin": 5943427.909282816,
+        "xmax": 1896228.690301748,
+        "ymax": 6035152.343224983,
+        "spatialReference": {
+          "wkid": 2193,
+          "latestWkid": 2193
+        }
+      },
+      "isInWebmap": false,
+      "isSaveLayers": false,
+      "layerOptions": {
+        "NIWA_SCENZ_TIMESERIES_V02_1878": {
+          "selected": true
+        }
+      },
+      "_uID": 30,
+      "isSaveExtent": true
+    },
+    {
+      "displayName": "Waiheke Island",
+      "name": "Waiheke Island",
+      "extent": {
+        "xmin": 1749653.5866747187,
+        "ymin": 5903515.2302065585,
+        "xmax": 1832205.5772227407,
+        "ymax": 5949377.447177682,
+        "spatialReference": {
+          "wkid": 2193,
+          "latestWkid": 2193
+        }
+      },
+      "isInWebmap": false,
+      "isSaveLayers": false,
+      "layerOptions": {
+        "NIWA_SCENZ_TIMESERIES_V02_1878": {
+          "selected": true
+        }
+      },
+      "_uID": 31,
+      "isSaveExtent": true
+    },
+    {
+      "displayName": "Little Barrier Island",
+      "name": "Little Barrier Island",
+      "extent": {
+        "xmin": 1739991.4044868741,
+        "ymin": 5967658.447249189,
+        "xmax": 1822543.3950348962,
+        "ymax": 6013520.664220313,
+        "spatialReference": {
+          "wkid": 2193,
+          "latestWkid": 2193
+        }
+      },
+      "isInWebmap": false,
+      "isSaveLayers": false,
+      "layerOptions": {
+        "NIWA_SCENZ_TIMESERIES_V02_1878": {
+          "selected": true
+        }
+      },
+      "_uID": 32,
+      "isSaveExtent": true
+    },
+    {
+      "displayName": "Matiu/Somes Island",
+      "name": "Matiu/Somes Island",
+      "extent": {
+        "xmin": 1746980.077925571,
+        "ymin": 5426119.693348746,
+        "xmax": 1767618.0755625407,
+        "ymax": 5437585.247591508,
+        "spatialReference": {
+          "wkid": 2193,
+          "latestWkid": 2193
+        }
+      },
+      "thumbnail": "/webappbuilder/apps/20/widgets/Bookmark/images/thumbnail_default.png",
+      "isInWebmap": false,
+      "isSaveLayers": false,
+      "layerOptions": {
+        "NIWA_SCENZ_TIMESERIES_V02_1878": {
+          "selected": true
+        }
+      },
+      "_uID": 33
+    }
+  ],
+  "bookmarks3D": [],
+  "layout": {
+    "cards": false,
+    "list": true,
+    "defaultMode": "list"
+  },
+  "editable": true,
+  "syncMode": {
+    "webmap": true,
+    "custom": true
+  },
+  "isSaveLayerVisibility": true
+}

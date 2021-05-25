@@ -1,9 +1,9 @@
 {
-  "name": "SCENZTimeseriesSEExport",
-  "displayName": "SCENZ_Timeseries_SE_Export",
-  "description": "SCENZTestModel2 using all Input Parameters: uses the Sampling tool on a Multidimensional CRF raster for monthly climatologies to export a table for an input area of pixels",
+  "name": "SCENZTimeseries7DExport",
+  "displayName": "SCENZ_Timeseries_7D_Export",
+  "description": "SCENZ_Timeseries_YR_Export using all Input Parameters: uses the Sampling tool on a Multidimensional CRF raster for annual timeseries to export a table for an input area of pixels",
   "category": "",
-  "helpUrl": "https://gis.niwa.co.nz/raster/rest/directories/arcgisoutput/SCENZ/SCENZ_Timeseries_Export_GPServer/SCENZ_SCENZ_Timeseries_Export/SCENZTimeseriesSEExport.htm",
+  "helpUrl": "https://gis.niwa.co.nz/raster/rest/directories/arcgisoutput/SCENZ/SCENZ_Timeseries_Export_GPServer/SCENZ_SCENZ_Timeseries_Export/SCENZTimeseries7DExport.htm",
   "serverInfo": {
     "currentVersion": 10.81,
     "url": "https://gis.niwa.co.nz/raster/rest/services/SCENZ/SCENZ_Timeseries_Export/GPServer/",
@@ -12,7 +12,7 @@
     "supportsUpload": false
   },
   "useResultMapServer": false,
-  "taskUrl": "https://gis.niwa.co.nz/raster/rest/services/SCENZ/SCENZ_Timeseries_Export/GPServer/SCENZ_Timeseries_SE_Export",
+  "taskUrl": "https://gis.niwa.co.nz/raster/rest/services/SCENZ/SCENZ_Timeseries_Export/GPServer/SCENZ_Timeseries_7D_Export",
   "isSynchronous": false,
   "inputParams": [
     {
@@ -80,8 +80,7 @@
       "visible": true,
       "required": true,
       "featureSetMode": "layers",
-      "tooltip": "PolygonInput",
-      "useFeatureCollection": false
+      "tooltip": "PolygonInput"
     },
     {
       "name": "esri_out_feature_service_name",

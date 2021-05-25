@@ -21,24 +21,19 @@
   "portalUrl": "https://gis.niwa.co.nz/portal",
   "appId": "",
   "authorizedCrossOriginDomains": [
-    "gistest.niwa.co.nz",
-    "arcedevportal.niwa.local",
-    "welwarcedev.niwa.local",
+    "gis.niwa.co.nz",
     "gis.niwa.co.nz",
     "services3.arcgis.com",
+    "arcdevportal.niwa.local",
     "services.arcgis.com",
     "niwa.maps.arcgis.com",
     "gistest.niwa.co.nz",
     "arcedevportal.niwa.local",
-    "services.arcgis.com",
-    "services3.arcgis.com",
-    "gistest.niwa.co.nz",
-    "gistest.niwa.co.nz",
-    "gistest.niwa.co.nz"
+    "services.arcgis.com"
   ],
-  "title": "NIWA-SCENZ-TIMESERIES-V02",
-  "subtitle": "",
-  "keepAppState": false,
+  "title": "NIWA-SCENZ-TIMESERIES",
+  "subtitle": "<div class=\"attribute-custom-style\"><br></div>",
+  "keepAppState": true,
   "logo": "",
   "geometryService": "https://utility.arcgisonline.com/arcgis/rest/services/Geometry/GeometryServer",
   "links": [],
@@ -90,8 +85,7 @@
         },
         "version": "2.19",
         "id": "widgets_Coordinate_Widget_4",
-        "name": "Coordinate",
-        "config": "configs/Coordinate/config_widgets_Coordinate_Widget_4.json"
+        "name": "Coordinate"
       },
       {
         "position": {
@@ -102,12 +96,12 @@
         "placeholderIndex": 1,
         "id": "_5",
         "name": "Filter",
+        "label": "Filter (use with Renderer) - scroll down/expand",
         "version": "2.19",
         "closeable": true,
         "uri": "widgets/Filter/Widget",
-        "openAtStart": true,
         "config": "configs/Filter/config__5.json",
-        "label": "Filter (use with Renderer)"
+        "openAtStart": true
       },
       {
         "position": {
@@ -118,26 +112,26 @@
         "placeholderIndex": 1,
         "id": "_6",
         "name": "ISRenderer",
+        "label": "Renderer (use with Filter)",
         "version": "",
         "closeable": true,
         "uri": "widgets/ISRenderer/Widget",
-        "config": "configs/ISRenderer/config__6.json",
-        "label": "Renderer (use with Filter)"
+        "config": "configs/ISRenderer/config__6.json"
       },
       {
         "position": {
-          "left": 255,
+          "left": 155,
           "top": 45,
           "relativeTo": "map"
         },
         "placeholderIndex": 1,
         "id": "_7",
-        "name": "ISProfile",
+        "name": "ISImageSelector",
+        "label": "Selector (use with other widgets)",
         "version": "",
         "closeable": true,
-        "uri": "widgets/ISProfile/Widget",
-        "config": "configs/ISProfile/config__7.json",
-        "label": "Profile (Product vs Time)"
+        "uri": "widgets/ISImageSelector/Widget",
+        "config": "configs/ISImageSelector/config__7.json"
       },
       {
         "position": {
@@ -147,32 +141,33 @@
         },
         "placeholderIndex": 1,
         "id": "_8",
+        "name": "Swipe",
         "version": "2.19",
         "closeable": true,
         "uri": "widgets/Swipe/Widget",
-        "name": "Swipe",
-        "config": "configs/Swipe/config__8.json"
+        "config": "configs/Swipe/config__8.json",
+        "label": "Swipe (use with selector)"
       },
       {
         "position": {
-          "left": 155,
+          "left": 255,
           "top": 45,
           "relativeTo": "map"
         },
         "placeholderIndex": 1,
         "id": "_9",
-        "name": "ISImageSelector",
+        "name": "ISProfile",
+        "label": "Profile (Product vs Time)",
         "version": "",
         "closeable": true,
-        "uri": "widgets/ISImageSelector/Widget",
-        "config": "configs/ISImageSelector/config__9.json",
-        "label": "Selector (use with other widgets)"
+        "uri": "widgets/ISProfile/Widget",
+        "config": "configs/ISProfile/config__9.json"
       },
       {
         "uri": "widgets/OverviewMap/Widget",
         "position": {
-          "right": 0,
           "bottom": 0,
+          "right": 0,
           "zIndex": 1,
           "relativeTo": "map"
         },
@@ -200,7 +195,8 @@
         },
         "version": "2.19",
         "id": "widgets_MyLocation_Widget_12",
-        "name": "MyLocation"
+        "name": "MyLocation",
+        "config": "configs/MyLocation/config_widgets_MyLocation_Widget_12.json"
       },
       {
         "uri": "widgets/AttributeTable/Widget",
@@ -271,10 +267,13 @@
       "right": 0,
       "bottom": 0
     },
-    "itemId": "979b89d7f0404d30a70bf950390b59e7",
+    "itemId": "91a73a6cefef4276ad8905f0101fa488",
     "mapOptions": {},
     "id": "map",
-    "portalUrl": "https://gis.niwa.co.nz/portal"
+    "portalUrl": "https://gis.niwa.co.nz/portal",
+    "mapRefreshInterval": {
+      "useWebMapRefreshInterval": true
+    }
   },
   "widgetPool": {
     "panel": {
@@ -292,123 +291,119 @@
         "name": "BasemapGallery",
         "version": "2.19",
         "uri": "widgets/BasemapGallery/Widget",
-        "config": "configs/BasemapGallery/config_widgets_BasemapGallery_Widget_39.json",
+        "config": "configs/BasemapGallery/config_widgets_BasemapGallery_Widget_23.json",
         "index": 2,
-        "id": "widgets_BasemapGallery_Widget_39",
-        "label": "Basemaps (NZTM selection)"
+        "id": "widgets_BasemapGallery_Widget_23"
       },
       {
         "uri": "widgets/LayerList/Widget",
         "version": "2.19",
         "id": "widgets_LayerList_Widget_19",
         "name": "LayerList",
-        "index": 3,
-        "label": "Layers (with legends)",
-        "config": "configs/LayerList/config_widgets_LayerList_Widget_19.json"
+        "index": 3
       },
       {
         "name": "eDraw",
+        "label": "eDraw (for use with export)",
         "version": "2.8.1",
         "uri": "widgets/eDraw/Widget",
-        "config": "configs/eDraw/config_widgets_eDraw_Widget_40.json",
+        "config": "configs/eDraw/config_widgets_eDraw_Widget_21.json",
         "index": 4,
-        "id": "widgets_eDraw_Widget_40",
-        "label": "eDraw (point, line, polygon)"
+        "id": "widgets_eDraw_Widget_21"
       },
       {
         "name": "AddData",
+        "label": "Add Data (online, url, file)",
         "version": "2.19",
         "uri": "widgets/AddData/Widget",
+        "config": "configs/AddData/config_widgets_AddData_Widget_20.json",
         "index": 6,
-        "id": "widgets_AddData_Widget_32",
-        "label": "Add Data (search online, url or file)",
-        "config": "configs/AddData/config_widgets_AddData_Widget_32.json"
+        "id": "widgets_AddData_Widget_20"
       },
       {
         "name": "Bookmark",
+        "label": "Bookmarks (main Islands and user)",
         "version": "2.19",
         "uri": "widgets/Bookmark/Widget",
-        "config": "configs/Bookmark/config_widgets_Bookmark_Widget_34.json",
+        "config": "configs/Bookmark/config_widgets_Bookmark_Widget_24.json",
         "index": 7,
-        "id": "widgets_Bookmark_Widget_34"
+        "id": "widgets_Bookmark_Widget_24"
       },
       {
         "name": "Share",
+        "label": "Share (link to apps)",
         "version": "2.19",
         "uri": "widgets/Share/Widget",
-        "config": "configs/Share/config_widgets_Share_Widget_37.json",
+        "config": "configs/Share/config_widgets_Share_Widget_27.json",
         "index": 8,
-        "id": "widgets_Share_Widget_37",
-        "label": "Share (link to app)"
+        "id": "widgets_Share_Widget_27"
       },
       {
         "name": "Print",
+        "label": "Print (imagery layer)",
         "version": "2.19",
         "uri": "widgets/Print/Widget",
-        "config": "configs/Print/config_widgets_Print_Widget_35.json",
+        "config": "configs/Print/config_widgets_Print_Widget_26.json",
         "index": 9,
-        "id": "widgets_Print_Widget_35",
-        "label": "Print (image layer)"
+        "id": "widgets_Print_Widget_26"
       },
       {
         "name": "ISExport",
+        "label": "Export (imagery layer)",
         "version": "",
         "uri": "widgets/ISExport/Widget",
-        "config": "configs/ISExport/config_widgets_ISExport_Widget_36.json",
+        "config": "configs/ISExport/config_widgets_ISExport_Widget_25.json",
         "index": 10,
-        "id": "widgets_ISExport_Widget_36",
-        "label": "Export (image layer)"
+        "id": "widgets_ISExport_Widget_25"
       },
       {
         "name": "About",
         "version": "2.19",
         "uri": "widgets/About/Widget",
-        "config": "configs/About/config_widgets_About_Widget_41.json",
+        "config": "configs/About/config_widgets_About_Widget_22.json",
         "index": 11,
-        "id": "widgets_About_Widget_41",
-        "openAtStart": false,
-        "label": "About (updated 27-April-2021)"
+        "id": "widgets_About_Widget_22"
       }
     ],
     "groups": [
       {
-        "label": "Export (from eDraw polygon)",
+        "label": "Export Data (polygon input from eDraw)",
         "widgets": [
           {
             "name": "Geoprocessing",
-            "label": "Weeks",
-            "version": "2.19",
-            "uri": "widgets/Geoprocessing/Widget",
-            "config": "configs/Geoprocessing/config_widgets_Geoprocessing_Widget_26.json",
-            "index": 13,
-            "id": "widgets_Geoprocessing_Widget_26"
-          },
-          {
-            "name": "Geoprocessing",
-            "label": "Months",
-            "version": "2.19",
-            "uri": "widgets/Geoprocessing/Widget",
-            "config": "configs/Geoprocessing/config_widgets_Geoprocessing_Widget_27.json",
-            "index": 14,
-            "id": "widgets_Geoprocessing_Widget_27"
-          },
-          {
-            "name": "Geoprocessing",
-            "label": "Seasons",
+            "label": "Week",
             "version": "2.19",
             "uri": "widgets/Geoprocessing/Widget",
             "config": "configs/Geoprocessing/config_widgets_Geoprocessing_Widget_28.json",
-            "index": 14,
+            "index": 12,
             "id": "widgets_Geoprocessing_Widget_28"
           },
           {
             "name": "Geoprocessing",
-            "label": "Years",
+            "label": "Month",
             "version": "2.19",
             "uri": "widgets/Geoprocessing/Widget",
             "config": "configs/Geoprocessing/config_widgets_Geoprocessing_Widget_29.json",
             "index": 14,
             "id": "widgets_Geoprocessing_Widget_29"
+          },
+          {
+            "name": "Geoprocessing",
+            "label": "Season",
+            "version": "2.19",
+            "uri": "widgets/Geoprocessing/Widget",
+            "config": "configs/Geoprocessing/config_widgets_Geoprocessing_Widget_31.json",
+            "index": 14,
+            "id": "widgets_Geoprocessing_Widget_31"
+          },
+          {
+            "name": "Geoprocessing",
+            "label": "Year",
+            "version": "2.19",
+            "uri": "widgets/Geoprocessing/Widget",
+            "config": "configs/Geoprocessing/config_widgets_Geoprocessing_Widget_32.json",
+            "index": 14,
+            "id": "widgets_Geoprocessing_Widget_32"
           }
         ],
         "index": 5,
@@ -430,161 +425,20 @@
   },
   "mobileLayout": {
     "widgetOnScreen": {
-      "widgets": [
-        {
-          "uri": "themes/FoldableTheme/widgets/HeaderController/Widget",
-          "position": {
-            "left": 0,
-            "top": 0,
-            "right": 0,
-            "height": 40,
-            "relativeTo": "browser"
-          },
-          "version": "2.19"
-        },
-        {
-          "uri": "widgets/Scalebar/Widget",
+      "widgets": {
+        "widgets/Scalebar/Widget": {
           "position": {
             "left": 7,
-            "bottom": 40,
-            "relativeTo": "map"
+            "bottom": 40
           },
-          "version": "2.19"
+          "version": "1.4"
         },
-        {
-          "uri": "widgets/Search/Widget",
-          "position": {
-            "left": 55,
-            "top": 5
-          },
-          "version": "2.19"
-        },
-        {
-          "uri": "widgets/Coordinate/Widget",
+        "widgets/Coordinate/Widget": {
           "position": {
             "left": 7,
-            "bottom": 17,
-            "relativeTo": "map"
+            "bottom": 17
           },
-          "version": "2.19"
-        },
-        {
-          "position": {
-            "left": 55,
-            "top": 45
-          }
-        },
-        {
-          "position": {
-            "left": 105,
-            "top": 45
-          }
-        },
-        {
-          "position": {
-            "left": 155,
-            "top": 45
-          }
-        },
-        {
-          "position": {
-            "left": 205,
-            "top": 45
-          }
-        },
-        {
-          "position": {
-            "left": 255,
-            "top": 45
-          }
-        },
-        {
-          "uri": "widgets/OverviewMap/Widget",
-          "position": {
-            "right": 0,
-            "bottom": 0,
-            "zIndex": 1
-          },
-          "version": "2.19"
-        },
-        {
-          "uri": "widgets/HomeButton/Widget",
-          "inPanel": false,
-          "position": {
-            "left": 7,
-            "top": 75
-          },
-          "version": "2.19"
-        },
-        {
-          "uri": "widgets/MyLocation/Widget",
-          "inPanel": false,
-          "position": {
-            "left": 7,
-            "top": 110
-          },
-          "version": "2.19"
-        },
-        {
-          "uri": "widgets/AttributeTable/Widget",
-          "version": "2.19",
-          "position": {
-            "relativeTo": "browser"
-          }
-        },
-        {
-          "uri": "widgets/Splash/Widget",
-          "visible": false,
-          "position": {
-            "relativeTo": "browser"
-          },
-          "version": "2.19"
-        },
-        {
-          "uri": "widgets/ZoomSlider/Widget",
-          "visible": true,
-          "position": {
-            "top": 5,
-            "left": 7
-          },
-          "version": "2.19"
-        },
-        {
-          "uri": "widgets/ExtentNavigate/Widget",
-          "visible": false,
-          "position": {
-            "top": 190,
-            "left": 7
-          },
-          "version": "2.19"
-        },
-        {
-          "uri": "widgets/FullScreen/Widget",
-          "visible": false,
-          "position": {
-            "top": 150,
-            "left": 7
-          },
-          "version": "2.19"
-        }
-      ]
-    },
-    "map": {
-      "position": {
-        "left": 0,
-        "top": 40,
-        "right": 0,
-        "bottom": 0
-      }
-    },
-    "widgetPool": {
-      "panel": {
-        "uri": "themes/FoldableTheme/panels/FoldablePanel/Panel",
-        "position": {
-          "top": 5,
-          "right": 5,
-          "bottom": 5,
-          "zIndex": 5
+          "version": "1.4"
         }
       }
     }
@@ -602,6 +456,7 @@
     }
   },
   "wabVersion": "2.19",
+  "isTemplateApp": true,
   "isWebTier": false,
   "httpProxy": {
     "useProxy": true,
@@ -609,10 +464,9 @@
     "url": "",
     "rules": []
   },
-  "logoLink": "https://gistest.niwa.co.nz/portal/home",
+  "logoLink": "https://gis.niwa.co.nz/portal/home",
   "dataSource": {
     "dataSources": {},
     "settings": {}
-  },
-  "appItemId": "8546695edc1a4dad9122edb15a167452"
+  }
 }

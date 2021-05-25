@@ -1,0 +1,1141 @@
+{
+  "basemapGallery": {
+    "mode": 2,
+    "basemaps": [
+      {
+        "thumbnailUrl": "${appPath}/configs/BasemapGallery/thumbnailUrl1621899566673.png",
+        "title": "NZ Geology Basemap (NZTM)",
+        "layers": [
+          {
+            "id": "qmapgeology_7886",
+            "layerType": "ArcGISTiledMapServiceLayer",
+            "url": "https://services.arcgisonline.co.nz/arcgis/rest/services/GNS/qmapgeology/MapServer",
+            "visibility": true,
+            "opacity": 1,
+            "title": "qmapgeology",
+            "serviceInfoResponse": {
+              "currentVersion": 10.5,
+              "serviceDescription": "These datasets are the product of the QMAP Geological Map of New Zealand Project and have been produced by GNS Science. QMAP represents the most current geological map of New Zealand at 1:250 000 scale. \n\nCopyright: (C) GNS Science. These datasets are licensed under a Creative Commons Attribution 3.0 New Zealand (CC BY 3.0) Licence. For more details visit http://creativecommons.org/licenses/by/3.0/nz. \n\nAcknowledgment: Where the data are used in an illustration GNS Science requests attribution in the following manner: (C) GNS Science 2013. Where reference to the data is to be included in a Reference List the following citation is suggested: QMAP seamless digital data 2013. Geological Map of New Zealand 1:250 000. Lower Hutt, New Zealand. GNS Science. \n\nWarning: This is an interim release of the data, which is subject to change without notice. It may contain errors or omissions. In particular the user should understand that the QMAP faults dataset is currently being reviewed against GNS's new active faults database. As a consequence some features will be added or changed in the QMAP faults dataset, and in some cases the geological_units and geological_boundaries datasets.",
+              "mapName": "QMap Geology Map",
+              "description": "These datasets are the product of the QMAP Geological Map of New Zealand Project and have been produced by GNS Science. QMAP represents the most current geological map of New Zealand at 1:250 000 scale. \n\nCopyright: (C) GNS Science. These datasets are licensed under a Creative Commons Attribution 3.0 New Zealand (CC BY 3.0) Licence. For more details visit http://creativecommons.org/licenses/by/3.0/nz. \n\nAcknowledgment: Where the data are used in an illustration GNS Science requests attribution in the following manner: (C) GNS Science 2013. Where reference to the data is to be included in a Reference List the following citation is suggested: QMAP seamless digital data 2013. Geological Map of New Zealand 1:250 000. Lower Hutt, New Zealand. GNS Science. \n\nWarning: This is an interim release of the data, which is subject to change without notice. It may contain errors or omissions. In particular the user should understand that the QMAP faults dataset is currently being reviewed against GNS's new active faults database. As a consequence some features will be added or changed in the QMAP faults dataset, and in some cases the geological_units and geological_boundaries datasets. ",
+              "copyrightText": "GNS Science",
+              "supportsDynamicLayers": false,
+              "layers": [
+                {
+                  "id": 0,
+                  "name": "background",
+                  "parentLayerId": -1,
+                  "defaultVisibility": true,
+                  "subLayerIds": null,
+                  "minScale": 0,
+                  "maxScale": 0
+                }
+              ],
+              "tables": [],
+              "spatialReference": {
+                "wkid": 2193,
+                "latestWkid": 2193
+              },
+              "singleFusedMapCache": true,
+              "tileInfo": {
+                "rows": 256,
+                "cols": 256,
+                "dpi": 96,
+                "format": "MIXED",
+                "compressionQuality": 90,
+                "origin": {
+                  "x": -4020900,
+                  "y": 19998100
+                },
+                "spatialReference": {
+                  "wkid": 2193,
+                  "latestWkid": 2193
+                },
+                "lods": [
+                  {
+                    "level": 0,
+                    "resolution": 4891.96981024998,
+                    "scale": 18489297.737236
+                  },
+                  {
+                    "level": 1,
+                    "resolution": 2445.98490512499,
+                    "scale": 9244648.868618
+                  },
+                  {
+                    "level": 2,
+                    "resolution": 1222.992452562495,
+                    "scale": 4622324.434309
+                  },
+                  {
+                    "level": 3,
+                    "resolution": 611.4962262813797,
+                    "scale": 2311162.217155
+                  },
+                  {
+                    "level": 4,
+                    "resolution": 305.74811314055756,
+                    "scale": 1155581.108577
+                  },
+                  {
+                    "level": 5,
+                    "resolution": 152.87405657041106,
+                    "scale": 577790.554289
+                  },
+                  {
+                    "level": 6,
+                    "resolution": 76.43702828507324,
+                    "scale": 288895.277144
+                  },
+                  {
+                    "level": 7,
+                    "resolution": 38.21851414253662,
+                    "scale": 144447.638572
+                  },
+                  {
+                    "level": 8,
+                    "resolution": 19.10925707126831,
+                    "scale": 72223.819286
+                  },
+                  {
+                    "level": 9,
+                    "resolution": 9.554628535634155,
+                    "scale": 36111.909643
+                  },
+                  {
+                    "level": 10,
+                    "resolution": 4.77731426794937,
+                    "scale": 18055.954822
+                  }
+                ]
+              },
+              "initialExtent": {
+                "xmin": 193178.53857219568,
+                "ymin": 5324360.174085834,
+                "xmax": 2989646.187615782,
+                "ymax": 6032386.817598994,
+                "spatialReference": {
+                  "wkid": 2193,
+                  "latestWkid": 2193
+                }
+              },
+              "fullExtent": {
+                "xmin": -1603744.2957999995,
+                "ymin": 3359707.5908999993,
+                "xmax": 5012968.937599994,
+                "ymax": 7487215.846000002,
+                "spatialReference": {
+                  "wkid": 2193,
+                  "latestWkid": 2193
+                }
+              },
+              "minScale": 18489297.737236,
+              "maxScale": 18055.954822,
+              "units": "esriMeters",
+              "supportedImageFormatTypes": "PNG32,PNG24,PNG,JPG,DIB,TIFF,EMF,PS,PDF,GIF,SVG,SVGZ,BMP",
+              "documentInfo": {
+                "Title": "QMap Geology Map for New Zealand",
+                "Author": "GNS Science",
+                "Comments": "These datasets are the product of the QMAP Geological Map of New Zealand Project and have been produced by GNS Science. QMAP represents the most current geological map of New Zealand at 1:250 000 scale. \n\nCopyright: (C) GNS Science. These datasets are licensed under a Creative Commons Attribution 3.0 New Zealand (CC BY 3.0) Licence. For more details visit http://creativecommons.org/licenses/by/3.0/nz. \n\nAcknowledgment: Where the data are used in an illustration GNS Science requests attribution in the following manner: (C) GNS Science 2013. Where reference to the data is to be included in a Reference List the following citation is suggested: QMAP seamless digital data 2013. Geological Map of New Zealand 1:250 000. Lower Hutt, New Zealand. GNS Science. \n\nWarning: This is an interim release of the data, which is subject to change without notice. It may contain errors or omissions. In particular the user should understand that the QMAP faults dataset is currently being reviewed against GNS's new active faults database. As a consequence some features will be added or changed in the QMAP faults dataset, and in some cases the geological_units and geological_boundaries datasets.",
+                "Subject": "Geology Map of New Zealand created by GNS Science",
+                "Category": "",
+                "AntialiasingMode": "None",
+                "TextAntialiasingMode": "Force",
+                "Keywords": "GNS,QMap,Geology,NZ,New Zealand"
+              },
+              "capabilities": "Map,Query,Data",
+              "supportedQueryFormats": "JSON, AMF, geoJSON",
+              "exportTilesAllowed": true,
+              "maxExportTilesCount": 100000,
+              "datumTransformations": [
+                {
+                  "geoTransforms": [
+                    {
+                      "wkid": 108001,
+                      "latestWkid": 1241,
+                      "transformForward": true,
+                      "name": "NAD_1927_To_NAD_1983_NADCON"
+                    }
+                  ]
+                },
+                {
+                  "geoTransforms": [
+                    {
+                      "wkid": 108001,
+                      "latestWkid": 1241,
+                      "transformForward": false,
+                      "name": "NAD_1927_To_NAD_1983_NADCON"
+                    }
+                  ]
+                }
+              ],
+              "supportsDatumTransformation": true,
+              "maxRecordCount": 1000,
+              "maxImageHeight": 4096,
+              "maxImageWidth": 4096,
+              "supportedExtensions": ""
+            }
+          }
+        ],
+        "spatialReference": {
+          "wkid": 2193,
+          "latestWkid": 2193
+        }
+      },
+      {
+        "thumbnailUrl": "${appPath}/configs/BasemapGallery/thumbnailUrl1621899566675.png",
+        "title": "NZ Dark Grey Canvas Basemap (NZTM)",
+        "layers": [
+          {
+            "id": "Dark_2810",
+            "layerType": "ArcGISTiledMapServiceLayer",
+            "url": "https://services.arcgisonline.co.nz/arcgis/rest/services/Canvas/Dark/MapServer",
+            "visibility": true,
+            "opacity": 1,
+            "title": "Dark",
+            "serviceInfoResponse": {
+              "currentVersion": 10.5,
+              "serviceDescription": "Dark Grey Canvas Basemap of New Zealand",
+              "mapName": "Layers",
+              "description": "",
+              "copyrightText": "Eagle Technology, Land Information New Zealand",
+              "supportsDynamicLayers": false,
+              "layers": [
+                {
+                  "id": 0,
+                  "name": "Sea",
+                  "parentLayerId": -1,
+                  "defaultVisibility": true,
+                  "subLayerIds": null,
+                  "minScale": 0,
+                  "maxScale": 0
+                }
+              ],
+              "tables": [],
+              "spatialReference": {
+                "wkid": 2193,
+                "latestWkid": 2193
+              },
+              "singleFusedMapCache": true,
+              "tileInfo": {
+                "rows": 512,
+                "cols": 512,
+                "dpi": 96,
+                "format": "JPEG",
+                "compressionQuality": 90,
+                "origin": {
+                  "x": -4020900,
+                  "y": 19998100
+                },
+                "spatialReference": {
+                  "wkid": 2193,
+                  "latestWkid": 2193
+                },
+                "lods": [
+                  {
+                    "level": 0,
+                    "resolution": 4891.96981024998,
+                    "scale": 18489297.737236
+                  },
+                  {
+                    "level": 1,
+                    "resolution": 2445.98490512499,
+                    "scale": 9244648.868618
+                  },
+                  {
+                    "level": 2,
+                    "resolution": 1222.992452562495,
+                    "scale": 4622324.434309
+                  },
+                  {
+                    "level": 3,
+                    "resolution": 611.4962262813797,
+                    "scale": 2311162.217155
+                  },
+                  {
+                    "level": 4,
+                    "resolution": 305.74811314055756,
+                    "scale": 1155581.108577
+                  },
+                  {
+                    "level": 5,
+                    "resolution": 152.87405657041106,
+                    "scale": 577790.554289
+                  },
+                  {
+                    "level": 6,
+                    "resolution": 76.43702828507324,
+                    "scale": 288895.277144
+                  },
+                  {
+                    "level": 7,
+                    "resolution": 38.21851414253662,
+                    "scale": 144447.638572
+                  },
+                  {
+                    "level": 8,
+                    "resolution": 19.10925707126831,
+                    "scale": 72223.819286
+                  },
+                  {
+                    "level": 9,
+                    "resolution": 9.554628535634155,
+                    "scale": 36111.909643
+                  },
+                  {
+                    "level": 10,
+                    "resolution": 4.77731426794937,
+                    "scale": 18055.954822
+                  },
+                  {
+                    "level": 11,
+                    "resolution": 2.388657133974685,
+                    "scale": 9027.977411
+                  },
+                  {
+                    "level": 12,
+                    "resolution": 1.1943285668550503,
+                    "scale": 4513.988705
+                  },
+                  {
+                    "level": 13,
+                    "resolution": 0.5971642835598172,
+                    "scale": 2256.994353
+                  },
+                  {
+                    "level": 14,
+                    "resolution": 0.29858214164761665,
+                    "scale": 1128.497176
+                  }
+                ]
+              },
+              "initialExtent": {
+                "xmin": 1354836.4794671237,
+                "ymin": 6922850.465291608,
+                "xmax": 2054388.162332871,
+                "ymax": 7113637.287891358,
+                "spatialReference": {
+                  "wkid": 2193,
+                  "latestWkid": 2193
+                }
+              },
+              "fullExtent": {
+                "xmin": -1603744.2957999995,
+                "ymin": 3359707.5908999993,
+                "xmax": 5012968.937599994,
+                "ymax": 7487215.846000002,
+                "spatialReference": {
+                  "wkid": 2193,
+                  "latestWkid": 2193
+                }
+              },
+              "minScale": 18489297.737236,
+              "maxScale": 1128.497176,
+              "units": "esriMeters",
+              "supportedImageFormatTypes": "PNG32,PNG24,PNG,JPG,DIB,TIFF,EMF,PS,PDF,GIF,SVG,SVGZ,BMP",
+              "documentInfo": {
+                "Title": "NZ Community Basemap",
+                "Author": "",
+                "Comments": "NZ Community Basemap",
+                "Subject": "NZ Community Basemap",
+                "Category": "",
+                "AntialiasingMode": "Best",
+                "TextAntialiasingMode": "Force",
+                "Keywords": "Dark Grey,Canvas,Basemap,New Zealand,NZ"
+              },
+              "capabilities": "Map,Query,Data",
+              "supportedQueryFormats": "JSON, AMF, geoJSON",
+              "exportTilesAllowed": true,
+              "maxExportTilesCount": 100000,
+              "datumTransformations": [
+                {
+                  "geoTransforms": [
+                    {
+                      "wkid": 108460,
+                      "latestWkid": 1568,
+                      "transformForward": true,
+                      "name": "New_Zealand_1949_To_NZGD_2000_3_NTv2"
+                    }
+                  ]
+                },
+                {
+                  "geoTransforms": [
+                    {
+                      "wkid": 108460,
+                      "latestWkid": 1568,
+                      "transformForward": false,
+                      "name": "New_Zealand_1949_To_NZGD_2000_3_NTv2"
+                    }
+                  ]
+                }
+              ],
+              "supportsDatumTransformation": true,
+              "maxRecordCount": 1000,
+              "maxImageHeight": 4096,
+              "maxImageWidth": 4096,
+              "supportedExtensions": ""
+            }
+          }
+        ],
+        "spatialReference": {
+          "wkid": 2193,
+          "latestWkid": 2193
+        }
+      },
+      {
+        "thumbnailUrl": "${appPath}/configs/BasemapGallery/thumbnailUrl1621899566678.png",
+        "title": "NZ Imagery Basemap (NZTM)",
+        "layers": [
+          {
+            "id": "newzealand_547",
+            "layerType": "ArcGISTiledMapServiceLayer",
+            "url": "https://services.arcgisonline.co.nz/arcgis/rest/services/Imagery/newzealand/MapServer",
+            "visibility": true,
+            "opacity": 1,
+            "title": "newzealand",
+            "serviceInfoResponse": {
+              "currentVersion": 10.5,
+              "serviceDescription": "This map was last updated in 2018 representing a range of content from the last few years. It includes New Zealand's most current publicly owned aerial imagery, covering 95 per cent of the country. Map service representing imagery footprints can be accessed here: https://services.arcgisonline.co.nz/arcgis/rest/services/Imagery/newzealand/MapServer/0 This service can be accessed as an OGC WMTS service here: http://services.arcgisonline.co.nz/arcgis/rest/services/Imagery/newzealand/MapServer/WMTS/1.0.0/WMTSCapabilities.xml The Scheduled November 2016 update features 20 new imagery sets put into the basemap. To see an app that shows the new updates : http://www.arcgis.com/apps/MapTools/index.html?appid=4668b5198e7d4680bc03abe4a553a5e1 To see the most recent imagery released by LINZ: http://data.linz.govt.nz/data/category/aerial-photos/?s=n List of new scheduled updates courtesy of Land Information New Zealand:\n\nAuckland 0.075m Urban Aerial Photos (2017)\nThames Coromandel 0.05m Urban Aerial Photos (2015) LINZ\nBay of Plenty 0.25m Rural Aerial Photos (2015-2017) LINZ\nBay of Plenty 0.125m Urban Aerial Photos (2015-2016) LINZ\nBay of Plenty 0.1m Urban Aerial Photos Index Tiles (2015-2016) LINZ\nCentral Hawkes Bay 0.1m Urban Aerial Photos (2017-2018) LINZ\nHastings 0.1m Urban Aerial Photos (2017-2018) LINZ\nNapier 0.05m Urban Aerial Photos (2017-2018) LINZ\nNapier 0.1m Urban Aerial Photos (2017-2018) LINZ\nNew Plymouth 0.10m Urban Aerial Photos (2017) LINZ\nWhanganui 0.075m Urban Aerial Photos (2017 - 2018)\nManawatu Whanganui 0.3m Rural Aerial Photos (2015-2016) LINZ\nPalmerston North 0.125m Urban Aerial Photos (2016-2017)\nKapiti Coast 0.10m Urban Aerial Photos (2017) LINZ\nUpper Hutt 0.10m Urban Aerial Photos (2017) LINZ\nHutt City 0.10m Urban Aerial Photos (2017) LINZ\nWellington 0.10m Urban Aerial Photos (2017) LINZ\nWellington 0.3m Rural Aerial Photos (2016-2017) LINZ\nNelson City 0.075m Urban Aerial Photos (2017-2018)\nTasman 0.1m Urban Aerial Photos (2017-2018)\nTasman 0.3m Rural Aerial Photos (2017-2018)\nTasman 0.3m Rural Aerial Photos (2017)\nChristchurch 0.075m Urban Aerial Photos (2018)\nSouthland & Central Otago 0.4m Rural Aerial Photos (2015-2017) LINZ\nNZ 10m Satellite Imagery (2017) LINZ",
+              "mapName": "Layers",
+              "description": "",
+              "copyrightText": "Sourced from the LINZ Data Service and licensed for re-use under the Creative Commons Attribution 4.0 New Zealand licence ",
+              "supportsDynamicLayers": false,
+              "layers": [
+                {
+                  "id": 0,
+                  "name": "Metadata Footprints",
+                  "parentLayerId": -1,
+                  "defaultVisibility": false,
+                  "subLayerIds": null,
+                  "minScale": 0,
+                  "maxScale": 0
+                }
+              ],
+              "tables": [],
+              "spatialReference": {
+                "wkid": 2193,
+                "latestWkid": 2193
+              },
+              "singleFusedMapCache": true,
+              "tileInfo": {
+                "rows": 256,
+                "cols": 256,
+                "dpi": 96,
+                "format": "MIXED",
+                "compressionQuality": 90,
+                "origin": {
+                  "x": -4020900,
+                  "y": 19998100
+                },
+                "spatialReference": {
+                  "wkid": 2193,
+                  "latestWkid": 2193
+                },
+                "lods": [
+                  {
+                    "level": 0,
+                    "resolution": 4891.96981024998,
+                    "scale": 18489297.737236
+                  },
+                  {
+                    "level": 1,
+                    "resolution": 2445.98490512499,
+                    "scale": 9244648.868618
+                  },
+                  {
+                    "level": 2,
+                    "resolution": 1222.992452562495,
+                    "scale": 4622324.434309
+                  },
+                  {
+                    "level": 3,
+                    "resolution": 611.4962262813797,
+                    "scale": 2311162.217155
+                  },
+                  {
+                    "level": 4,
+                    "resolution": 305.74811314055756,
+                    "scale": 1155581.108577
+                  },
+                  {
+                    "level": 5,
+                    "resolution": 152.87405657041106,
+                    "scale": 577790.554289
+                  },
+                  {
+                    "level": 6,
+                    "resolution": 76.43702828507324,
+                    "scale": 288895.277144
+                  },
+                  {
+                    "level": 7,
+                    "resolution": 38.21851414253662,
+                    "scale": 144447.638572
+                  },
+                  {
+                    "level": 8,
+                    "resolution": 19.10925707126831,
+                    "scale": 72223.819286
+                  },
+                  {
+                    "level": 9,
+                    "resolution": 9.554628535634155,
+                    "scale": 36111.909643
+                  },
+                  {
+                    "level": 10,
+                    "resolution": 4.77731426794937,
+                    "scale": 18055.954822
+                  },
+                  {
+                    "level": 11,
+                    "resolution": 2.388657133974685,
+                    "scale": 9027.977411
+                  },
+                  {
+                    "level": 12,
+                    "resolution": 1.1943285668550503,
+                    "scale": 4513.988705
+                  },
+                  {
+                    "level": 13,
+                    "resolution": 0.5971642835598172,
+                    "scale": 2256.994353
+                  },
+                  {
+                    "level": 14,
+                    "resolution": 0.29858214164761665,
+                    "scale": 1128.497176
+                  },
+                  {
+                    "level": 15,
+                    "resolution": 0.14929107082380833,
+                    "scale": 564.248588
+                  },
+                  {
+                    "level": 16,
+                    "resolution": 0.07464553541190416,
+                    "scale": 282.124294
+                  }
+                ]
+              },
+              "initialExtent": {
+                "xmin": -3489392.318121234,
+                "ymin": 2845019.1581744337,
+                "xmax": 6679382.260785056,
+                "ymax": 8128346.553244411,
+                "spatialReference": {
+                  "wkid": 2193,
+                  "latestWkid": 2193
+                }
+              },
+              "fullExtent": {
+                "xmin": 215459.48484141752,
+                "ymin": 4670946.889850238,
+                "xmax": 2974530.4578224057,
+                "ymax": 6302418.821568606,
+                "spatialReference": {
+                  "wkid": 2193,
+                  "latestWkid": 2193
+                }
+              },
+              "minScale": 18489297.737236,
+              "maxScale": 0,
+              "units": "esriMeters",
+              "supportedImageFormatTypes": "PNG32,PNG24,PNG,JPG,DIB,TIFF,EMF,PS,PDF,GIF,SVG,SVGZ,BMP",
+              "documentInfo": {
+                "Title": "",
+                "Author": "",
+                "Comments": "New Imagery",
+                "Subject": "New Imagery",
+                "Category": "",
+                "AntialiasingMode": "None",
+                "TextAntialiasingMode": "Force",
+                "Keywords": "Imagery,Basemap"
+              },
+              "capabilities": "Map,Query,Data",
+              "supportedQueryFormats": "JSON, AMF, geoJSON",
+              "exportTilesAllowed": true,
+              "maxExportTilesCount": 100000,
+              "supportsDatumTransformation": true,
+              "maxRecordCount": 1000,
+              "maxImageHeight": 4096,
+              "maxImageWidth": 4096,
+              "supportedExtensions": "",
+              "resampling": true
+            }
+          }
+        ],
+        "spatialReference": {
+          "wkid": 2193,
+          "latestWkid": 2193
+        }
+      },
+      {
+        "thumbnailUrl": "${appPath}/configs/BasemapGallery/thumbnailUrl1621899566680.png",
+        "title": "NZ Light Canvas Basemap (NZTM)",
+        "layers": [
+          {
+            "id": "Light_9904",
+            "layerType": "ArcGISTiledMapServiceLayer",
+            "url": "https://services.arcgisonline.co.nz/arcgis/rest/services/Canvas/Light/MapServer",
+            "visibility": true,
+            "opacity": 1,
+            "title": "Light",
+            "serviceInfoResponse": {
+              "currentVersion": 10.5,
+              "serviceDescription": "Light Grey Canvas Basemap of New Zealand",
+              "mapName": "Layers",
+              "description": "",
+              "copyrightText": "Land Information New Zealand, Eagle Technology ",
+              "supportsDynamicLayers": false,
+              "layers": [
+                {
+                  "id": 0,
+                  "name": "Sea (background polygon)",
+                  "parentLayerId": -1,
+                  "defaultVisibility": true,
+                  "subLayerIds": null,
+                  "minScale": 0,
+                  "maxScale": 0
+                }
+              ],
+              "tables": [],
+              "spatialReference": {
+                "wkid": 2193,
+                "latestWkid": 2193
+              },
+              "singleFusedMapCache": true,
+              "tileInfo": {
+                "rows": 512,
+                "cols": 512,
+                "dpi": 96,
+                "format": "JPEG",
+                "compressionQuality": 90,
+                "origin": {
+                  "x": -4020900,
+                  "y": 19998100
+                },
+                "spatialReference": {
+                  "wkid": 2193,
+                  "latestWkid": 2193
+                },
+                "lods": [
+                  {
+                    "level": 0,
+                    "resolution": 4891.96981024998,
+                    "scale": 18489297.737236
+                  },
+                  {
+                    "level": 1,
+                    "resolution": 2445.98490512499,
+                    "scale": 9244648.868618
+                  },
+                  {
+                    "level": 2,
+                    "resolution": 1222.992452562495,
+                    "scale": 4622324.434309
+                  },
+                  {
+                    "level": 3,
+                    "resolution": 611.4962262813797,
+                    "scale": 2311162.217155
+                  },
+                  {
+                    "level": 4,
+                    "resolution": 305.74811314055756,
+                    "scale": 1155581.108577
+                  },
+                  {
+                    "level": 5,
+                    "resolution": 152.87405657041106,
+                    "scale": 577790.554289
+                  },
+                  {
+                    "level": 6,
+                    "resolution": 76.43702828507324,
+                    "scale": 288895.277144
+                  },
+                  {
+                    "level": 7,
+                    "resolution": 38.21851414253662,
+                    "scale": 144447.638572
+                  },
+                  {
+                    "level": 8,
+                    "resolution": 19.10925707126831,
+                    "scale": 72223.819286
+                  },
+                  {
+                    "level": 9,
+                    "resolution": 9.554628535634155,
+                    "scale": 36111.909643
+                  },
+                  {
+                    "level": 10,
+                    "resolution": 4.77731426794937,
+                    "scale": 18055.954822
+                  },
+                  {
+                    "level": 11,
+                    "resolution": 2.388657133974685,
+                    "scale": 9027.977411
+                  },
+                  {
+                    "level": 12,
+                    "resolution": 1.1943285668550503,
+                    "scale": 4513.988705
+                  },
+                  {
+                    "level": 13,
+                    "resolution": 0.5971642835598172,
+                    "scale": 2256.994353
+                  },
+                  {
+                    "level": 14,
+                    "resolution": 0.29858214164761665,
+                    "scale": 1128.497176
+                  }
+                ]
+              },
+              "initialExtent": {
+                "xmin": 1354836.4794671237,
+                "ymin": 6922850.465291619,
+                "xmax": 2054388.162332871,
+                "ymax": 7113637.287891369,
+                "spatialReference": {
+                  "wkid": 2193,
+                  "latestWkid": 2193
+                }
+              },
+              "fullExtent": {
+                "xmin": -1603744.2957999995,
+                "ymin": 3359707.5908999993,
+                "xmax": 5012968.937599994,
+                "ymax": 7487215.846000002,
+                "spatialReference": {
+                  "wkid": 2193,
+                  "latestWkid": 2193
+                }
+              },
+              "minScale": 18489297.737236,
+              "maxScale": 1128.497176,
+              "units": "esriMeters",
+              "supportedImageFormatTypes": "PNG32,PNG24,PNG,JPG,DIB,TIFF,EMF,PS,PDF,GIF,SVG,SVGZ,BMP",
+              "documentInfo": {
+                "Title": "NZ Community Basemap",
+                "Author": "",
+                "Comments": "NZ Community Basemap",
+                "Subject": "NZ Community Basemap",
+                "Category": "",
+                "AntialiasingMode": "Best",
+                "TextAntialiasingMode": "Force",
+                "Keywords": "Light Grey,Canvas,Basemap,New Zealand,NZ"
+              },
+              "capabilities": "Map,Query,Data",
+              "supportedQueryFormats": "JSON, AMF, geoJSON",
+              "exportTilesAllowed": true,
+              "maxExportTilesCount": 100000,
+              "datumTransformations": [
+                {
+                  "geoTransforms": [
+                    {
+                      "wkid": 108460,
+                      "latestWkid": 1568,
+                      "transformForward": true,
+                      "name": "New_Zealand_1949_To_NZGD_2000_3_NTv2"
+                    }
+                  ]
+                },
+                {
+                  "geoTransforms": [
+                    {
+                      "wkid": 108460,
+                      "latestWkid": 1568,
+                      "transformForward": false,
+                      "name": "New_Zealand_1949_To_NZGD_2000_3_NTv2"
+                    }
+                  ]
+                }
+              ],
+              "supportsDatumTransformation": true,
+              "maxRecordCount": 1000,
+              "maxImageHeight": 4096,
+              "maxImageWidth": 4096,
+              "supportedExtensions": ""
+            }
+          }
+        ],
+        "spatialReference": {
+          "wkid": 2193,
+          "latestWkid": 2193
+        }
+      },
+      {
+        "thumbnailUrl": "${appPath}/configs/BasemapGallery/thumbnailUrl1621899566681.png",
+        "title": "NZ LINZ Topographic Basemap (NZTM)",
+        "layers": [
+          {
+            "id": "geotiffs_2593",
+            "layerType": "ArcGISTiledMapServiceLayer",
+            "url": "https://services.arcgisonline.co.nz/arcgis/rest/services/LINZ/geotiffs/MapServer",
+            "visibility": true,
+            "opacity": 1,
+            "title": "geotiffs",
+            "serviceInfoResponse": {
+              "currentVersion": 10.5,
+              "serviceDescription": "The Topo250 and Topo50 map series provides topographic mapping for the New Zealand mainland, the Chatham Islands at 1:250,000 and 1:50,000 scale.",
+              "mapName": "Layers",
+              "description": "",
+              "copyrightText": "Eagle Technology, LINZ",
+              "supportsDynamicLayers": false,
+              "layers": [
+                {
+                  "id": 0,
+                  "name": "Sea",
+                  "parentLayerId": -1,
+                  "defaultVisibility": true,
+                  "subLayerIds": null,
+                  "minScale": 0,
+                  "maxScale": 0
+                }
+              ],
+              "tables": [],
+              "spatialReference": {
+                "wkid": 2193,
+                "latestWkid": 2193
+              },
+              "singleFusedMapCache": true,
+              "tileInfo": {
+                "rows": 256,
+                "cols": 256,
+                "dpi": 96,
+                "format": "JPEG",
+                "compressionQuality": 95,
+                "origin": {
+                  "x": -4020900,
+                  "y": 19998100
+                },
+                "spatialReference": {
+                  "wkid": 2193,
+                  "latestWkid": 2193
+                },
+                "lods": [
+                  {
+                    "level": 0,
+                    "resolution": 4891.96981024998,
+                    "scale": 18489297.737236
+                  },
+                  {
+                    "level": 1,
+                    "resolution": 2445.98490512499,
+                    "scale": 9244648.868618
+                  },
+                  {
+                    "level": 2,
+                    "resolution": 1222.992452562495,
+                    "scale": 4622324.434309
+                  },
+                  {
+                    "level": 3,
+                    "resolution": 611.4962262813797,
+                    "scale": 2311162.217155
+                  },
+                  {
+                    "level": 4,
+                    "resolution": 305.74811314055756,
+                    "scale": 1155581.108577
+                  },
+                  {
+                    "level": 5,
+                    "resolution": 152.87405657041106,
+                    "scale": 577790.554289
+                  },
+                  {
+                    "level": 6,
+                    "resolution": 76.43702828507324,
+                    "scale": 288895.277144
+                  },
+                  {
+                    "level": 7,
+                    "resolution": 38.21851414253662,
+                    "scale": 144447.638572
+                  },
+                  {
+                    "level": 8,
+                    "resolution": 19.10925707126831,
+                    "scale": 72223.819286
+                  },
+                  {
+                    "level": 9,
+                    "resolution": 9.554628535634155,
+                    "scale": 36111.909643
+                  },
+                  {
+                    "level": 10,
+                    "resolution": 4.77731426794937,
+                    "scale": 18055.954822
+                  },
+                  {
+                    "level": 11,
+                    "resolution": 2.388657133974685,
+                    "scale": 9027.977411
+                  }
+                ]
+              },
+              "initialExtent": {
+                "xmin": -1174351.6000321147,
+                "ymin": 6925217.074996745,
+                "xmax": 4583496.866632111,
+                "ymax": 8383024.078451239,
+                "spatialReference": {
+                  "wkid": 2193,
+                  "latestWkid": 2193
+                }
+              },
+              "fullExtent": {
+                "xmin": -1603783.9834000021,
+                "ymin": 3359628.2156999987,
+                "xmax": 5012929.249999996,
+                "ymax": 7487136.470800001,
+                "spatialReference": {
+                  "wkid": 2193,
+                  "latestWkid": 2193
+                }
+              },
+              "minScale": 18489297.737236,
+              "maxScale": 9027.977411,
+              "units": "esriMeters",
+              "supportedImageFormatTypes": "PNG32,PNG24,PNG,JPG,DIB,TIFF,EMF,PS,PDF,GIF,SVG,SVGZ,BMP",
+              "documentInfo": {
+                "Title": "",
+                "Author": "",
+                "Comments": "The Topo250 and Topo50 map series provides topographic mapping for the New Zealand mainland, the Chatham Islands at 1:250,000 and 1:50,000 scale.",
+                "Subject": "Topo250 and Topo50 combined map series",
+                "Category": "",
+                "AntialiasingMode": "None",
+                "TextAntialiasingMode": "Force",
+                "Keywords": "Topo50,Topo250,New Zealand,Basemap"
+              },
+              "capabilities": "Map,Query,Data",
+              "supportedQueryFormats": "JSON, AMF, geoJSON",
+              "exportTilesAllowed": true,
+              "maxExportTilesCount": 100000,
+              "supportsDatumTransformation": true,
+              "maxRecordCount": 1000,
+              "maxImageHeight": 4096,
+              "maxImageWidth": 4096,
+              "supportedExtensions": ""
+            }
+          }
+        ],
+        "spatialReference": {
+          "wkid": 2193,
+          "latestWkid": 2193
+        }
+      },
+      {
+        "thumbnailUrl": "${appPath}/configs/BasemapGallery/thumbnailUrl1621899566683.png",
+        "title": "NZ Transparent Basemap (NZTM)",
+        "layers": [
+          {
+            "id": "Light_4645",
+            "layerType": "ArcGISTiledMapServiceLayer",
+            "url": "https://services.arcgisonline.co.nz/arcgis/rest/services/Canvas/Light/MapServer",
+            "visibility": true,
+            "opacity": 1,
+            "title": "Light",
+            "minScale": 18489297.737236,
+            "maxScale": 12807820,
+            "serviceInfoResponse": {
+              "currentVersion": 10.5,
+              "serviceDescription": "Light Grey Canvas Basemap of New Zealand",
+              "mapName": "Layers",
+              "description": "",
+              "copyrightText": "Land Information New Zealand, Eagle Technology ",
+              "supportsDynamicLayers": false,
+              "layers": [
+                {
+                  "id": 0,
+                  "name": "Sea (background polygon)",
+                  "parentLayerId": -1,
+                  "defaultVisibility": true,
+                  "subLayerIds": null,
+                  "minScale": 0,
+                  "maxScale": 0
+                }
+              ],
+              "tables": [],
+              "spatialReference": {
+                "wkid": 2193,
+                "latestWkid": 2193
+              },
+              "singleFusedMapCache": true,
+              "tileInfo": {
+                "rows": 512,
+                "cols": 512,
+                "dpi": 96,
+                "format": "JPEG",
+                "compressionQuality": 90,
+                "origin": {
+                  "x": -4020900,
+                  "y": 19998100
+                },
+                "spatialReference": {
+                  "wkid": 2193,
+                  "latestWkid": 2193
+                },
+                "lods": [
+                  {
+                    "level": 0,
+                    "resolution": 4891.96981024998,
+                    "scale": 18489297.737236
+                  },
+                  {
+                    "level": 1,
+                    "resolution": 2445.98490512499,
+                    "scale": 9244648.868618
+                  },
+                  {
+                    "level": 2,
+                    "resolution": 1222.992452562495,
+                    "scale": 4622324.434309
+                  },
+                  {
+                    "level": 3,
+                    "resolution": 611.4962262813797,
+                    "scale": 2311162.217155
+                  },
+                  {
+                    "level": 4,
+                    "resolution": 305.74811314055756,
+                    "scale": 1155581.108577
+                  },
+                  {
+                    "level": 5,
+                    "resolution": 152.87405657041106,
+                    "scale": 577790.554289
+                  },
+                  {
+                    "level": 6,
+                    "resolution": 76.43702828507324,
+                    "scale": 288895.277144
+                  },
+                  {
+                    "level": 7,
+                    "resolution": 38.21851414253662,
+                    "scale": 144447.638572
+                  },
+                  {
+                    "level": 8,
+                    "resolution": 19.10925707126831,
+                    "scale": 72223.819286
+                  },
+                  {
+                    "level": 9,
+                    "resolution": 9.554628535634155,
+                    "scale": 36111.909643
+                  },
+                  {
+                    "level": 10,
+                    "resolution": 4.77731426794937,
+                    "scale": 18055.954822
+                  },
+                  {
+                    "level": 11,
+                    "resolution": 2.388657133974685,
+                    "scale": 9027.977411
+                  },
+                  {
+                    "level": 12,
+                    "resolution": 1.1943285668550503,
+                    "scale": 4513.988705
+                  },
+                  {
+                    "level": 13,
+                    "resolution": 0.5971642835598172,
+                    "scale": 2256.994353
+                  },
+                  {
+                    "level": 14,
+                    "resolution": 0.29858214164761665,
+                    "scale": 1128.497176
+                  }
+                ]
+              },
+              "initialExtent": {
+                "xmin": 1354836.4794671237,
+                "ymin": 6922850.465291619,
+                "xmax": 2054388.162332871,
+                "ymax": 7113637.287891369,
+                "spatialReference": {
+                  "wkid": 2193,
+                  "latestWkid": 2193
+                }
+              },
+              "fullExtent": {
+                "xmin": -1603744.2957999995,
+                "ymin": 3359707.5908999993,
+                "xmax": 5012968.937599994,
+                "ymax": 7487215.846000002,
+                "spatialReference": {
+                  "wkid": 2193,
+                  "latestWkid": 2193
+                }
+              },
+              "minScale": 18489297.737236,
+              "maxScale": 1128.497176,
+              "units": "esriMeters",
+              "supportedImageFormatTypes": "PNG32,PNG24,PNG,JPG,DIB,TIFF,EMF,PS,PDF,GIF,SVG,SVGZ,BMP",
+              "documentInfo": {
+                "Title": "NZ Community Basemap",
+                "Author": "",
+                "Comments": "NZ Community Basemap",
+                "Subject": "NZ Community Basemap",
+                "Category": "",
+                "AntialiasingMode": "Best",
+                "TextAntialiasingMode": "Force",
+                "Keywords": "Light Grey,Canvas,Basemap,New Zealand,NZ"
+              },
+              "capabilities": "Map,Query,Data",
+              "supportedQueryFormats": "JSON, AMF, geoJSON",
+              "exportTilesAllowed": true,
+              "maxExportTilesCount": 100000,
+              "datumTransformations": [
+                {
+                  "geoTransforms": [
+                    {
+                      "wkid": 108460,
+                      "latestWkid": 1568,
+                      "transformForward": true,
+                      "name": "New_Zealand_1949_To_NZGD_2000_3_NTv2"
+                    }
+                  ]
+                },
+                {
+                  "geoTransforms": [
+                    {
+                      "wkid": 108460,
+                      "latestWkid": 1568,
+                      "transformForward": false,
+                      "name": "New_Zealand_1949_To_NZGD_2000_3_NTv2"
+                    }
+                  ]
+                }
+              ],
+              "supportsDatumTransformation": true,
+              "maxRecordCount": 1000,
+              "maxImageHeight": 4096,
+              "maxImageWidth": 4096,
+              "supportedExtensions": ""
+            }
+          }
+        ],
+        "spatialReference": {
+          "wkid": 2193,
+          "latestWkid": 2193
+        }
+      }
+    ]
+  }
+}

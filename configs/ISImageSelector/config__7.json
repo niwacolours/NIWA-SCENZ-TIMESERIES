@@ -1,0 +1,19 @@
+{
+  "display": "both",
+  "zoomLevel": 0,
+  "searchExtent": 75,
+  "autoRefresh": false,
+  "listImagesSeparate": false,
+  "NIWA_SCENZ_TIMESERIES_V02_1878": {
+    "imageField": "StdTime",
+    "objectID": "OBJECTID",
+    "category": "Category",
+    "title": "Product"
+  },
+  "secondaryLayer": {
+    "imageField": "",
+    "objectID": "OBJECTID",
+    "category": "Category",
+    "title": "Product"
+  }
+}
