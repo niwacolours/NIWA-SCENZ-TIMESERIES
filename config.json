@@ -100,8 +100,8 @@
         "version": "2.19",
         "closeable": true,
         "uri": "widgets/Filter/Widget",
-        "config": "configs/Filter/config__5.json",
-        "openAtStart": true
+        "openAtStart": true,
+        "config": "configs/Filter/config__5.json"
       },
       {
         "position": {
@@ -145,7 +145,6 @@
         "version": "2.19",
         "closeable": true,
         "uri": "widgets/Swipe/Widget",
-        "config": "configs/Swipe/config__8.json",
         "label": "Swipe (use with selector)"
       },
       {
@@ -267,7 +266,7 @@
       "right": 0,
       "bottom": 0
     },
-    "itemId": "91a73a6cefef4276ad8905f0101fa488",
+    "itemId": "0d8e071ece0e446e9982939f83b5ff1c",
     "mapOptions": {},
     "id": "map",
     "portalUrl": "https://gis.niwa.co.nz/portal",
@@ -316,7 +315,6 @@
         "label": "Add Data (online, url, file)",
         "version": "2.19",
         "uri": "widgets/AddData/Widget",
-        "config": "configs/AddData/config_widgets_AddData_Widget_20.json",
         "index": 6,
         "id": "widgets_AddData_Widget_20"
       },

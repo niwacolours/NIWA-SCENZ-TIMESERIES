@@ -8,9 +8,9 @@
   "allowTurnOffAll": false,
   "filters": [
     {
-      "layerId": "NIWA_SCENZ_TIMESERIES_V02_1878",
-      "url": "https://gis.niwa.co.nz/raster/rest/services/NIWA_SCENZ_TIMESERIES_V02/ImageServer",
-      "name": "Product (toggle off/on if blank)",
+      "layerId": "NIWA_SCENZ_TIMESERIES_V02_6935",
+      "url": "https://gis.niwa.co.nz/raster/rest/services/SCENZ/NIWA_SCENZ_TIMESERIES_V02/ImageServer",
+      "name": "Product (toggle on/off if no image)",
       "filter": {
         "logicalOperator": "AND",
         "parts": [
@@ -31,7 +31,7 @@
             "interactiveObj": {
               "prompt": "Product is",
               "hint": "",
-              "cascade": "all"
+              "cascade": "previous"
             },
             "caseSensitive": false,
             "displaySQL": "UPPER(Variable) = 'CHL'",
@@ -72,8 +72,8 @@
       }
     },
     {
-      "layerId": "NIWA_SCENZ_TIMESERIES_V02_1878",
-      "url": "https://gis.niwa.co.nz/raster/rest/services/NIWA_SCENZ_TIMESERIES_V02/ImageServer",
+      "layerId": "NIWA_SCENZ_TIMESERIES_V02_6935",
+      "url": "https://gis.niwa.co.nz/raster/rest/services/SCENZ/NIWA_SCENZ_TIMESERIES_V02/ImageServer",
       "name": "Timestep",
       "filter": {
         "logicalOperator": "AND",
@@ -95,7 +95,7 @@
             "interactiveObj": {
               "prompt": "Timestep is",
               "hint": "",
-              "cascade": "all"
+              "cascade": "previous"
             },
             "caseSensitive": false,
             "displaySQL": "UPPER(GroupName) = 'MONTHLYTIMESERIES'",
@@ -136,8 +136,8 @@
       }
     },
     {
-      "layerId": "NIWA_SCENZ_TIMESERIES_V02_1878",
-      "url": "https://gis.niwa.co.nz/raster/rest/services/NIWA_SCENZ_TIMESERIES_V02/ImageServer",
+      "layerId": "NIWA_SCENZ_TIMESERIES_V02_6935",
+      "url": "https://gis.niwa.co.nz/raster/rest/services/SCENZ/NIWA_SCENZ_TIMESERIES_V02/ImageServer",
       "name": "Year",
       "filter": {
         "logicalOperator": "AND",
@@ -159,7 +159,7 @@
             "interactiveObj": {
               "prompt": "Year is",
               "hint": "",
-              "cascade": "all"
+              "cascade": "previous"
             },
             "caseSensitive": false,
             "displaySQL": "UPPER(Year) = '2020'",
@@ -200,8 +200,8 @@
       }
     },
     {
-      "layerId": "NIWA_SCENZ_TIMESERIES_V02_1878",
-      "url": "https://gis.niwa.co.nz/raster/rest/services/NIWA_SCENZ_TIMESERIES_V02/ImageServer",
+      "layerId": "NIWA_SCENZ_TIMESERIES_V02_6935",
+      "url": "https://gis.niwa.co.nz/raster/rest/services/SCENZ/NIWA_SCENZ_TIMESERIES_V02/ImageServer",
       "name": "Month",
       "filter": {
         "logicalOperator": "AND",
@@ -218,20 +218,20 @@
             "valueObj": {
               "isValid": true,
               "type": "unique",
-              "value": "08"
+              "value": "01"
             },
             "interactiveObj": {
               "prompt": "Month is",
               "hint": "",
-              "cascade": "all"
+              "cascade": "previous"
             },
             "caseSensitive": false,
-            "displaySQL": "UPPER(Month) = '08'",
-            "expr": "UPPER(Month) = '08'"
+            "displaySQL": "UPPER(Month) = '01'",
+            "expr": "UPPER(Month) = '01'"
           }
         ],
-        "expr": "UPPER(Month) = '08'",
-        "displaySQL": "UPPER(Month) = '08'"
+        "expr": "UPPER(Month) = '01'",
+        "displaySQL": "UPPER(Month) = '01'"
       },
       "icon": null,
       "enableMapFilter": true,

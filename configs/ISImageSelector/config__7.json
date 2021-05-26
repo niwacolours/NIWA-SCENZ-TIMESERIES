@@ -15,5 +15,11 @@
     "objectID": "OBJECTID",
     "category": "Category",
     "title": "Product"
+  },
+  "NIWA_SCENZ_TIMESERIES_V02_6935": {
+    "imageField": "StdTime",
+    "objectID": "OBJECTID",
+    "category": "Category",
+    "title": "Product"
   }
 }
