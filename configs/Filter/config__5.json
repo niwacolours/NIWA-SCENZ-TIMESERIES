@@ -4,7 +4,7 @@
   "zoomto": false,
   "zoombackto": false,
   "allowCustom": false,
-  "allowResetAll": false,
+  "allowResetAll": true,
   "allowTurnOffAll": false,
   "filters": [
     {
@@ -25,13 +25,67 @@
             "operator": "stringOperatorIs",
             "valueObj": {
               "isValid": true,
-              "type": "unique",
-              "value": "CHL"
+              "selectUI": "dropdown",
+              "type": "uniquePredefined",
+              "value": [
+                {
+                  "value": "ADET",
+                  "alias": "ADET",
+                  "isChecked": false
+                },
+                {
+                  "value": "BBP",
+                  "alias": "BBP",
+                  "isChecked": false
+                },
+                {
+                  "value": "CHL",
+                  "alias": "CHL",
+                  "isChecked": true
+                },
+                {
+                  "value": "EBED",
+                  "alias": "EBED",
+                  "isChecked": false
+                },
+                {
+                  "value": "HVIS",
+                  "alias": "HVIS",
+                  "isChecked": false
+                },
+                {
+                  "value": "KPAR",
+                  "alias": "KPAR",
+                  "isChecked": false
+                },
+                {
+                  "value": "POB",
+                  "alias": "POB",
+                  "isChecked": false
+                },
+                {
+                  "value": "SEC",
+                  "alias": "SEC",
+                  "isChecked": false
+                },
+                {
+                  "value": "SST",
+                  "alias": "SST",
+                  "isChecked": false
+                },
+                {
+                  "value": "TSS",
+                  "alias": "TSS",
+                  "isChecked": false
+                }
+              ],
+              "emptyLabel": "- empty -",
+              "enableEmpty": false
             },
             "interactiveObj": {
-              "prompt": "Product is",
+              "prompt": "Product is (select  \"Renderer\" first or put on \"stretch\")",
               "hint": "",
-              "cascade": "previous"
+              "cascade": "none"
             },
             "caseSensitive": false,
             "displaySQL": "UPPER(Variable) = 'CHL'",
@@ -89,13 +143,37 @@
             "operator": "stringOperatorIs",
             "valueObj": {
               "isValid": true,
-              "type": "unique",
-              "value": "MonthlyTimeseries"
+              "selectUI": "dropdown",
+              "type": "uniquePredefined",
+              "value": [
+                {
+                  "value": "7DTimeseries",
+                  "alias": "7DTimeseries",
+                  "isChecked": false
+                },
+                {
+                  "value": "MonthlyTimeseries",
+                  "alias": "MonthlyTimeseries",
+                  "isChecked": true
+                },
+                {
+                  "value": "SeasonalTimeseries",
+                  "alias": "SeasonalTimeseries",
+                  "isChecked": false
+                },
+                {
+                  "value": "AnnualTimeseries",
+                  "alias": "AnnualTimeseries",
+                  "isChecked": false
+                }
+              ],
+              "emptyLabel": "- empty -",
+              "enableEmpty": false
             },
             "interactiveObj": {
               "prompt": "Timestep is",
               "hint": "",
-              "cascade": "previous"
+              "cascade": "none"
             },
             "caseSensitive": false,
             "displaySQL": "UPPER(GroupName) = 'MONTHLYTIMESERIES'",
@@ -153,13 +231,13 @@
             "operator": "stringOperatorIs",
             "valueObj": {
               "isValid": true,
-              "type": "unique",
+              "type": "value",
               "value": "2020"
             },
             "interactiveObj": {
               "prompt": "Year is",
               "hint": "",
-              "cascade": "previous"
+              "cascade": "none"
             },
             "caseSensitive": false,
             "displaySQL": "UPPER(Year) = '2020'",
@@ -217,13 +295,13 @@
             "operator": "stringOperatorIs",
             "valueObj": {
               "isValid": true,
-              "type": "unique",
+              "type": "value",
               "value": "01"
             },
             "interactiveObj": {
               "prompt": "Month is",
               "hint": "",
-              "cascade": "previous"
+              "cascade": "none"
             },
             "caseSensitive": false,
             "displaySQL": "UPPER(Month) = '01'",
