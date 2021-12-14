@@ -1,10 +1,10 @@
 {
   "basemapGallery": {
-    "mode": 1,
+    "mode": 2,
     "basemaps": [
       {
         "title": "NZ Geology Basemap (NZTM)",
-        "thumbnailUrl": "${appPath}/configs/BasemapGallery/base64Img_widgets_BasemapGallery_Widget_23_1639016155285.png",
+        "thumbnailUrl": "${appPath}/configs/BasemapGallery/base64Img_widgets_BasemapGallery_Widget_23_1639086513236.png",
         "layers": [
           {
             "id": "qmapgeology_7886",
@@ -184,7 +184,7 @@
       },
       {
         "title": "NZ Dark Grey Canvas Basemap (NZTM)",
-        "thumbnailUrl": "${appPath}/configs/BasemapGallery/base64Img_widgets_BasemapGallery_Widget_23_1639016155286.png",
+        "thumbnailUrl": "${appPath}/configs/BasemapGallery/base64Img_widgets_BasemapGallery_Widget_23_1639086513237.png",
         "layers": [
           {
             "id": "Dark_2810",
@@ -384,7 +384,7 @@
       },
       {
         "title": "NZ Imagery Basemap (NZTM)",
-        "thumbnailUrl": "${appPath}/configs/BasemapGallery/base64Img_widgets_BasemapGallery_Widget_23_1639016155287.png",
+        "thumbnailUrl": "${appPath}/configs/BasemapGallery/base64Img_widgets_BasemapGallery_Widget_23_1639086513238.png",
         "layers": [
           {
             "id": "newzealand_547",
@@ -573,7 +573,7 @@
       },
       {
         "title": "NZ Light Canvas Basemap (NZTM)",
-        "thumbnailUrl": "${appPath}/configs/BasemapGallery/base64Img_widgets_BasemapGallery_Widget_23_1639016155288.png",
+        "thumbnailUrl": "${appPath}/configs/BasemapGallery/base64Img_widgets_BasemapGallery_Widget_23_1639086513242.png",
         "layers": [
           {
             "id": "Light_9904",
@@ -773,7 +773,7 @@
       },
       {
         "title": "NZ LINZ Topographic Basemap (NZTM)",
-        "thumbnailUrl": "${appPath}/configs/BasemapGallery/base64Img_widgets_BasemapGallery_Widget_23_1639016155289.png",
+        "thumbnailUrl": "${appPath}/configs/BasemapGallery/base64Img_widgets_BasemapGallery_Widget_23_1639086513243.png",
         "layers": [
           {
             "id": "geotiffs_2593",
@@ -936,7 +936,7 @@
       },
       {
         "title": "NZ Transparent Basemap (NZTM)",
-        "thumbnailUrl": "${appPath}/configs/BasemapGallery/base64Img_widgets_BasemapGallery_Widget_23_1639016155290.png",
+        "thumbnailUrl": "${appPath}/configs/BasemapGallery/base64Img_widgets_BasemapGallery_Widget_23_1639086513244.png",
         "layers": [
           {
             "id": "Light_4645",
