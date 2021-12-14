@@ -22,9 +22,9 @@ define({
   "bookmarksFromConfig": "Marcaj preconfigurat",
   "bookmarksFromCache": "Marcaje temporare locale",
   "notice": "Notificare",
-  "changeNoticeTips": "Modificările se memorează numai în cache-ul browserului dumneavoastră â€™. Sincronizarea între widget și configurarea sa este deconectată odată ce efectuați modificări.",
+  "changeNoticeTips": "Schimbările vor fi salvate doar în cache-ul browser-ului dvs. Sincronizarea dintre widget și configurația acesteia este deconectată deoarece efectuați modificări.",
   "syncNoticeTips": "Această operație șterge toate modificările dumneavoastră și reface semnele de carte configurate.",
-  "dontShowAgain": "Nu â€™ arăta din nou",
+  "dontShowAgain": "Nu mai afişați",
   "saveVisibility": "Salvaţi vizibilitatea stratului tematic",
   "_widgetLabel": "Semn de carte"
 });

@@ -19,6 +19,7 @@ define([
   'dojo/_base/declare',
   'dojo/_base/array',
   'dojo/_base/lang',
+  'jimu/utils',
   'dojo/on',
   'dojo/has',
   'dojo/query',
@@ -61,6 +62,7 @@ define([
   dojoDeclare,
   dojoArray,
   dojoLang,
+  jimuUtils,
   dojoOn,
   dojoHas,
   dojoQuery,
@@ -564,7 +566,7 @@ define([
       var isCanceled = this._frmtdlg.content.isCanceled;
       if (isCanceled) {
         if (this.addSign !== this._frmtdlg.content.addSignChkBox.checked) {
-          this._frmtdlg.content.addSignChkBox.checked = this.addSign;
+          this._frmtdlg.content.addSignChkBox.setValue(this.addSign);
         }
         return;
       }
@@ -744,6 +746,8 @@ define([
       if (evt.keyCode === dojoKeys.ENTER) {
         evt.preventDefault();
         var sanitizedInput = this.getCleanInput(evt.currentTarget.value);
+        //always format the text if coords are manually entered hence set inputFromText flag to false
+        this.inputFromText = false;
         this.getCoordinateType(sanitizedInput).then(dojoLang.hitch(this, function (itm) {
           if (itm) {
             if (itm.length === 1) {
@@ -1857,6 +1861,9 @@ define([
       r.latdeg = parts[0].replace(/[nNsS]/, '');
       r.londeg = parts[1].replace(/[eEwW]/, '');
 
+      r.latdeg = jimuUtils.localizeNumber(parseFloat(r.latdeg));
+      r.londeg = jimuUtils.localizeNumber(parseFloat(r.londeg));
+
       if (addSignPrefix) {
         if (parts[0].slice(-1) === 'N') {
           r.latdeg = '+' + r.latdeg;
@@ -1893,6 +1900,9 @@ define([
       r.latmin = r.parts[1].replace(/[nNsS]/, '');
       r.londeg = r.parts[2];
       r.lonmin = r.parts[3].replace(/[eEwW]/, '');
+
+      r.latmin = jimuUtils.localizeNumber(parseFloat(r.latmin));
+      r.lonmin = jimuUtils.localizeNumber(parseFloat(r.lonmin));
 
       if (addSignPrefix) {
         if (r.parts[1].slice(-1) === 'N') {
@@ -1936,8 +1946,12 @@ define([
 
       r.londeg = r.parts[3];
       r.lonmin = r.parts[4];
+
+      r.latsec = jimuUtils.localizeNumber(parseFloat(r.latsec));
+
       if (r.parts[5]) {
         r.lonsec = r.parts[5].replace(/[EWew]/, '');
+        r.lonsec = jimuUtils.localizeNumber(parseFloat(r.lonsec));
       }
 
       if (addSignPrefix) {

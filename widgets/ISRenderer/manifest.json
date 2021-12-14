@@ -1,6 +1,6 @@
 {
   "name": "ISRenderer",
-  "label" : "IS Renderer",
+  "label": "IS Renderer",
   "platform": "HTML",
   "version": "",
   "author": "Esri",
@@ -8,10 +8,10 @@
   "copyright": "",
   "license": "http://www.apache.org/licenses/LICENSE-2.0",
   "properties": {
-    "hasLocale" : false,
-    "hasSettingPage" : false,
-    "hasSettingUIFile" : false,
-    "hasSettingLocale" : false,
-    "hasSettingStyle" : false
+    "hasLocale": false,
+    "hasSettingPage": false,
+    "hasSettingUIFile": false,
+    "hasSettingLocale": false,
+    "hasSettingStyle": false
   }
 }

@@ -441,7 +441,7 @@
   color: white !important;
 }
 .jimu-draw-box .drawings-clear:before{
-  content: '\e901';
+  content: '\e914';
 }
 
 .jimu-draw-box.enabled .drawings-clear:hover{

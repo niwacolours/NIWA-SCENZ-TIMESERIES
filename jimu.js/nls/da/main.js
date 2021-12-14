@@ -121,7 +121,7 @@ define({
     "map": "Fortsæt til kort",
     "sidePanel": "Fortsæt til sidepanel",
     "attributeTable": "Fortsæt til attributtabel",
-    "tabAway": "Tryk på Tab for at fortsætte og gå ud af appen, tryk på Shift og Tab for at gå tilbage til ${value} indenfor"
+    "tabAway": "Tryk på Tab for at fortsætte og gå ud af appen, tryk på Shift og Tab for at gå tilbage til ${value} indenfor."
   },
   "panelHeader": {
     "foldWindow": "Fold vindue sammen",

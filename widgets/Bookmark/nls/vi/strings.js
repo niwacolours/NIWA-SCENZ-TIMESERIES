@@ -22,9 +22,9 @@ define({
   "bookmarksFromConfig": "Các đánh dấu đã được cấu hình",
   "bookmarksFromCache": "Các đánh dấu cục bộ tạm thời",
   "notice": "Lưu ý",
-  "changeNoticeTips": "Những thay đổi sẽ chỉ được lưu vào trong bộ nhớ cache trình duyệt của bạn. Việc đồng bộ hóa giữa tiện ích và cấu hình của nó sẽ bị ngắt kết nối khi bạn bắt đầu thực hiện chỉnh sửa.",
+  "changeNoticeTips": "Những thay đổi sẽ chỉ được lưu trong bộ nhớ cache trình duyệt của bạn. Việc đồng bộ hóa giữa tiện ích và cấu hình của nó sẽ bị ngắt kết nối khi bạn bắt đầu thực hiện chỉnh sửa.",
   "syncNoticeTips": "Điều này sẽ xóa mọi chỉnh sửa của bạn và khôi phục lại đánh dấu đã được cấu hình.",
-  "dontShowAgain": "Không hiển thị lại",
+  "dontShowAgain": "Không hiện lại.",
   "saveVisibility": "Lưu khả năng hiển thị lớp",
   "_widgetLabel": "Đánh dấu"
 });

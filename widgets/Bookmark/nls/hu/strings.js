@@ -22,9 +22,9 @@ define({
   "bookmarksFromConfig": "Előre konfigurált könyvjelzők",
   "bookmarksFromCache": "Helyi ideiglenes könyvjelzők",
   "notice": "Megjegyzés",
-  "changeNoticeTips": "A módosítások csak a böngésző gyorsítótárában lesznek elmentve. Ha módosításokat végez, akkor megszűnik a szinkronizálás a widget és annak konfigurációja között.",
+  "changeNoticeTips": "A módosítások csak böngészője gyorsítótárában lesznek elmentve. Ha módosításokat végez, akkor megszűnik a szinkronizálás a widget és annak konfigurációja között.",
   "syncNoticeTips": "Ez törli az összes módosítást és visszaállítja a konfigurált könyvjelzőket.",
-  "dontShowAgain": "Ne jelenjen meg újra",
+  "dontShowAgain": "Ne jelenjen meg még egyszer.",
   "saveVisibility": "Réteg láthatóságának mentése",
   "_widgetLabel": "Könyvjelző"
 });

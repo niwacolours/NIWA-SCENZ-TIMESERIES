@@ -76,7 +76,7 @@
         "exceededTransferLimit": false
       },
       "category": "",
-      "label": "PolygonInput",
+      "label": "Use eDraw widget (highlight polygon - turns blue; select three dots for input)",
       "visible": true,
       "required": true,
       "featureSetMode": "layers",
@@ -86,11 +86,12 @@
       "name": "esri_out_feature_service_name",
       "dataType": "GPString",
       "description": "The name of the optional feature service to create on the federated server containing the result of this tool. If no name is specified an output feature service will not be created.",
-      "defaultValue": "",
+      "defaultValue": null,
       "category": "",
       "label": "Output Feature Service Name",
-      "visible": true,
-      "required": false
+      "visible": false,
+      "required": false,
+      "tooltip": "Output Feature Service Name"
     }
   ],
   "outputParams": [

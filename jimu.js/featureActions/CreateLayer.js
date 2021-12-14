@@ -17,6 +17,7 @@
 define([
   'dojo/_base/declare',
   'dojo/_base/lang',
+  'dojo/_base/array',
   'dojo/_base/html',
   'dojo/json',
   'dojo/on',
@@ -28,7 +29,7 @@ define([
   'jimu/dijit/Search',
   'jimu/LayerInfos/LayerInfos',
   'jimu/utils'
-], function(declare, lang, html, Json, on, FeatureLayer, rendererJsonUtils,
+], function(declare, lang, array, html, Json, on, FeatureLayer, rendererJsonUtils,
   symbolJsonUtils, BaseFeatureAction,
   Popup, JimuInput, LayerInfos, jimuUtils){
   var clazz = declare(BaseFeatureAction, {
@@ -49,7 +50,7 @@ define([
       var featureLayer, serviceRendererJson, selectionSymbol, layerRenderer;
       var layerDefinition = {
         geometryType: layer.geometryType,
-        fields: lang.clone(layer.fields),
+        fields: array.map(layer.fields, function(field) { return field.toJSON() }),
         objectIdField: layer.objectIdField
       };
       var featureCollection = {

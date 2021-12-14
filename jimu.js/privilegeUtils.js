@@ -15,12 +15,11 @@
 ///////////////////////////////////////////////////////////////////////////
 define([
   'dojo/Deferred',
-  'esri/arcgis/OAuthInfo',
   'esri/IdentityManager',
   'esri/request',
   'jimu/tokenUtils',
   'jimu/portalUrlUtils'
-], function(Deferred, OAuthInfo, IdentityManager, esriRequest, tokenUtils, portalUrlUtils) {
+], function(Deferred, IdentityManager, esriRequest, tokenUtils, portalUrlUtils) {
 
   var mo = {};
 
@@ -28,12 +27,6 @@ define([
     var portalUrl = portalUrlUtils.getStandardPortalUrl(portal.portalUrl);
     var sharingUrl = portalUrlUtils.getSharingUrl(portalUrl);
     var oauthappid = "arcgisWebApps";
-    // register OAuthInfo with client ID 'arcgisWebApps'
-    var oAuthInfo = new OAuthInfo({
-      appId: "arcgisWebApps",
-      portalUrl: portalUrl
-    });
-    IdentityManager.registerOAuthInfos([oAuthInfo]);
 
     var retDef = new Deferred();
     var checkAppAccessDef;

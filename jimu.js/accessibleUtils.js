@@ -444,7 +444,9 @@ define([
       }
     }
 
-    if(focusNode){
+    // Never show skip links in click-mode.
+    var isSkipsInClickMode = !mo.isInNavMode() && html.getAttr(focusNode, 'role') === 'link'
+    if(focusNode && !isSkipsInClickMode){
       focusNode.focus();
     }
     return focusNode;

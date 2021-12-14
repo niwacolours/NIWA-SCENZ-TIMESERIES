@@ -22,7 +22,7 @@ define({
   "bookmarksFromConfig": "Unapred konfigurisani obeleživači",
   "bookmarksFromCache": "Lokalni privremeni obeleživači",
   "notice": "Obaveštenje",
-  "changeNoticeTips": "Promene će biti sačuvane samo u kešu vašeg pregledača. Sinhronizacija između vidžeta i njegove konfiguracije je prekinuta kada izvršite izmene.",
+  "changeNoticeTips": "Promene će biti sačuvane samo u keš memoriji vašeg pregledača. Sinhronizacija između vidžeta i njegove konfiguracije je prekinuta kada izvršite izmene.",
   "syncNoticeTips": "To će izbrisati sve vaše izmene i vratiti konfigurisane obeleživače.",
   "dontShowAgain": "Ne prikazuj ponovo",
   "saveVisibility": "Sačuvaj vidljivost sloja",

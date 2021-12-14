@@ -121,7 +121,7 @@ define({
     "map": "Zur Karte",
     "sidePanel": "Zum Seitenbereich",
     "attributeTable": "Zur Attributtabelle",
-    "tabAway": "Drücken Sie die Tabulatortaste, um fortzufahren und die App zu verlassen. Drücken Sie die Umschalt- und die Tabulatortaste, um zurückzukehren zu \"${value}\" in"
+    "tabAway": "Drücken Sie die Tabulatortaste, um fortzufahren und die App zu verlassen. Drücken Sie die Umschalt- und die Tabulatortaste, um zu ${value} in der App zurückzukehren."
   },
   "panelHeader": {
     "foldWindow": "Fenster einklappen",

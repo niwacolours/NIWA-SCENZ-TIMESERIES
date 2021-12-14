@@ -112,6 +112,7 @@ define([
                 showInfoWindowOnSelect: true,
                 map: this.map,
                 sources: searchSouces,
+                //minCharacters: 1,
                 theme: 'arcgisSearch'
               });
               html.place(this.searchDijit.domNode, this.searchNode);

@@ -24,7 +24,7 @@ define({
   "notice": "Mededeling",
   "changeNoticeTips": "Wijzigingen worden alleen opgeslagen in de cache van uw browser. Synchronisatie tussen de widget en de configuratie ervan is losgekoppeld zodra u wijzigingen aanbrengt.",
   "syncNoticeTips": "Dit zal alle wijzigingen wissen en de geconfigureerde bladwijzers herstellen.",
-  "dontShowAgain": "Niet meer tonen",
+  "dontShowAgain": "Niet meer weergeven",
   "saveVisibility": "Laagzichtbaarheid opslaan",
   "_widgetLabel": "Bladwijzer"
 });

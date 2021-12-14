@@ -859,6 +859,8 @@ define([
           this.own(on(this.customFilter, 'change', lang.hitch(this, this._onCustomFilterChange)));
           //last node to first node on custom filter for mobile mode.
           this.own(on(this.customFilter.btnAddSetMobile, 'keydown', lang.hitch(this, this._btnAddSetToToggleBtn)));
+        } else {
+          this._applyCustomFilter(true); // remove expr from previous layer
         }
 
         this.customFilter.build({
@@ -934,12 +936,18 @@ define([
         this._applyCustomFilter();
       },
 
-      _applyCustomFilter: function(){
-        var filterJson = this.customFilter.toJson();
-        if(!filterJson || !this.customFilterToggleButton.checked || filterJson.parts.length === 0){
+      _applyCustomFilter: function(isReset){
+        if(!this.customFilterToggleButton.checked){
           return;
         }
-        this.filterManager.applyWidgetFilter(this.selectedLayer.id, this.id + '-custom-filter', filterJson.expr, true, null, this.config.zoomto);
+        var wFilterId = this.id + '-custom-filter';
+        var previousExpr = this.filterManager.getWidgetFilter(this.selectedLayer.id, wFilterId);
+        var newExpr = isReset ? '1=1' : this.customFilter.toValidJson().expr;
+        // Do not apply filters when: Process from Changing a layer to Completing the first valid expression, or expr is not changed.
+        if((!previousExpr && newExpr === '1=1') || previousExpr === newExpr){
+          return;
+        }
+        this.filterManager.applyWidgetFilter(this.selectedLayer.id, wFilterId, newExpr, true, null, this.config.zoomto);
         this._afterFilterApplied(this.selectedLayer.id);
       },
 

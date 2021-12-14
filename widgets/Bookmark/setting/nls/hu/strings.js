@@ -26,7 +26,7 @@ define({
   "importTitle": "Könyvjelzők importálása",
   "importFromWeb": "Könyvjelzők importálása a jelenlegi webtérképről",
   "selectAll": "Összes kiválasztása",
-  "noBookmarkInConfig": "Kattintson az „Importálás” vagy az „Új létrehozása” gombra a könyvjelzők hozzáadásához.",
+  "noBookmarkInConfig": "Könyvjelzők hozzáadásához kattintson az „Importálás” vagy az „Új létrehozása” lehetőségre.",
   "noBookmarkInWebMap": "Nincs könyvjelző konfigurálva a térképen.",
   "extent": "Kiterjedés",
   "saveExtent": "Térképkiterjedés mentése erre a könyvjelzőre",

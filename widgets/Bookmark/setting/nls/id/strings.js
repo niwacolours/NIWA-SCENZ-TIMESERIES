@@ -26,7 +26,7 @@ define({
   "importTitle": "Impor Penanda Lokasi",
   "importFromWeb": "Impor Penanda Lokasi dari peta web saat ini",
   "selectAll": "Pilih Semua",
-  "noBookmarkInConfig": "Klik â€œImporâ€ atau â€œBuat Baruâ€ untuk menambahkan penanda lokasi.",
+  "noBookmarkInConfig": "Klik “Impor” atau “Buat Baru” untuk menambahkan bookmark.",
   "noBookmarkInWebMap": "Tidak ada penanda lokasi yang dikonfigurasi di peta.",
   "extent": "Jangkauan",
   "saveExtent": "Simpan jangkauan peta ke penanda lokasi ini",

@@ -24,7 +24,7 @@ define({
   "notice": "Hinweis",
   "changeNoticeTips": "Änderungen werden nur im Browser-Cache gespeichert. Die Synchronisierung zwischen dem Widget und dessen Konfiguration wird unterbrochen, sobald Sie Änderungen vornehmen.",
   "syncNoticeTips": "So werden Ihre Änderungen gelöscht und die konfigurierten Lesezeichen wiederhergestellt.",
-  "dontShowAgain": "Nicht noch einmal anzeigen",
+  "dontShowAgain": "Nicht mehr anzeigen",
   "saveVisibility": "Layer-Sichtbarkeit speichern",
   "_widgetLabel": "Lesezeichen"
 });

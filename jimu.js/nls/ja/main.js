@@ -121,7 +121,7 @@ define({
     "map": "マップに移動",
     "sidePanel": "サイド パネルに移動",
     "attributeTable": "属性テーブルに移動",
-    "tabAway": "Tab キーを押して続行し、アプリから移動します。Shift キーと Tab キーを押して、中の ${value} に戻ります。"
+    "tabAway": "Tab を押して続行し、アプリから移動します。Shift と Tab を押して、${value} 内に戻ります。"
   },
   "panelHeader": {
     "foldWindow": "ウィンドウの折りたたみ",

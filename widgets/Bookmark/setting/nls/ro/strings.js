@@ -26,7 +26,7 @@ define({
   "importTitle": "Importare semne de carte",
   "importFromWeb": "Importare semne de carte de pe harta web curentă",
   "selectAll": "Selectare toate",
-  "noBookmarkInConfig": "Faceți clic pe â€œImportâ€ sau pe â€œCreate Newâ€ pentru a adăuga semne de carte.",
+  "noBookmarkInConfig": "Dați clic pe \"Import” sau “Creează nou” pentru a adăuga semne de carte.",
   "noBookmarkInWebMap": "Nu este configurat niciun semn de carte pe hartă.",
   "extent": "Extindere",
   "saveExtent": "Salvare extindere hartă pentru acest semn de carte",

@@ -121,7 +121,7 @@ define({
     "map": "Přeskočit na mapu",
     "sidePanel": "Přeskočit na postranní panel",
     "attributeTable": "Přeskočit na atributovou tabulku",
-    "tabAway": "Stisknutím klávesy Tab opustíte aplikaci, stisknutím kláves Shift a Tab se vrátíte zpět na ${value}"
+    "tabAway": "Stisknutím klávesy Tab opustíte aplikaci, stisknutím kláves Shift a Tab se vrátíte zpět na ${value}."
   },
   "panelHeader": {
     "foldWindow": "Sbalit okno",
@@ -622,7 +622,7 @@ define({
   "widgetManager": {
     "createWidgetError": "Došlo k chybě při vytváření widgetu.",
     "createWidgetSettingPageError": "Došlo k chybě na stránce nastavení widgetu.",
-    "loadWidgetResourceError": "Došlo k chybě při načítání zdroje widgetu."
+    "loadWidgetResourceError": "Došlo k chybě při načítání zdroje widgetu"
   },
   "shareOptions": {
     "shareMap": "Zvolte, kdo bude moci vidět tuto aplikaci",

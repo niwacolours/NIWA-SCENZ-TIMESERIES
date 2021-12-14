@@ -26,7 +26,7 @@ define({
   "importTitle": "Importa segnalibri",
   "importFromWeb": "Importa segnalibri dalla mappa Web attuale",
   "selectAll": "Seleziona tutto",
-  "noBookmarkInConfig": "Fare clic su â€œImportaâ€ o â€œCrea nuovoâ€ per aggiungere segnalibri.",
+  "noBookmarkInConfig": "Cliccare \"Importa\" o \"Crea Nuovo\" per aggiungere segnalibri.",
   "noBookmarkInWebMap": "Nessun segnalibro configurato nella mappa.",
   "extent": "Estensione",
   "saveExtent": "Salva estensione della mappa in questo segnalibro",

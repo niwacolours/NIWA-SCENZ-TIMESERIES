@@ -26,7 +26,7 @@ define({
   "importTitle": "ייבא סימניות",
   "importFromWeb": "ייבא סימניות מה-Web Map הנוכחית",
   "selectAll": "בחר הכל",
-  "noBookmarkInConfig": "לחץ על â€œייבאtâ€ או על â€צור חדשהâ€ כדי להוסיף סימניות.",
+  "noBookmarkInConfig": "לחץ על 'ייבוא' או 'צור חדשה' כדי להוסיף סימניות.",
   "noBookmarkInWebMap": "לא הוגדרה אף סימנייה במפה.",
   "extent": "תיחום",
   "saveExtent": "שמור את תיחום המפה בסימניה זו",

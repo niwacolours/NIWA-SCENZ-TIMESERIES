@@ -16,7 +16,7 @@
 
 var dojoConfig, jimuConfig;
 
-/*global weinreUrl, loadResources, _loadPolyfills, loadingCallback, debug, allCookies, unescape */
+/*global weinreUrl, loadResources, _loadPolyfills, loadingCallback, debug, allCookies */
 
 var ie = (function() {
 
@@ -235,14 +235,6 @@ var ie = (function() {
       dojoConfig.locale = ['hi'].indexOf(locale) >= 0 ? 'en' : locale;
       window._setRTL(dojoConfig.locale);
       return;
-    }
-
-    if(allCookies.esri_auth){
-      /*jshint -W061 */
-      var userObj = eval('(' + unescape(allCookies.esri_auth) + ')');
-      if(userObj.culture){
-        dojoConfig.locale = userObj.culture;
-      }
     }
 
     if(window.queryObject.mode){

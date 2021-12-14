@@ -29,7 +29,7 @@ define([
   'esri/tasks/query',
   'esri/graphic',
   "jimu/ArcadeUtils"],
-  function(exports, lang, array, html, dojo, has, number, Deferred, jimuUtils, esriLang, 
+  function(exports, lang, array, html, dojo, has, number, Deferred, jimuUtils, esriLang,
     QueryTask, Query, Graphic, ArcadeUtils) {
     /*
     ** filename String no file extension
@@ -333,7 +333,7 @@ define([
         if (options.fromClient) {
           data = array.map(layer.graphics, function(graphic) {
             var attrs = withGeometry ? getAttrsWithXY(graphic) : lang.clone(graphic);
-            attrs = withExpressionFields ? 
+            attrs = withExpressionFields ?
             exports._getAttrsWithExpressions(attrs, options.arcadeExpressions) : attrs;
             return attrs;
           });
@@ -405,20 +405,17 @@ define([
 
       var datas = dataOptions.data;
       var outFields = dataOptions.outFields;
+      var domainValuesMap = exports._getDomainValuesMap(layer, outFields, datas)
 
       for (var i = 0, len = datas.length; i < len; i++) {
         var aliasData = {};
         for (var j = 0; j < outFields.length; j++) {
           var _field = outFields[j];
-          aliasData[_field.name] = exports._getExportValue(
-            datas[i][_field.name],
+          aliasData[_field.name] = domainValuesMap[_field.name] ? domainValuesMap[_field.name][i].displayValue : exports._getExportValue(
+            datas[i],
             _field,
-            layer.objectIdField,
-            layer.typeIdField,
-            datas[i][layer.typeIdField],
-            layer.types,
             formattedOptions
-            );
+          );
         }
         formattedDatas.push(aliasData);
       }
@@ -437,8 +434,18 @@ define([
       return def;
     };
 
-    exports._getExportValue = function(data, field, pk, typeIdField,
-      typeData, types, formattedOptions) {
+    exports._getDomainValuesMap = function (layer, outFields, datas) {
+      var valuesMap = {}
+      array.forEach(outFields, function (field) {
+        var result = jimuUtils.getDisplayValueForCodedValueOrSubtype(layer, field.name, datas[0]);
+        valuesMap[field.name] = result.isCodedValueOrSubtype ?
+          jimuUtils.getDisplayValueForCodedValueOrSubtypeBatch(layer, field.name, datas) : false;
+      })
+      return valuesMap
+    };
+
+    exports._getExportValue = function(datas, field, formattedOptions) {
+      var data = datas[field.name];
       var pInfos = formattedOptions.popupInfo;
       function getFormatInfo(fieldName) {
         if (pInfos && esriLang.isDefined(pInfos.fieldInfos)) {
@@ -462,24 +469,14 @@ define([
         }
         return false;
       }
-      var isDomain = !!field.domain && formattedOptions.formatCodedValue;
       var isDate = field.type === "esriFieldTypeDate" && formattedOptions.formatDate;
-      var isOjbectIdField = pk && (field.name === pk);
-      var isTypeIdField = typeIdField && (field.name === typeIdField);
       var isRichTextField = field.type === "esriFieldTypeString" &&
                             formattedOptions.richText.clearFormat &&
                             isRichTextField(field.name);
 
       if (isDate) {
         return jimuUtils.fieldFormatter.getFormattedDate(data, getFormatInfo(field.name));
-      }
-      if (isTypeIdField) {
-        return jimuUtils.fieldFormatter.getTypeName(data, types);
-      }
-      if (isDomain) {
-        return jimuUtils.fieldFormatter.getCodedValue(field.domain, data);
-      }
-      if (isRichTextField) {
+      } else if (isRichTextField) {
         if(data) {
           var d = document.createElement('span');
           d.innerHTML = data;
@@ -487,28 +484,9 @@ define([
         } else {
           return data;
         }
+      } else {
+        return datas[field.name]
       }
-      if (!isDomain && !isDate && !isOjbectIdField && !isTypeIdField && !isRichTextField) {
-        var codeValue = null;
-        if (pk && types && types.length > 0) {
-          var typeChecks = array.filter(types, function(item) {
-            // value of typeIdField has been changed above
-            return item.id === typeData;
-          });
-          var typeCheck = typeChecks && typeChecks[0];
-
-          if (typeCheck && typeCheck.domains &&
-            typeCheck.domains[field.name] && typeCheck.domains[field.name].codedValues) {
-            codeValue = jimuUtils.fieldFormatter.getCodedValue(
-              typeCheck.domains[field.name],
-              data
-            );
-          }
-        }
-        return codeValue !== null ? codeValue : data;
-      }
-
-      return data;
     };
 
     exports._getAttrsWithExpressions = function(attributes, arcadeExpressions) {

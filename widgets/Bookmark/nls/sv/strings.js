@@ -24,7 +24,7 @@ define({
   "notice": "Meddelande",
   "changeNoticeTips": "Ändringar sparas endast i webbläsarens cacheminne. Synkronisering mellan widgeten och dess konfiguration avbryts när du gör ändringar.",
   "syncNoticeTips": "Detta raderar alla ändringar och återställer de konfigurerade bokmärkena.",
-  "dontShowAgain": "Visa inte igen",
+  "dontShowAgain": "Visa inte detta igen",
   "saveVisibility": "Spara lagrets synlighet",
   "_widgetLabel": "Bokmärke"
 });

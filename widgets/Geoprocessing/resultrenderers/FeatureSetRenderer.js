@@ -157,6 +157,7 @@ define([
           id: this.widgetUID + param.name,
           infoTemplate: infoTemplate
         });
+        this.resultLayer.geometryType = featureset.geometryType;
       }
       array.forEach(featureset.features, function(feature){
         this.resultLayer.add(feature);

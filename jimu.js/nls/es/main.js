@@ -121,7 +121,7 @@ define({
     "map": "Ir directamente a Mapa",
     "sidePanel": "Ir directamente a Panel lateral",
     "attributeTable": "Ir directamente a Tabla de atributos",
-    "tabAway": "Pulse Tab para continuar y salir de la aplicación, pulse Mayús y Tab para volver a ${value} dentro de"
+    "tabAway": "Pulse Tab para continuar y salir de la aplicación, pulse Mayús y Tab para volver al valor ${value} contenido."
   },
   "panelHeader": {
     "foldWindow": "Plegar ventana",

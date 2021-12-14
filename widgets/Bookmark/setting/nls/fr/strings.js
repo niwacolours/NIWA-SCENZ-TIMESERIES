@@ -26,7 +26,7 @@ define({
   "importTitle": "Importer des géosignets",
   "importFromWeb": "Importer des géosignets depuis la carte Web actuelle",
   "selectAll": "Sélectionner tout",
-  "noBookmarkInConfig": "Cliquez sur Importer ou Créer pour ajouter des géosignets.",
+  "noBookmarkInConfig": "Cliquez sur “Importer” ou “Créer” pour ajouter des géosignets.",
   "noBookmarkInWebMap": "Aucun géosignet n’est configuré dans la carte.",
   "extent": "Etendue",
   "saveExtent": "Enregistrer l’étendue de la carte dans ce géosignet",

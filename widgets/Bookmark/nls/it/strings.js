@@ -22,9 +22,9 @@ define({
   "bookmarksFromConfig": "Segnalibri preconfigurati",
   "bookmarksFromCache": "Segnalibri temporanei locali",
   "notice": "Avviso",
-  "changeNoticeTips": "Le modifiche saranno salvate solo nella cache del browser. La sincronizzazione tra il widget e la sua configurazione viene disconnessa una volta apportate le modifiche.",
+  "changeNoticeTips": "Le modifiche verranno salvate solo nella cache del browser. La sincronizzazione tra il widget e la sua configurazione è disconnessa una volta fatte le modifiche.",
   "syncNoticeTips": "Questo cancellerà le eventuali modifiche e ripristinerà i segnalibri configurati.",
-  "dontShowAgain": "Non mostrare più",
+  "dontShowAgain": "Non mostrare di nuovo",
   "saveVisibility": "Salva la visibilità del layer",
   "_widgetLabel": "Segnalibro"
 });

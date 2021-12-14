@@ -121,7 +121,7 @@ define({
     "map": "Preskoči na kartu",
     "sidePanel": "Preskoči na bočnu ploču",
     "attributeTable": "Preskoči na atributnu tablicu",
-    "tabAway": "Pritisnite Tab za nastavak i izlaz iz app-a, pritisnite Shift i Tab za povratak do ${value} unutra"
+    "tabAway": "Pritisnite Tab za nastavak i izlaz iz aplikacije, pritisnite Shift i Tab za povratak do ${value} unutra"
   },
   "panelHeader": {
     "foldWindow": "Preklopi prozor",
@@ -622,7 +622,7 @@ define({
   "widgetManager": {
     "createWidgetError": "Pogreška pri stvaranju widgeta",
     "createWidgetSettingPageError": "Pogreška stranice za postavke za stvaranje widgeta",
-    "loadWidgetResourceError": "Pogreška učitavanja izvora widgeta"
+    "loadWidgetResourceError": "Pogreška učitavanja resursa widgeta"
   },
   "shareOptions": {
     "shareMap": "Izaberite tko može vidjeti ovaj app",

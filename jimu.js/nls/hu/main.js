@@ -121,7 +121,7 @@ define({
     "map": "Ugrás a térképhez",
     "sidePanel": "Ugrás az oldalsó panelhez",
     "attributeTable": "Ugrás az attribútumtáblához",
-    "tabAway": "Nyomja le a Tab billentyűt a folytatáshoz és az alkalmazásból való kilépéshez, vagy nyomja le a Shift és a Tab billentyűt, ha az alkalmazáson belül vissza akar lépni a következő értékre: ${value}"
+    "tabAway": "Nyomja le a Tab billentyűt a folytatáshoz és az alkalmazásból való kilépéshez, vagy nyomja le a Shift és a Tab billentyűt, ha az alkalmazáson belül vissza akar lépni a következő alkalmazásra: ${value}"
   },
   "panelHeader": {
     "foldWindow": "Ablak összehajtása",

@@ -26,7 +26,7 @@ define({
   "importTitle": "Lesezeichen importieren",
   "importFromWeb": "Lesezeichen aus der aktuellen Webkarte anzeigen",
   "selectAll": "Alles auswählen",
-  "noBookmarkInConfig": "Klicken Sie auf â€œImportierenâ€ oder â€œNeu erstellenâ€, um Lesezeichen hinzuzufügen.",
+  "noBookmarkInConfig": "Klicken Sie auf \"Importieren\" oder \"Neue erstellen\", um Lesezeichen hinzuzufügen.",
   "noBookmarkInWebMap": "Auf der Karte ist kein Lesezeichen konfiguriert.",
   "extent": "Ausdehnung",
   "saveExtent": "Kartenausdehnung in diesem Lesezeichen speichern",

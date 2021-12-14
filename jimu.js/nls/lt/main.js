@@ -121,7 +121,7 @@ define({
     "map": "Praleisti iki žemėlapio",
     "sidePanel": "Praleisti iki šoninio skydelio",
     "attributeTable": "Praleisti iki atributų lentelės",
-    "tabAway": "Paspauskite Tab, norėdami tęsti ir išeikite iš aplikacijos, paspauskite Shift ir Tab, kad sugrįžtumėte į ${value} per"
+    "tabAway": "Paspauskite Tab, norėdami tęsti ir išeikite iš aplikacijos, paspauskite Shift ir Tab, kad sugrįžtumėte į ${value}."
   },
   "panelHeader": {
     "foldWindow": "Suskleisti langą",
@@ -622,7 +622,7 @@ define({
   "widgetManager": {
     "createWidgetError": "Klaida kuriant valdiklį",
     "createWidgetSettingPageError": "Klaida kuriant valdiklio nustatymų langą",
-    "loadWidgetResourceError": "Klaida užkraunant valdiklio resursus"
+    "loadWidgetResourceError": "Klaida įkeliant valdiklio išteklių"
   },
   "shareOptions": {
     "shareMap": "Pasirinti, kas galės matyti šį žemėlapį",

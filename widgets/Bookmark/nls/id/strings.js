@@ -22,9 +22,9 @@ define({
   "bookmarksFromConfig": "Penanda lokasi yang telah dikonfigurasi",
   "bookmarksFromCache": "Penanda lokasi sementara lokal",
   "notice": "Pemberitahuan",
-  "changeNoticeTips": "Perubahan hanya akan disimpan dalam cache browser Anda. Sinkronisasi antara widget dan konfigurasinya akan terputus setelah Anda melakukan modifikasi.",
+  "changeNoticeTips": "Perubahan akan disimpan hanya dalam cache browser Anda. Sinkronisasi antara widget dan konfigurasinya akan terputus setelah Anda melakukan modifikasi.",
   "syncNoticeTips": "Ini akan menghapus semua modifikasi Anda dan memulihkan penanda lokasi yang dikonfigurasikan.",
-  "dontShowAgain": "Jangan perlihatkan lagi",
+  "dontShowAgain": "Jangan tampilkan lagi.",
   "saveVisibility": "Simpan visibilitas layer",
   "_widgetLabel": "Penanda Lokasi"
 });

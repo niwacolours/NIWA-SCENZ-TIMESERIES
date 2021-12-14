@@ -22,9 +22,9 @@ define({
   "bookmarksFromConfig": "Iš anksto sukonfigūruotos žymos",
   "bookmarksFromCache": "Vietinės laikinos žymos",
   "notice": "Įspėjimas",
-  "changeNoticeTips": "Keitimai bus įrašyti tik į jūsų naršyklės podėlį. Atlikus keitimus, valdiklio ir jo konfigūracijos sinchronizavimas bus išjungtas.",
+  "changeNoticeTips": "Keitimai bus įrašyti tik į jūsų naršyklės podėlį Atlikus keitimus, valdiklio ir jo konfigūracijos sinchronizavimas bus išjungtas.",
   "syncNoticeTips": "Visi jūsų keitimai bus ištrinti ir bus atkurtos sukonfigūruotos žymos.",
-  "dontShowAgain": "Daugiau nerodyti",
+  "dontShowAgain": "Daugiau neberodyti",
   "saveVisibility": "Įrašyti sluoksnio matomumą",
   "_widgetLabel": "Žymės"
 });

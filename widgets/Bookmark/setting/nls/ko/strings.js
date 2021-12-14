@@ -26,7 +26,7 @@ define({
   "importTitle": "북마크 가져오기",
   "importFromWeb": "현재 웹 맵의 북마크 가져오기",
   "selectAll": "모두 선택",
-  "noBookmarkInConfig": "북마크를 추가하려면 â€œ가져오기â€ 또는 â€œ새로 생성â€을 클릭하세요.",
+  "noBookmarkInConfig": "\"가져오기\" 또는 \"새로 만들기\"를 클릭하여 북마크를 추가합니다.",
   "noBookmarkInWebMap": "맵에 구성된 북마크가 없습니다.",
   "extent": "범위",
   "saveExtent": "맵 범위를 이 북마크에 저장",

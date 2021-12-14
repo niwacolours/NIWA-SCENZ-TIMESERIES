@@ -121,7 +121,7 @@ define({
     "map": "Hopp til kart",
     "sidePanel": "Hopp til sidepanel",
     "attributeTable": "Hopp til attributtabell",
-    "tabAway": "Trykk på Tab-tasten for å fortsette og gå ut av appen. Trykk på Skift- og Tab-tastene for å gå tilbake til ${value} innenfor"
+    "tabAway": "Trykk på Tab-tasten for å fortsette og gå ut av appen. Trykk på Skift- og Tab-tastene for å gå tilbake til ${value} i den."
   },
   "panelHeader": {
     "foldWindow": "Fold sammen vindu",

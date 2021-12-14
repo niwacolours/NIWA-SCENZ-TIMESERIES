@@ -121,7 +121,7 @@ define({
     "map": "跳转至地图",
     "sidePanel": "跳转至侧面板",
     "attributeTable": "跳转至属性表",
-    "tabAway": "按 Tab 键可继续并移出应用程序，按 Shift 和 Tab 键可返回到 ${value}"
+    "tabAway": "按 Tab 键可继续并移出应用程序，按 Shift 和 Tab 键可返回到内部 ${value}。"
   },
   "panelHeader": {
     "foldWindow": "折叠窗口",

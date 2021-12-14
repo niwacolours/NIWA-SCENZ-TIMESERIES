@@ -24,7 +24,7 @@ define({
   "notice": "Teade",
   "changeNoticeTips": "Muudatused salvestatakse ainult brauseri vahemälus. Muudatuste tegemisel katkestatakse vidina ja selle konfiguratsiooni vaheline sünkroonimine.",
   "syncNoticeTips": "See kustutab kõik muudatused ja taastab konfigureeritud järjehoidjad.",
-  "dontShowAgain": "Ära näita enam",
+  "dontShowAgain": "Ära enam kuva.",
   "saveVisibility": "Salvesta kihi nähtavus",
   "_widgetLabel": "Järjehoidja"
 });

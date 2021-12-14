@@ -1171,21 +1171,20 @@ define([
             "baseMap": {
               "baseMapLayers": [
                 {
-                  "id": "VectorTile_2846",
-                  "title": "Dark Gray Base",
-                  "layerType": "VectorTileLayer",
-                  "styleUrl": "https://cdn.arcgis.com/sharing/rest/content/items/5e9b3685f4c24d8781073dd928ebda50/resources/styles/root.json"
+                  "id": "World_Hillshade_3805",
+                  "title": "World Hillshade",
+                  "url": "https://services.arcgisonline.com/arcgis/rest/services/Elevation/World_Hillshade/MapServer",
+                  "layerType": "ArcGISTiledMapServiceLayer"
                 },
                 {
-                  "id": "VectorTile_1645",
-                  "title": "Dark Gray Reference",
+                  "id": "VectorTile_2333",
+                  "title": "World Topographic Map",
                   "layerType": "VectorTileLayer",
-                  "styleUrl": "https://cdn.arcgis.com/sharing/rest/content/items/747cb7a5329c478cbe6981076cc879c5/resources/styles/root.json",
-                  "isReference": true
+                  "styleUrl": "https://cdn.arcgis.com/sharing/rest/content/items/7dc6cea0b1764a1f9af2e679f642f0f5/resources/styles/root.json"
                 }
               ],
-              "id": "f9d4828215fa4a48935b2d7ffb19c168",
-              "title": "Dark Gray Canvas",
+              "id": "17bc95a746f-basemap-1",
+              "title": "Topographic",
               "elevationLayers": [
                 {
                   "id": "globalElevation",
@@ -1215,12 +1214,12 @@ define([
               "heightModel": "gravity_related_height",
               "heightUnit": "meter"
             },
-            "version": "1.22",
+            "version": "1.25",
             "initialState": {
               "environment": {
                 "lighting": {
-                  "datetime": 1584297035000,
-                  "displayUTCOffset": -7
+                  "datetime": 1615807627000,
+                  "displayUTCOffset": 1
                 },
                 "atmosphereEnabled": true,
                 "starsEnabled": true
@@ -1232,12 +1231,12 @@ define([
                       "latestWkid": 3857,
                       "wkid": 102100
                     },
-                    "x": -10869958.65773034,
-                    "y": 4489824.988560619,
-                    "z": 21453906.561298884
+                    "x": 915287.4999999688,
+                    "y": 5857945.572735667,
+                    "z": 13849005.538247917
                   },
                   "heading": 0,
-                  "tilt": 0.11455639826428493
+                  "tilt": 0.1576610261033009
                 }
               }
             },
@@ -1247,7 +1246,7 @@ define([
             },
             "viewingMode": "global",
             "authoringApp": "WebAppBuilder",
-            "authoringAppVersion": "2.19"
+            "authoringAppVersion": "2.22"
           };
           var text = dojoJson.stringify(data);
           var args = {

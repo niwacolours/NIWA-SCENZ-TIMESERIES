@@ -121,7 +121,7 @@ define({
     "map": "Pređi na mapu",
     "sidePanel": "Pređi na bočni panel",
     "attributeTable": "Pređi na atributnu tabelu",
-    "tabAway": "Pritisnite dugme „Tab” da biste nastavili i izašli iz aplikacije, pritisnite dugmad „Shift” i „Tab” da biste se vratili na ${value}"
+    "tabAway": "Pritisnite dugme \"Tab\" da biste nastavili i izašli iz aplikacije, pritisnite dugme \"Shift\" i \"Tab\" da biste se vratili na ${value} unutra."
   },
   "panelHeader": {
     "foldWindow": "Preklopi prozor",

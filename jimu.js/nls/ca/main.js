@@ -121,7 +121,7 @@ define({
     "map": "Ves al mapa",
     "sidePanel": "Ves a la subfinestra lateral",
     "attributeTable": "Ves a la taula d'atributs",
-    "tabAway": "Premeu Tabulador per continuar i sortir de l'aplicació. Premeu Maj i Tabulador per tornar a ${value} a"
+    "tabAway": "Premeu la tecla de tabulació per continuar i sortir de l'aplicació. Premeu la tecla Maj i la tecla de tabulació per tornar a dins de ${value}."
   },
   "panelHeader": {
     "foldWindow": "Plega la finestra",

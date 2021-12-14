@@ -32,8 +32,7 @@ define([
   '../dijit/LoadingShelter',
   './BaseLayoutManager',
   './GridMobileController',
-  "xstyle/css!../../libs/goldenlayout/goldenlayout-base.css",
-  "xstyle/css!../../libs/goldenlayout/goldenlayout-light-theme.css"
+  "xstyle/css!../../libs/goldenlayout/goldenlayout-base.css"
 ],
 
 function(declare, lang, array, html, topic, on, domConstruct, domGeometry,

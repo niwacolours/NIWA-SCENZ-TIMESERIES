@@ -1,6 +1,6 @@
 {
   "showTitle": true,
-  "showBasemap": true,
+  "showBasemap": false,
   "showLegend": true,
   "expandAllLayersByDefault": false,
   "contextMenu": {
@@ -14,7 +14,7 @@
     "DescriptionOrShowItemDetailsOrDownload": true
   },
   "layerOptions": {
-    "NIWA_SCENZ_TIMESERIES_V02_8005": {
+    "NIWA_SCENZ_TIMESERIES_V02_6935": {
       "display": true
     }
   }

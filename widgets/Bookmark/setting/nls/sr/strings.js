@@ -26,7 +26,7 @@ define({
   "importTitle": "Uvezi obeleživače",
   "importFromWeb": "Uvezu obeleživače iz trenutne veb mape",
   "selectAll": "Selektuj sve",
-  "noBookmarkInConfig": "Kliknite na „Uvezi“ ili „Kreiraj novi“ da dodate obeleživače.",
+  "noBookmarkInConfig": "Klinite na “Uvezi” ili “Kreiraj novo” da biste dodali obeleživače.",
   "noBookmarkInWebMap": "U mapi nije konfigurisan nijedan obeleživač.",
   "extent": "Obuhvat",
   "saveExtent": "Sačuvaj obuhvat mape u ovom obeleživaču",

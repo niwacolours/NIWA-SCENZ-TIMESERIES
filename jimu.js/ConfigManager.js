@@ -1091,6 +1091,9 @@ function (declare, lang, array, html, topic, Deferred, on, jimuUtils, WidgetMana
             topic.publish("appConfigLoaded", this.getAppConfig());
           }));
         }
+
+        var credential = tokenUtils.getPortalCredential(window.portalUrl);
+        window.postMessageToSw({type: 'to_sw_credential', credential: credential.toJson()});
       }));
     },
 
@@ -1395,7 +1398,8 @@ function (declare, lang, array, html, topic, Deferred, on, jimuUtils, WidgetMana
     _getDefaultIconFromUri: function(uri){
       var segs = uri.split('/');
       segs.pop();
-      return segs.join('/') + '/images/icon.png?wab_dv=' + window.deployVersion;
+      var iconUrl = segs.join('/') + '/images/icon.png?wab_dv=' + window.deployVersion;
+      return iconUrl;
     },
 
     _addIndexForWidgetPool: function(config){
@@ -1463,7 +1467,8 @@ function (declare, lang, array, html, topic, Deferred, on, jimuUtils, WidgetMana
         return;
       }
 
-      if(e.icon && e.icon === e.folderUrl + 'images/icon.png?wab_dv=' + window.deployVersion){
+      var defaultIcon = e.folderUrl + 'images/icon.png?wab_dv=' + window.deployVersion;
+      if(e.icon && e.icon === defaultIcon){
         delete e.icon;
       }
 

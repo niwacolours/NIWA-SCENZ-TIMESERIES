@@ -22,9 +22,9 @@ define({
   "bookmarksFromConfig": "預配置的書籤",
   "bookmarksFromCache": "本機臨時書簽",
   "notice": "通知",
-  "changeNoticeTips": "只會在瀏覽器的快取中儲存變更。一旦做修改，就會中斷連線 widget 及其配置之間的同步。",
+  "changeNoticeTips": "只會在您的瀏覽器快取中儲存變更。 一旦做修改，就會中斷連線 widget 及其配置之間的同步。",
   "syncNoticeTips": "這會清除所有修改並還原已配置的書籤。",
-  "dontShowAgain": "不要再顯示",
+  "dontShowAgain": "不再顯示",
   "saveVisibility": "儲存圖層可見性",
   "_widgetLabel": "書籤"
 });

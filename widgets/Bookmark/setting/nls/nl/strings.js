@@ -26,7 +26,7 @@ define({
   "importTitle": "Bladwijzers importeren",
   "importFromWeb": "Importeer bladwijzers uit de huidige webmap",
   "selectAll": "Alles selecteren",
-  "noBookmarkInConfig": "Klik op â€œImporterenâ€ of â€œNieuw makenâ€ om bladwijzers toe te voegen.",
+  "noBookmarkInConfig": "Klik op “Importeren” of “Nieuw maken” om bladwijzers toe te voegen.",
   "noBookmarkInWebMap": "Er is geen bladwijzer in de kaart geconfigureerd.",
   "extent": "Extent",
   "saveExtent": "Sla kaartextent op voor deze bladwijzer",

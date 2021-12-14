@@ -26,7 +26,7 @@ define({
   "importTitle": "Importér bogmærker",
   "importFromWeb": "Importér bogmærker fra det aktuelle webkort",
   "selectAll": "Vælg alle",
-  "noBookmarkInConfig": "Klik på Importér eller Opret nyt for at tilføje bogmærker.",
+  "noBookmarkInConfig": "Klik på “Importér” eller “Opret ny” for at tilføje bogmærker.",
   "noBookmarkInWebMap": "Der er ikke konfigureret noget bogmærke i kortet.",
   "extent": "Udstrækning",
   "saveExtent": "Gem kortudstrækning til dette bogmærke",

@@ -22,7 +22,7 @@ define({
   "bookmarksFromConfig": "Géosignets préconfigurés",
   "bookmarksFromCache": "Géosignets temporaires locaux",
   "notice": "Avis",
-  "changeNoticeTips": "Les changements sont enregistrés uniquement dans le cache de votre navigateur. Le fait d’effectuer des modifications désactive la synchronisation entre le widget et sa configuration.",
+  "changeNoticeTips": "Les modifications seront uniquement enregistrées dans le cache de votre navigateur. Lorsque des modifications sont apportées, la synchronisation entre le widget et sa configuration est désactivée.",
   "syncNoticeTips": "Cela a pour effet d’effacer toutes vos modifications et de restaurer les géosignets configurés.",
   "dontShowAgain": "Ne plus afficher",
   "saveVisibility": "Enregistrer la visibilité des couches",

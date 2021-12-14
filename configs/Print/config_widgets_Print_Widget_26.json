@@ -3,7 +3,7 @@
   "defaultTitle": "ArcGIS Web Map",
   "defaultAuthor": "ArcGIS Web AppBuilder",
   "defaultCopyright": "",
-  "defaultFormat": "PDF",
+  "defaultFormat": "TIFF",
   "defaultLayout": "MAP_ONLY",
   "copyrightEditable": true
 }

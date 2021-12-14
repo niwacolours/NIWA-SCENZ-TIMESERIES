@@ -122,7 +122,7 @@ define({
       'map': 'Skip to Map',
       'sidePanel': 'Skip to Side Panel',
       'attributeTable': 'Skip to Attribute Table',
-      'tabAway': 'Press Tab to continue and move out of the app, press Shift and Tab to go back to ${value} in within'
+      'tabAway': 'Press Tab to continue and move out of the app, press Shift and Tab to go back to the ${value} inside.'
     },
     panelHeader:{
       foldWindow: 'Fold window',
@@ -624,7 +624,7 @@ define({
     widgetManager: {
       createWidgetError: "Create widget error",
       createWidgetSettingPageError: "Create widget setting page error",
-      loadWidgetResourceError: "Load widget resouce error"
+      loadWidgetResourceError: "Load widget resource error"
     },
     shareOptions: {
       shareMap: "Choose who can view this app",

@@ -26,7 +26,7 @@ define({
   "importTitle": "Importēt grāmatzīmes",
   "importFromWeb": "Importēt grāmatzīmes no pašreizējās tīmekļa kartes",
   "selectAll": "Izvēlēties visas",
-  "noBookmarkInConfig": "Lai pievienotu grāmatzīmi, noklikšķiniet uz Importēt vai Izveidot jaunu.",
+  "noBookmarkInConfig": "Noklikšķiniet uz “Importēt” vai “Izveidot jaunu”, lai pievienotu grāmatzīmes.",
   "noBookmarkInWebMap": "Kartē neviena grāmatzīme nav konfigurēta.",
   "extent": "Pārklājums",
   "saveExtent": "Saglabāt kartes pārklājumu šajā grāmatzīmē",

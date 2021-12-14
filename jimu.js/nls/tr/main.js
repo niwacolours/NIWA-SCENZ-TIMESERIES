@@ -121,7 +121,7 @@ define({
     "map": "Haritaya Atla",
     "sidePanel": "Yan Panele Atla",
     "attributeTable": "Öznitelik Tablosuna Atla",
-    "tabAway": "Devam etmek ve uygulamadan çıkmak için Tab tuşuna basın, içerisindeki ${value} değerine geri dönmek için Shift ve Tab tuşuna basın"
+    "tabAway": "Devam etmek ve uygulamadan çıkmak için Tab tuşuna basın, ${value} içine geri dönmek için Shift ve Tab tuşuna basın."
   },
   "panelHeader": {
     "foldWindow": "Pencereyi katla",

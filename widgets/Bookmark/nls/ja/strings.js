@@ -22,9 +22,9 @@ define({
   "bookmarksFromConfig": "事前構成済みのブックマーク",
   "bookmarksFromCache": "ローカルの一時的なブックマーク",
   "notice": "注意",
-  "changeNoticeTips": "変更内容は、ブラウザーのキャッシュのみに保存されます。変更を行うと、ウィジェットとその構成の間の同期は切断されます。",
+  "changeNoticeTips": "変更内容は、ブラウザーのキャッシュのみに保存されます。 変更を行うと、ウィジェットとその構成の間の同期は切断されます。",
   "syncNoticeTips": "これによって、すべての変更が消去され、構成済みのブックマークが復元されます。",
-  "dontShowAgain": "再び表示しない",
+  "dontShowAgain": "今後表示しない",
   "saveVisibility": "レイヤーの表示設定の保存",
   "_widgetLabel": "ブックマーク"
 });

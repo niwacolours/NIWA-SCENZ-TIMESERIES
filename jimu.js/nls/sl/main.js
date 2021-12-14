@@ -121,7 +121,7 @@ define({
     "map": "Preskoči na karto",
     "sidePanel": "Preskoči na stransko ploščo",
     "attributeTable": "Preskoči na atributno tabelo",
-    "tabAway": "Pritisnite tipko Tab, da nadaljujte in se premaknete iz aplikacije; pritisnite tipki Shift in Tab, da se vrnete nas ${value} znotraj"
+    "tabAway": "Pritisnite tipko Tab, da nadaljujte in se premaknete iz aplikacije; pritisnite tipki Shift in Tab, da se vrnete nazaj v ${value}."
   },
   "panelHeader": {
     "foldWindow": "Zloži okno",

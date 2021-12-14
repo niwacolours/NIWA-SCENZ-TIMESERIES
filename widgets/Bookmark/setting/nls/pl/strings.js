@@ -26,7 +26,7 @@ define({
   "importTitle": "Importuj zakładki",
   "importFromWeb": "Importuj zakładki z bieżącej mapy internetowej",
   "selectAll": "Zaznacz wszystkie",
-  "noBookmarkInConfig": "Kliknij przycisk â€œImportujâ€ lub â€œUtwórz noweâ€, aby dodać zakładki.",
+  "noBookmarkInConfig": "Kliknij opcję “Importuj” lub opcję “Utwórz nowe”, aby dodać zakładki.",
   "noBookmarkInWebMap": "Na mapie nie skonfigurowano żadnych zakładek.",
   "extent": "Zasięg",
   "saveExtent": "Zapisz zasięg mapy w tej zakładce.",

@@ -855,8 +855,8 @@ define([
         node = html.create('div', {
           'class': 'icon-node jimu-float-trailing' + ((this.openedId === iconConfig.id)? ' jimu-state-selected': ''),
           title: iconConfig.label,
-          // 'aria-label': iconConfig.label,
           role: 'button',
+          'aria-pressed': this.openedId === iconConfig.id ? 'true' : 'false',
           settingId: iconConfig.id,
           style: {
             width: this.height + 'px',
@@ -1102,7 +1102,7 @@ define([
       },
 
       _switchNodeToClose: function(id) {
-        query('.icon-node', this.domNode).removeClass('jimu-state-selected');
+        this._removeSelectedStateForIcons();
         var iconJson = this.appConfig.getConfigElementById(id);
         var def;
         if(iconJson){
@@ -1133,9 +1133,22 @@ define([
       },
 
       _unSelectIcon: function(id) {
-        query('.icon-node[settingId="' + id + '"]', this.domNode)
-          .removeClass('jimu-state-selected');
+        var nodes = query('.icon-node[settingId="' + id + '"]', this.domNode)
+        this._removeSelectedStateForIcons(nodes)
         this.openedId = '';
+      },
+
+      _removeSelectedStateForIcons: function (nodes) {
+        nodes = (nodes || query('.icon-node', this.domNode))
+        array.forEach(nodes, function(node) {
+          html.removeClass(node, 'jimu-state-selected')
+          html.setAttr(node, 'aria-pressed', 'false');
+        }, this);
+      },
+
+      _addSelectedStateForIcon: function (iconNode) {
+        html.addClass(iconNode, 'jimu-state-selected')
+        html.setAttr(iconNode, 'aria-pressed', 'true');
       },
 
       _showIconContent: function(iconConfig) {
@@ -1154,9 +1167,8 @@ define([
               iconNode.click();
               return;
             }
-            query('.icon-node', this.domNode).removeClass('jimu-state-selected');
-
-            html.addClass(iconNode, 'jimu-state-selected');
+            this._removeSelectedStateForIcons();
+            this._addSelectedStateForIcon(iconNode);
 
             //we don't call widget.startup because getWidgetMarginBox has started widget
             //widget.startup();
@@ -1180,8 +1192,8 @@ define([
             var iconNode;
             if(!iconConfig.groupNode){
               iconNode = this._getIconNodeById(iconConfig.id);
-              query('.icon-node', this.domNode).removeClass('jimu-state-selected');
-              html.addClass(iconNode, 'jimu-state-selected');
+              this._removeSelectedStateForIcons();
+              this._addSelectedStateForIcon(iconNode);
             }
 
             this.openedId = iconConfig.id;

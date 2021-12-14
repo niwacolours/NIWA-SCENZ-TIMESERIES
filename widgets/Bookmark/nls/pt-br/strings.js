@@ -22,7 +22,7 @@ define({
   "bookmarksFromConfig": "Marcadores pré-configurados",
   "bookmarksFromCache": "Marcadores temporários locais",
   "notice": "Aviso",
-  "changeNoticeTips": "As alterações serão salvas somente no cache do seu navegador. A sincronização entre o widget e a sua configuração é desconectada quando você faz modificações.",
+  "changeNoticeTips": "As alterações serão salvas apenas no cache do seu navegador. A sincronização entre o widget e sua configuração é desconectada assim que você faz modificações.",
   "syncNoticeTips": "Isto irá apagar todas as suas modificações e restaurar os marcadores configurados.",
   "dontShowAgain": "Não mostrar novamente",
   "saveVisibility": "Salvar visibilidade da camada",

@@ -319,7 +319,8 @@ function(Evented, declare, _WidgetBase, _TemplatedMixin, _WidgetsInTemplateMixin
           setTimeout(lang.hitch(this, function(){
             //must setTimeout to bind events
             this._bindFieldsSelectChangeAndOperatorChangeEvents();
-          }), 10);
+          }), 0);
+
         }
       }
     },
@@ -493,6 +494,7 @@ function(Evented, declare, _WidgetBase, _TemplatedMixin, _WidgetsInTemplateMixin
       if (!fieldItem) {
         return;
       }
+
       this.fieldsSelect.set('value', fieldItem.id);
 
       this._updateOperatorsByFieldsSelect();
@@ -572,7 +574,11 @@ function(Evented, declare, _WidgetBase, _TemplatedMixin, _WidgetsInTemplateMixin
         }
 
         if(supportCascade){
-          this.cascadeSelect.set("value", "previous");
+          if (valueType === 'uniquePredefined' || valueType === 'multiplePredefined') {
+            this.cascadeSelect.set("value", "none");
+          } else {
+            this.cascadeSelect.set("value", "previous");
+          }
           html.addClass(this.domNode, 'support-cascade');
         }else{
           this.cascadeSelect.set("value", "none");

@@ -26,7 +26,7 @@ define({
   "importTitle": "Importera bokmärken",
   "importFromWeb": "Importera bokmärken från den aktuella webbkartan",
   "selectAll": "Markera alla",
-  "noBookmarkInConfig": "Klicka på â€œImporteraâ€ eller â€œSkapa nyâ€ för att lägga till bokmärken.",
+  "noBookmarkInConfig": "Klicka på \"Importera\" eller \"Skapa ny\" för att lägga till bokmärken.",
   "noBookmarkInWebMap": "Inget bokmärke är konfigurerat i kartan.",
   "extent": "Utbredning",
   "saveExtent": "Spara kartutbredningen till det här bokmärket",

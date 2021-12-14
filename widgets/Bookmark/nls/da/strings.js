@@ -22,7 +22,7 @@ define({
   "bookmarksFromConfig": "Prækonfigurerede bogmærker",
   "bookmarksFromCache": "Lokale midlertidige bogmærker",
   "notice": "Bemærk",
-  "changeNoticeTips": "Ændringerne vil kun blive gemt i din browsers cache. Synkronisering mellem widget'en og dens konfiguration afbrydes, så snart du foretager ændringer.",
+  "changeNoticeTips": "Ændringer vil kun blive gemt i din browsers cache. Synkronisering mellem widget'en og dens konfiguration afbrydes, så snart du foretager ændringer.",
   "syncNoticeTips": "Dette vil slette alle din ændringer og gendanne de konfigurerede bogmærker.",
   "dontShowAgain": "Vis ikke igen",
   "saveVisibility": "Gem lagsynlighed",

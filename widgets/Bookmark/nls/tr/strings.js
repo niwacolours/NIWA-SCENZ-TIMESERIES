@@ -22,9 +22,9 @@ define({
   "bookmarksFromConfig": "Önceden yapılandırılmış yer işaretleri",
   "bookmarksFromCache": "Yerel geçici yer işaretleri",
   "notice": "Dikkat",
-  "changeNoticeTips": "Değişiklikler sadece tarayıcınızın önbelleğine kaydedilecek. Değişiklik yaptıktan sonra, araç ve yapılandırması arasındaki senkronizasyon kesilir.",
+  "changeNoticeTips": "Değişiklikler yalnızca tarayıcınızın önbelleğine kaydedilecektir. Değişiklikler yaptığınızda, araç ve yapılandırması arasındaki senkronizasyon bağlantısı kesilir.",
   "syncNoticeTips": "Bu değişikliklerinizi siler ve yapılandırılmış yer imlerini geri yükler.",
-  "dontShowAgain": "Yeniden gösterme",
+  "dontShowAgain": "Bir daha gösterme",
   "saveVisibility": "Katman görünürlüğünü kaydet",
   "_widgetLabel": "Yer İmi"
 });

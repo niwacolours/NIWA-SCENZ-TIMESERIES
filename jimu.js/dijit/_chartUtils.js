@@ -249,9 +249,12 @@ define([
       };
     },
 
-    getAxisZeroPosition: function() {
+    getAxisZeroPosition: function(type) {
       if (!this.chart) {
         return false;
+      }
+      if (!type || !this.isAxisChart({ type: type })) {
+        return
       }
       var pos;
       try {
@@ -593,7 +596,7 @@ define([
     },
 
     settingDataZoom: function(option, config, position, prevRatio) {
-      if (!this.isAxisChart(config)) {
+      if (!this.isAxisChart(config) || !position) {
         return option;
       }
 
@@ -1064,6 +1067,12 @@ define([
             }.bind(this);
           }
         }
+        if(typeof xAxis.min !== 'undefined') {
+          xAxisOption.min = xAxis.min
+        }
+        if(typeof xAxis.max !== 'undefined') {
+          xAxisOption.max = xAxis.max
+        }
       }
       if (yAxis) {
         yAxisOption.show = !!yAxis.show;
@@ -1084,6 +1093,12 @@ define([
               return this.localizeNumberForDigitSeparator(value, yFormat.digitSeparator);
             }.bind(this);
           }
+        }
+        if(typeof yAxis.min !== 'undefined') {
+          yAxisOption.min = yAxis.min
+        }
+        if(typeof yAxis.max !== 'undefined') {
+          yAxisOption.max = yAxis.max
         }
       }
       

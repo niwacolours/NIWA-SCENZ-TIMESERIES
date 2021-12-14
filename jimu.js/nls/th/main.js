@@ -121,7 +121,7 @@ define({
     "map": "ข้ามไปยังแผนที่",
     "sidePanel": "ข้ามไปยังพาเนลด้านข้าง",
     "attributeTable": "ข้ามไปยังตารางแอตทริบิวต์",
-    "tabAway": "กด Tab เพื่อดำเนินการต่อและออกจากแอพ กด Shift และ Tab เพื่อกลับไปยัง ${value} ภายใน"
+    "tabAway": "กด Tab เพื่อดำเนินการต่อและย้ายออกจากแอป กด Shift และ Tab เพื่อกลับเข้าไปด้านใน ${value}"
   },
   "panelHeader": {
     "foldWindow": "พับหน้าต่าง",
@@ -622,7 +622,7 @@ define({
   "widgetManager": {
     "createWidgetError": "การสร้างวิดเจ็ตมีข้อผิดพลาด",
     "createWidgetSettingPageError": "การสร้างหน้าการตั้งค่าวิดเจ็ตมีข้อผิดพลาด",
-    "loadWidgetResourceError": "การโหลดข้อมูลสำหรับวิดเจ็ตมีข้อผิดพลาด"
+    "loadWidgetResourceError": "ข้อผิดพลาดการโหลดทรัพยากรวิดเจ็ต"
   },
   "shareOptions": {
     "shareMap": "เลือกผู้ที่สามารถดูแอปนี้",

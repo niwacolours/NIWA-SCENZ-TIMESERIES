@@ -11,7 +11,7 @@
       "red",
       "yellow"
     ],
-    "version": "2.19",
+    "version": "2.22",
     "sharedTheme": {
       "isPortalSupport": true,
       "useHeader": false,
@@ -48,7 +48,7 @@
           "height": 40,
           "relativeTo": "browser"
         },
-        "version": "2.19",
+        "version": "2.22",
         "id": "themes_FoldableTheme_widgets_HeaderController_Widget_1",
         "name": "HeaderController"
       },
@@ -59,7 +59,7 @@
           "bottom": 25,
           "relativeTo": "map"
         },
-        "version": "2.19",
+        "version": "2.22",
         "id": "widgets_Scalebar_Widget_2",
         "name": "Scalebar",
         "config": "configs/Scalebar/config_widgets_Scalebar_Widget_2.json"
@@ -71,7 +71,7 @@
           "top": 5,
           "relativeTo": "map"
         },
-        "version": "2.19",
+        "version": "2.22",
         "id": "widgets_Search_Widget_3",
         "name": "Search",
         "config": "configs/Search/config_widgets_Search_Widget_3.json"
@@ -83,9 +83,11 @@
           "bottom": 5,
           "relativeTo": "map"
         },
-        "version": "2.19",
+        "version": "2.22",
         "id": "widgets_Coordinate_Widget_4",
-        "name": "Coordinate"
+        "name": "Coordinate",
+        "config": "configs/Coordinate/config_widgets_Coordinate_Widget_4.json",
+        "visible": false
       },
       {
         "position": {
@@ -96,8 +98,8 @@
         "placeholderIndex": 1,
         "id": "_5",
         "name": "Filter",
-        "label": "Filter (use with Renderer) - scroll down/expand",
-        "version": "2.19",
+        "label": "Filter (use with Renderer):  Filters for product, timestep, year and month. All filters are ON by default to load a single layer. Turning OFF a filter loads all available items, stacking one on top of the other (depending on which other filters are ON) - so use with caution as it may take some time to load. Change Renderer to a product or \"Stretch\" to render using this widget. Stretch allows product selection from here. If product filter is turned OFF while on “Stretch”, all products will be loaded.",
+        "version": "2.22",
         "closeable": true,
         "uri": "widgets/Filter/Widget",
         "openAtStart": true,
@@ -112,7 +114,7 @@
         "placeholderIndex": 1,
         "id": "_6",
         "name": "ISRenderer",
-        "label": "Renderer (use with Filter)",
+        "label": "Renderer (use with Filter): A series of product specific renderings to bracket both spatial and seasonal ranges for the entire coverage (defaults to CHL). If you use “Stretch” or “None” all products will be loaded, so use prior to Filter to select a product to display. For best results with stretch parameters, select dynamic range adjustment (DRA) with either a standard deviation or percentage clip. If you select a different product render, make sure either “Filter” product is OFF or selected to correct product otherwise it will not show.",
         "version": "",
         "closeable": true,
         "uri": "widgets/ISRenderer/Widget",
@@ -127,7 +129,7 @@
         "placeholderIndex": 1,
         "id": "_7",
         "name": "ISImageSelector",
-        "label": "Selector (use with other widgets)",
+        "label": "Selector (use with other widgets): Selects a single image based on the date and provides either a slider (default) or drop-down list to allow selection. The configuration of Filter determines the images available. “Set current as secondary layer” is used in conjunction with Swipe for comparing with another product or time. Disable before closing.",
         "version": "",
         "closeable": true,
         "uri": "widgets/ISImageSelector/Widget",
@@ -142,10 +144,11 @@
         "placeholderIndex": 1,
         "id": "_8",
         "name": "Swipe",
-        "version": "2.19",
+        "version": "2.22",
         "closeable": true,
         "uri": "widgets/Swipe/Widget",
-        "label": "Swipe (use with selector)"
+        "label": "\t Swipe (use with Selector): First use Selector to set a product image of interest as a secondary layer (Layer: Product – Date). Then whatever product image the webpage is on (Layer: Product), can be used to vertically swipe compare to the secondary layer. These can be seen in the Layer List. To maximise gradient discrimination use on Renderer on “Stretch” DRA – both images will dynamically adjust colour scaling.",
+        "config": "configs/Swipe/config__8.json"
       },
       {
         "position": {
@@ -156,7 +159,7 @@
         "placeholderIndex": 1,
         "id": "_9",
         "name": "ISProfile",
-        "label": "Profile (Product vs Time)",
+        "label": "Profile (Product vs Time): Extracts data values for an individual pixel (“Identify”) or a timeseries plot (“Temporal profile”). Dependant on Filter as to what timesteps, years and months are extracted and plotted.",
         "version": "",
         "closeable": true,
         "uri": "widgets/ISProfile/Widget",
@@ -170,7 +173,7 @@
           "zIndex": 1,
           "relativeTo": "map"
         },
-        "version": "2.19",
+        "version": "2.22",
         "id": "widgets_OverviewMap_Widget_10",
         "name": "OverviewMap"
       },
@@ -181,9 +184,10 @@
           "top": 75,
           "relativeTo": "map"
         },
-        "version": "2.19",
+        "version": "2.22",
         "id": "widgets_HomeButton_Widget_11",
-        "name": "HomeButton"
+        "name": "HomeButton",
+        "label": "Home:  Web map’s default extent to include the entire New Zealand image layer."
       },
       {
         "uri": "widgets/MyLocation/Widget",
@@ -192,7 +196,7 @@
           "top": 110,
           "relativeTo": "map"
         },
-        "version": "2.19",
+        "version": "2.22",
         "id": "widgets_MyLocation_Widget_12",
         "name": "MyLocation",
         "config": "configs/MyLocation/config_widgets_MyLocation_Widget_12.json"
@@ -202,7 +206,7 @@
         "position": {
           "relativeTo": "browser"
         },
-        "version": "2.19",
+        "version": "2.22",
         "id": "widgets_AttributeTable_Widget_13",
         "name": "AttributeTable"
       },
@@ -211,7 +215,7 @@
         "position": {
           "relativeTo": "browser"
         },
-        "version": "2.19",
+        "version": "2.22",
         "id": "widgets_Splash_Widget_14",
         "name": "Splash",
         "config": "configs/Splash/config_widgets_Splash_Widget_14.json"
@@ -223,7 +227,7 @@
           "left": 7,
           "relativeTo": "map"
         },
-        "version": "2.19",
+        "version": "2.22",
         "id": "widgets_ZoomSlider_Widget_15",
         "name": "ZoomSlider"
       },
@@ -236,7 +240,7 @@
         },
         "id": "widgets_ExtentNavigate_Widget_16",
         "name": "ExtentNavigate",
-        "version": "2.19"
+        "version": "2.22"
       },
       {
         "uri": "widgets/FullScreen/Widget",
@@ -245,7 +249,7 @@
           "left": 7,
           "relativeTo": "map"
         },
-        "version": "2.19",
+        "version": "2.22",
         "id": "widgets_FullScreen_Widget_17",
         "name": "FullScreen"
       }
@@ -288,40 +292,44 @@
     "widgets": [
       {
         "name": "BasemapGallery",
-        "version": "2.19",
+        "version": "2.22",
         "uri": "widgets/BasemapGallery/Widget",
         "config": "configs/BasemapGallery/config_widgets_BasemapGallery_Widget_23.json",
         "index": 2,
-        "id": "widgets_BasemapGallery_Widget_23"
+        "id": "widgets_BasemapGallery_Widget_23",
+        "label": "Basemaps (NZTM selection):  User preference. Some are better at different zoom levels and with different product renderings."
       },
       {
         "uri": "widgets/LayerList/Widget",
-        "version": "2.19",
+        "version": "2.22",
         "id": "widgets_LayerList_Widget_19",
         "name": "LayerList",
-        "index": 3
+        "index": 3,
+        "label": "Layers (with legends): Active product layer, secondary (temporary) layer, other layers added using Add Data, and basemap, with associated legends. Several viewing and order options are available in the three-dot icon.",
+        "config": "configs/LayerList/config_widgets_LayerList_Widget_19.json"
       },
       {
         "name": "eDraw",
-        "label": "eDraw (for use with export)",
-        "version": "2.8.1",
+        "label": "eDraw (point, line, polygon):  A community user extension of the standard draw widget with additional features to show measurements, change look, name, save and export/import.  On selection of an area of interest (polygon), use the three-dot icon to “set as input” for the various timesteps (weeks, months, seasons, or years) for Export. The point and line drawing modes are not exportable as these are not polygons.",
         "uri": "widgets/eDraw/Widget",
         "config": "configs/eDraw/config_widgets_eDraw_Widget_21.json",
         "index": 4,
-        "id": "widgets_eDraw_Widget_21"
+        "id": "widgets_eDraw_Widget_21",
+        "version": "2.8.1"
       },
       {
         "name": "AddData",
-        "label": "Add Data (online, url, file)",
-        "version": "2.19",
+        "label": "Add Data (search online, url, file):  You can search within or outside your organisation, If adding “fails” it is likely to be on a different projection to NZTM.  The “Layers” icon at the bottom right organises loaded layers for easy removal.",
+        "version": "2.22",
         "uri": "widgets/AddData/Widget",
         "index": 6,
-        "id": "widgets_AddData_Widget_20"
+        "id": "widgets_AddData_Widget_20",
+        "config": "configs/AddData/config_widgets_AddData_Widget_20.json"
       },
       {
         "name": "Bookmark",
-        "label": "Bookmarks (main Islands and user)",
-        "version": "2.19",
+        "label": " Bookmarks (main Islands and user):  Main islands (permanent) and user added bookmarks that should remain if using same computer and web-browser. Use with Search (Find address or place), adjust map (zoom and pan), then “Add” bookmark and save a name.",
+        "version": "2.22",
         "uri": "widgets/Bookmark/Widget",
         "config": "configs/Bookmark/config_widgets_Bookmark_Widget_24.json",
         "index": 7,
@@ -329,8 +337,8 @@
       },
       {
         "name": "Share",
-        "label": "Share (link to apps)",
-        "version": "2.19",
+        "label": "Share (link to app): Share a link or embed this app in a website, with a range of options for display.",
+        "version": "2.22",
         "uri": "widgets/Share/Widget",
         "config": "configs/Share/config_widgets_Share_Widget_27.json",
         "index": 8,
@@ -338,8 +346,8 @@
       },
       {
         "name": "Print",
-        "label": "Print (imagery layer)",
-        "version": "2.19",
+        "label": "Print (image layer): RGB bands. Georeferenced. Various options of layout and format to save (print) to a file of choice (e.g. PDF, png, tiff). Suggest. Layout (MAP_ONLY). Format (TIFF). Zoom in to an area of interest. Select options in \"Advanced\" or leave as default. \"Print\". CLICK on thumbnail when \"creating print\" finished. This will open the URL link in a separate webpage. ENTER the address to download to computer if it doesn't automatically.",
+        "version": "2.22",
         "uri": "widgets/Print/Widget",
         "config": "configs/Print/config_widgets_Print_Widget_26.json",
         "index": 9,
@@ -347,30 +355,31 @@
       },
       {
         "name": "ISExport",
-        "label": "Export (imagery layer)",
+        "label": "Export (image layer):  Raw data values of pixels. Save to portal or disk. Suggest. Select save to disk. Output Spatial Reference (WebMercatorAS). Current Renderer (uncheck). Define Extent (uncheck) - check if you want only a specific area. Zoom to an area of interest. Pixel Size will change as you zoom in or out. Export. If NOTHING happens. Open Browser Developer Tools (Chrome: Ctrl+Shift+I). Select Network tab. Filter for \"exportImage?f=json\". Double-click (open) the export image. Select (without quotes) https://gis.niwa.co.nz.........tif. Right-click (Go to address). This will download the file to your computer.",
         "version": "",
         "uri": "widgets/ISExport/Widget",
-        "config": "configs/ISExport/config_widgets_ISExport_Widget_25.json",
+        "config": "configs/ISExport/config_widgets_ISExport_Widget_33.json",
         "index": 10,
-        "id": "widgets_ISExport_Widget_25"
+        "id": "widgets_ISExport_Widget_33"
       },
       {
         "name": "About",
-        "version": "2.19",
+        "version": "2.22",
         "uri": "widgets/About/Widget",
         "config": "configs/About/config_widgets_About_Widget_22.json",
         "index": 11,
-        "id": "widgets_About_Widget_22"
+        "id": "widgets_About_Widget_22",
+        "openAtStart": false
       }
     ],
     "groups": [
       {
-        "label": "Export Data (polygon input from eDraw)",
+        "label": "Export (polygon input from eDraw):  A series of geo-processing tools which extract all products, from all layers (dates from mid-2002 - present), for all pixels within the polygon input area (eDraw). “Run” for appropriate timestep. When completed a link appears in the output tab. Selecting the link will download a file “*.csv” to your computer. Rename the file and use for further analysis in other software. Monthly timestep extractions can be analysed further on the Shiny-SCENZ (Monthly) tab on the main NIWA-SCENZ website.  The time to download will depend on the size of the polygon and may “fail” if too large. Be patient.",
         "widgets": [
           {
             "name": "Geoprocessing",
             "label": "Week",
-            "version": "2.19",
+            "version": "2.22",
             "uri": "widgets/Geoprocessing/Widget",
             "config": "configs/Geoprocessing/config_widgets_Geoprocessing_Widget_28.json",
             "index": 12,
@@ -379,7 +388,7 @@
           {
             "name": "Geoprocessing",
             "label": "Month",
-            "version": "2.19",
+            "version": "2.22",
             "uri": "widgets/Geoprocessing/Widget",
             "config": "configs/Geoprocessing/config_widgets_Geoprocessing_Widget_29.json",
             "index": 14,
@@ -388,7 +397,7 @@
           {
             "name": "Geoprocessing",
             "label": "Season",
-            "version": "2.19",
+            "version": "2.22",
             "uri": "widgets/Geoprocessing/Widget",
             "config": "configs/Geoprocessing/config_widgets_Geoprocessing_Widget_31.json",
             "index": 14,
@@ -397,7 +406,7 @@
           {
             "name": "Geoprocessing",
             "label": "Year",
-            "version": "2.19",
+            "version": "2.22",
             "uri": "widgets/Geoprocessing/Widget",
             "config": "configs/Geoprocessing/config_widgets_Geoprocessing_Widget_32.json",
             "index": 14,
@@ -453,7 +462,7 @@
       "height": 29
     }
   },
-  "wabVersion": "2.19",
+  "wabVersion": "2.22",
   "isTemplateApp": true,
   "isWebTier": false,
   "httpProxy": {

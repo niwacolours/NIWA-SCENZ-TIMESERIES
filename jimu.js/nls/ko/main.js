@@ -121,7 +121,7 @@ define({
     "map": "맵으로 건너뛰기",
     "sidePanel": "측면 패널로 건너뛰기",
     "attributeTable": "속성 테이블로 건너뛰기",
-    "tabAway": "Tab 키를 눌러 계속하여 앱 외부로 이동하거나 Shift 키와 Tab 키를 눌러 ${value}(으)로 이동"
+    "tabAway": "Tab 키를 눌러 계속하여 앱 외부로 이동하거나 Shift 키와 Tab 키를 눌러 ${value} 내부로 이동합니다."
   },
   "panelHeader": {
     "foldWindow": "창 접기",
@@ -622,7 +622,7 @@ define({
   "widgetManager": {
     "createWidgetError": "위젯 생성 오류",
     "createWidgetSettingPageError": "위젯 설정 페이지 생성 오류",
-    "loadWidgetResourceError": "위젯 리소스 로드 오류"
+    "loadWidgetResourceError": "위젯 리소스 불러오기 오류"
   },
   "shareOptions": {
     "shareMap": "이 앱을 볼 수 있는 사람 선택",

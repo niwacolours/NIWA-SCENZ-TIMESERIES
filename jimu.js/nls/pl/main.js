@@ -121,7 +121,7 @@ define({
     "map": "Przejdź do mapy",
     "sidePanel": "Przejdź do panelu bocznego",
     "attributeTable": "Przejdź do tabeli atrybutów",
-    "tabAway": "Naciśnij klawisz Tab, aby kontynuować i opuścić aplikację, naciśnij klawisze Shift oraz Tab, aby wrócić do ${value} w obrębie"
+    "tabAway": "Naciśnij klawisz Tab, aby kontynuować i opuścić aplikację, naciśnij klawisze Shift oraz Tab, aby wrócić do ${value} wewnątrz."
   },
   "panelHeader": {
     "foldWindow": "Zwiń okno",

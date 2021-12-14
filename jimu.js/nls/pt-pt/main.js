@@ -121,7 +121,7 @@ define({
     "map": "Aceder ao Mapa",
     "sidePanel": "Avançar para Painel Lateral",
     "attributeTable": "Aceder à Tabela de Atributos",
-    "tabAway": "Prima Tab para continuar e sair da aplicação, prima Shift e Tab para voltar para ${value} em"
+    "tabAway": "Prima Tab para continuar e sair da aplicação, prima Shift e Tab para voltar para ${value} no interior."
   },
   "panelHeader": {
     "foldWindow": "Dobrar janela",

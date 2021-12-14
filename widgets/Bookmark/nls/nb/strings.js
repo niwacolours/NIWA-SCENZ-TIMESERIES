@@ -22,9 +22,9 @@ define({
   "bookmarksFromConfig": "Forhåndskonfigurerte bokmerker",
   "bookmarksFromCache": "Lokale midlertidige bokmerker",
   "notice": "Merknad",
-  "changeNoticeTips": "Endringer vil bli lagret bare i nettleserens cache. Synkronisering mellom miniprogrammet og konfigurasjonen er koblet fra når du har gjort endringer.",
+  "changeNoticeTips": "Endringer lagres bare i nettleserens hurtigbuffer. Synkronisering mellom miniprogrammet og konfigurasjonen kobles fra når du har gjort endringer.",
   "syncNoticeTips": "Dette sletter alle endringene dine og gjenoppretter de konfigurerte bokmerkene.",
-  "dontShowAgain": "Ikke vis igjen",
+  "dontShowAgain": "Ikke vis dette igjen",
   "saveVisibility": "Lagre synligheten for lag",
   "_widgetLabel": "Bokmerke"
 });

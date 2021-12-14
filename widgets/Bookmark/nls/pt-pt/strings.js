@@ -24,7 +24,7 @@ define({
   "notice": "Aviso",
   "changeNoticeTips": "As alterações serão guardadas apenas na cache do seu navegador. A sincronização entre o widget e a respetiva configuração é desligada após efetuar modificações.",
   "syncNoticeTips": "Esta ação irá apagar as suas modificações e restaurar os marcadores configurados.",
-  "dontShowAgain": "Não voltar a exibir",
+  "dontShowAgain": "Não mostrar novamente",
   "saveVisibility": "Guardar a visibilidade da camada",
   "_widgetLabel": "Marcador"
 });

@@ -121,7 +121,7 @@ define({
     "map": "Overslaan en verdergaan naar kaart",
     "sidePanel": "Overslaan en verdergaan naar zijpaneel",
     "attributeTable": "Overslaan en verdergaan naar attribuuttabel",
-    "tabAway": "Druk op Tab om verder te gaan en uit de app te gaan, druk op Shift en Tab om terug te gaan naar ${value} in de app"
+    "tabAway": "Druk op Tab om verder te gaan en uit de app te gaan, druk op Shift en Tab om terug te gaan naar ${value} in de app."
   },
   "panelHeader": {
     "foldWindow": "Venster invouwen",

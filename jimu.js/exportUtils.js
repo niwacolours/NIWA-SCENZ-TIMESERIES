@@ -143,6 +143,7 @@ define([
 
         if(feature._layer) {
           return {
+            drawingInfo: feature._layer.drawingInfo, //from layerObject or layerDefinition, for codedvalues utils
             geometryType: featureSet.geometryType,
             fields: feature._layer.fields,
             objectIdField: feature._layer.objectIdField,
@@ -167,6 +168,10 @@ define([
         };
       },
 
+      _getOutFields: function(featureSet, layerDefinition){
+        return lang.clone(featureSet.fields && featureSet.fields.length > 0 ? featureSet.fields : layerDefinition.fields);
+      },
+
       formatAttributes: function(featureSet) {
         var def = new Deferred();
         var popupInfo = this.findPopupInfo(featureSet);
@@ -177,7 +182,7 @@ define([
           });
           CSVUtils._formattedData(featureSet.features[0]._layer, {
             data: data,
-            outFields: layerDefinition.fields
+            outFields: this._getOutFields(featureSet, layerDefinition)
           }, {
             formatNumber: true,
             formatDate: true,
@@ -211,7 +216,7 @@ define([
           var layerDefinition = this.findLayerDefinition(fs);
           var features = fs.features;
           if (layerDefinition && layerDefinition.fields) {
-            var outFields = lang.clone(layerDefinition.fields);
+            var outFields = this._getOutFields(fs, layerDefinition);
             this._addXYAttribute(outFields, 'x');
             this._addXYAttribute(outFields, 'y');
             layerDefinition.fields = outFields;

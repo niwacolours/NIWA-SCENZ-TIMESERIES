@@ -93,18 +93,8 @@ define(['dojo/_base/declare',
             this.close();
           }
         }
-        // if (true === this._requireConfirm) {
-        //   //checkbox
-        //   this.confirmCheck.focus();
-        // } else if ((false === this._requireConfirm && false === this._showOption) ||
-        //   (false === this._requireConfirm && true === this._showOption)) {
-        //   this.okNode.focus();
-        // }
-        if (!this._requireConfirm && !this._showOption) {
-          this.okNode.focus();
-        } else {
-          this.confirmCheck.focus();
-        }
+        // Just focus on first node (content DOM).
+        utils.focusFirstFocusNode(this.domNode);
 
         this._eventShow();
       },

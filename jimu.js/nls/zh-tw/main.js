@@ -121,7 +121,7 @@ define({
     "map": "跳至地圖",
     "sidePanel": "跳至側面板",
     "attributeTable": "跳至屬性表",
-    "tabAway": "按 Tab 以繼續並離開應用程式，按 Shift 和 Tab 可返回其中的 ${value}"
+    "tabAway": "按 Tab 以繼續並離開應用程式，按 Shift 和 Tab 可返回其中的 ${value}。"
   },
   "panelHeader": {
     "foldWindow": "折疊視窗",

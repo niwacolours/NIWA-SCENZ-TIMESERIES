@@ -24,7 +24,7 @@ define({
   "notice": "Poznámka",
   "changeNoticeTips": "Zmeny budú uložené iba vo vyrovnávacej pamäti vášho prehliadača. Po vykonaní úprav sa synchronizácia medzi widgetom a jeho konfiguráciou odpojí.",
   "syncNoticeTips": "Týmto sa vymažú všetky vaše zmeny a obnovia sa nakonfigurované záložky.",
-  "dontShowAgain": "Znova nezobrazovať",
+  "dontShowAgain": "Nezobrazovať znova",
   "saveVisibility": "Uložiť viditeľnosť vrstvy",
   "_widgetLabel": "Záložka"
 });

@@ -371,15 +371,17 @@ define([
           var layerInfo = this.layerInfosObj.getLayerInfoById(legendLayer.id);
           var validLayerType = layer && layer.declaredClass &&
             layer.declaredClass !== "esri.layers.GraphicsLayer";
-          var validRenderer = !layer.renderer ||
-            (layer.renderer && !layer.renderer.hasVisualVariables());
-          var showLegendInMap = layerInfo && layerInfo.getShowLegendOfWebmap();
-          if (validLayerType && validRenderer && showLegendInMap) {
-            if (legendLayer.subLayerIds) {
-              legendLayer.subLayerIds = lang.hitch(this, getSubLayerIds, legendLayer)();
-            }
+          if (validLayerType) { // layer may be undefined
+            var validRenderer = !layer.renderer ||
+              (layer.renderer && !layer.renderer.hasVisualVariables());
+            var showLegendInMap = layerInfo && layerInfo.getShowLegendOfWebmap();
+            if (validRenderer && showLegendInMap) {
+              if (legendLayer.subLayerIds) {
+                legendLayer.subLayerIds = lang.hitch(this, getSubLayerIds, legendLayer)();
+              }
 
-            arr.push(legendLayer);
+              arr.push(legendLayer);
+            }
           }
         }
 

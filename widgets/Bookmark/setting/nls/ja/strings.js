@@ -26,7 +26,7 @@ define({
   "importTitle": "ブックマークのインポート",
   "importFromWeb": "ブックマークを現在の Web マップからインポート",
   "selectAll": "すべて選択",
-  "noBookmarkInConfig": "[インポート] または [新規作成] をクリックして、ブックマークを追加します。",
+  "noBookmarkInConfig": "ブックマークを追加するには [インポート] か [新規作成] をクリックします。",
   "noBookmarkInWebMap": "マップでブックマークが構成されていません。",
   "extent": "範囲",
   "saveExtent": "マップ範囲をこのブックマークに保存",

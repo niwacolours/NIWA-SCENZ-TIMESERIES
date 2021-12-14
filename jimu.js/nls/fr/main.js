@@ -121,7 +121,7 @@ define({
     "map": "Passer à la carte",
     "sidePanel": "Passer au volet latéral",
     "attributeTable": "Passer à la table attributaire",
-    "tabAway": "Appuyez sur la touche Tabulation pour continuer et sortir de l’application, appuyez sur les touches Majuscule et Tabulation pour revenir à la valeur ${value} dans"
+    "tabAway": "Appuyez sur la touche Tabulation pour continuer et sortir de l’application, appuyez sur les touches Majuscule et Tabulation pour revenir à la valeur ${value} à l’intérieur."
   },
   "panelHeader": {
     "foldWindow": "Réduire la fenêtre",

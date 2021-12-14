@@ -22,7 +22,7 @@ define({
   "bookmarksFromConfig": "Přednastavené záložky",
   "bookmarksFromCache": "Lokální dočasné záložky",
   "notice": "Poznámka",
-  "changeNoticeTips": "Změny budou uloženy do vyrovnávací paměti vašeho prohlížeče. Synchronizace mezi widgetem a jeho konfigurací se odpojí, jakmile provedete změnu.",
+  "changeNoticeTips": "Změny budou uloženy do vyrovnávací paměti vašeho prohlížeče. Synchronizace mezi widgetem a jeho konfigurací se odpojí, jakmile provedete změnu.",
   "syncNoticeTips": "Tím se vymažou veškeré změny a obnoví nastavené záložky.",
   "dontShowAgain": "Příště nezobrazovat",
   "saveVisibility": "Uložit viditelnost vrstev",

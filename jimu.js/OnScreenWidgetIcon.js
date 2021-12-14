@@ -138,6 +138,7 @@ function(declare, lang, array, html, on, keys, Tooltip, _WidgetBase, utils) {
       }, this);
 
       html.addClass(this.domNode, 'jimu-state-selected');
+      html.setAttr(this.domNode, 'aria-pressed', 'true');
       this._showLoading();
       if(this.widgetConfig.inPanel === false){
         this.widgetManager.loadWidget(this.widgetConfig)
@@ -175,6 +176,7 @@ function(declare, lang, array, html, on, keys, Tooltip, _WidgetBase, utils) {
     switchToClose: function(){
       this.state = 'closed';
       html.removeClass(this.domNode, 'jimu-state-selected');
+      html.setAttr(this.domNode, 'aria-pressed', 'false');
       if(this.widgetConfig.inPanel === false){
         this.widgetManager.closeWidget(this.widget);
       }else{

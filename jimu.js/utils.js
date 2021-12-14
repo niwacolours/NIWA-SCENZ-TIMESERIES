@@ -781,9 +781,6 @@ function(lang, array, html, has, config, ioQuery, query, nlt, Deferred, all, on,
       }
       widgetJson.manifest = manifest;
       widgetJson.isRemote = manifest.isRemote;
-      if(widgetJson.isRemote){
-        widgetJson.itemId = manifest.itemId;
-      }
       if(manifest.featureActions){
         widgetJson.featureActions = manifest.featureActions;
       }
@@ -824,11 +821,12 @@ function(lang, array, html, has, config, ioQuery, query, nlt, Deferred, all, on,
     };
 
     ret.getFolderUrlFromItem = function(item){
+      var url;
+
       if(!item.url){
         return null;
       }
 
-      var url;
       if(/manifest\.json$/.test(item.url)){
         url = item.url.substring(0, item.url.length - 'manifest.json'.length);
       }else if(/\/$/.test(item.url)){
@@ -840,6 +838,7 @@ function(lang, array, html, has, config, ioQuery, query, nlt, Deferred, all, on,
       if(window.location.protocol === "https:"){
         url = url.replace(/^http:\/\//, 'https://');
       }
+
       return url;
     };
 
@@ -2986,10 +2985,6 @@ function(lang, array, html, has, config, ioQuery, query, nlt, Deferred, all, on,
       }
 
       if(webmapInfo){
-        // use default mapOptions of current webmap.
-        if(appConfig.map.mapOptions){
-          mo.deleteMapOptions(appConfig.map.mapOptions);
-        }
         appConfig.map.portalUrl = portalUrl;
 
         if (!templateAppConfig.values.app_title) {
@@ -3210,6 +3205,10 @@ function(lang, array, html, has, config, ioQuery, query, nlt, Deferred, all, on,
     //http://servicesdev1.arcgis.com/5uh3wwYLNzBuU0Eu/arcgis/rest/services/CarsandLivingThings/FeatureServer/0?f=pjson
     var fieldInfo = mo.getFieldInfoByFieldName(layerDefinition.fields, fieldName);
     var codedValues;
+    if (!fieldInfo) {
+      return codedValues;
+    }
+
     //query codedvalue from types-domain
     if(typeIdFieldValue !== undefined && typeIdFieldValue !== null){ //it can be 0(number)
       codedValues = mo._getCodedValueBySubTypeId(layerDefinition, fieldName, typeIdFieldValue, /*optional*/fieldInfo);
@@ -3585,6 +3584,9 @@ function(lang, array, html, has, config, ioQuery, query, nlt, Deferred, all, on,
 
     var codedValues = null ;
     fieldInfo = fieldInfo ? fieldInfo : mo.getFieldInfoByFieldName(layerDefinition.fields, fieldName);
+    if(!fieldInfo){ // for custom fields like x, y when exporting data.
+      return codedValues;
+    }
     if(layerDefinition[type] && layerDefinition[arrayType] && layerDefinition[arrayType].length > 0){
       array.map(layerDefinition[arrayType], lang.hitch(this, function(item){
         if(item.id === typeIdFieldValue){
@@ -3735,7 +3737,7 @@ function(lang, array, html, has, config, ioQuery, query, nlt, Deferred, all, on,
   };
 
   //get renderer from layerDef.drawingInfo
-  mo._getRendererFromLayerDef = function(layerDefinition){
+  mo.getUniqueRendererByLayerDefinition = function(layerDefinition){
     var render = null;
     if(layerDefinition.drawingInfo && layerDefinition.drawingInfo.renderer &&
       layerDefinition.drawingInfo.renderer.type === 'uniqueValue'){
@@ -3744,20 +3746,25 @@ function(lang, array, html, has, config, ioQuery, query, nlt, Deferred, all, on,
     return render;
   };
 
-  //get renderer from layerObj which is configurated in webmap if it exists,
-  //otherwise use drawingInfo from layerDef.
+  // The priority of layerObject's renderer is higher than layerDefinition's drawingInfo.
+  mo.isUniqueReneredByLayerObject = function(renderInfo, _layerDefRender){
+    return renderInfo.type === 'uniqueValue' && (_layerDefRender && _layerDefRender.field1 === renderInfo.field1);
+  }
+
+  // get renderer from layerObj which is configurated in webmap if it exists,
+  // otherwise use drawingInfo from layerDef.
   mo._getRenderValueLabelsForUnique = function(layerDefinition){
     var valueLabels = null, uniqueValueInfos = null;
-    var layerDefRender = mo._getRendererFromLayerDef(layerDefinition);
+    var layerDefRender = mo.getUniqueRendererByLayerDefinition(layerDefinition);
     if(layerDefRender){//layerDefinition
       valueLabels = {};
       uniqueValueInfos = layerDefRender.uniqueValueInfos;
     }else if(layerDefinition.renderer){//layerObject
       var _layerDef = layerDefinition.toJson().layerDefinition; //get serviceLayerDef from layerObj
-      var _layerDefRender = mo._getRendererFromLayerDef(_layerDef);
+      var _layerDefRender = mo.getUniqueRendererByLayerDefinition(_layerDef);
       var renderInfo = layerDefinition.renderer.toJson();
       //only support uniqueRender and same field as layerDef
-      if(renderInfo.type === 'uniqueValue' && (_layerDefRender && _layerDefRender.field1 === renderInfo.field1)){
+      if(mo.isUniqueReneredByLayerObject(renderInfo, _layerDefRender)){
         valueLabels = {};
         uniqueValueInfos = renderInfo.uniqueValueInfos;
       }else if(_layerDefRender){

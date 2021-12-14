@@ -121,7 +121,7 @@ define({
     "map": "Siirry karttaan",
     "sidePanel": "Siirry sivupaneeliin",
     "attributeTable": "Siirry ominaisuustietotauluun",
-    "tabAway": "Jatka painamalla sarkainta ja poistu sovelluksesta tai siirry takaisin kohteeseen ${value} seuraavan ajan kuluessa painamalla vaihtonäppäintä ja sarkainta:"
+    "tabAway": "Jatka painamalla sarkainta ja poistu sovelluksesta tai siirry takaisin kohteeseen ${value} painamalla vaihtonäppäintä ja sarkainta."
   },
   "panelHeader": {
     "foldWindow": "Kutista ikkuna",

@@ -121,7 +121,7 @@ define({
     "map": "Lewati ke Peta",
     "sidePanel": "Lewati ke Panel Samping",
     "attributeTable": "Lewati ke Tabel Atribut",
-    "tabAway": "Tekan Tab untuk melanjutkan dan keluar aplikasi, tekan Shift dan Tab untuk kembali ke ${value} dalam"
+    "tabAway": "Tekan Tab untuk melanjutkan dan keluar aplikasi, tekan Shift dan Tab untuk kembali ke ${value} di dalamnya."
   },
   "panelHeader": {
     "foldWindow": "Tutup jendela",
@@ -622,7 +622,7 @@ define({
   "widgetManager": {
     "createWidgetError": "Kesalahan buat widget",
     "createWidgetSettingPageError": "Kesalahan buat halaman pengaturan widget",
-    "loadWidgetResourceError": "Kesalahan muat sumber widget"
+    "loadWidgetResourceError": "Kesalahan muat sumber daya widget"
   },
   "shareOptions": {
     "shareMap": "Pilih siapa yang bisa melihat aplikasi ini",

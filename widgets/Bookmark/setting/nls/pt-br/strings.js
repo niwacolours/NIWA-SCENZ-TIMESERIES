@@ -26,7 +26,7 @@ define({
   "importTitle": "Importar Marcadores",
   "importFromWeb": "Importar marcadores do mapa da web atual",
   "selectAll": "Selecionar Tudo",
-  "noBookmarkInConfig": "Clique em \"Importar\" ou “Criar Novo” para adicionar marcadores.",
+  "noBookmarkInConfig": "Clique em “Importa” ou “Criar Novo” para adicionar marcadores.",
   "noBookmarkInWebMap": "Nenhum marcador está configurado no mapa.",
   "extent": "Extensão",
   "saveExtent": "Salvar extensão de mapa neste marcador",

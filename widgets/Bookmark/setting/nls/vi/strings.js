@@ -26,7 +26,7 @@ define({
   "importTitle": "Nhập đánh dấu",
   "importFromWeb": "Nhập đánh dấu từ bản đồ web hiện tại",
   "selectAll": "Chọn Tất cả",
-  "noBookmarkInConfig": "Nhấp vào Nhập hoặc Tạo Mới để thêm đánh dấu.",
+  "noBookmarkInConfig": "Nhấp vào “Nhập” hoặc “Tạo mới” để thêm đánh dấu.",
   "noBookmarkInWebMap": "Không có đánh dấu nào được cấu hình trong bản đồ.",
   "extent": "Phạm vi",
   "saveExtent": "Lưu phạm vi bản đồ vào đánh dấu này",

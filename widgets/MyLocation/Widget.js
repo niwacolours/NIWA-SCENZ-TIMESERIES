@@ -39,6 +39,12 @@ define([
 
       _graphicsLayer: null,
 
+      //locateAction msg
+      _locateAction: {
+        locator: null,
+        cacheLatestTracking: null
+      },
+
       startup: function () {
         this.inherited(arguments);
         this.placehoder = html.create('div', {
@@ -57,11 +63,13 @@ define([
           this.a11y_updateLabel(this.nls.httpNotSupportError);
           this.a11y_disable();
         } else if (window.navigator.geolocation) {
-          this.own(on(this.placehoder, 'click', lang.hitch(this, this.onLocationClick)));
+          this.own(on(this.placehoder, 'click', lang.hitch(this, this.onLocationClickWapper)));
           this.own(on(this.map, 'zoom-end', lang.hitch(this, this._scaleChangeHandler)));
 
           this.a11y_initEvents();
           this.a11y_enable();
+
+          this._createHiddenLocator();
         } else {
           html.setAttr(this.placehoder, 'title', this.nls.browserError);
           this.a11y_updateLabel(this.nls.browserError);
@@ -69,27 +77,42 @@ define([
         }
       },
 
-      onLocationClick: function (evt) {
+      //for IOS 13+ added a permission API ,#18638
+      onLocationClickWapper: function (evt) {
         if (evt && evt.stopPropagation) {
           evt.stopPropagation();
         }
 
+        if (true === Compass.needCompass(this.config)) {//compass for ios 13+
+          Compass.checkPermission().then(
+            lang.hitch(this, function () {
+              this.onLocationClick(evt);
+            }),
+            lang.hitch(this, function () {
+              this.onLocationClick(evt);
+            })
+          )
+        } else {
+          this.onLocationClick(evt);
+        }
+      },
+
+      onLocationClick: function (evt) {
         if (html.hasClass(this.domNode, "onCenter") ||
           html.hasClass(this.domNode, "locating")) {
 
-          if(!(this.geoLocate && true === this.geoLocate._canDestroy)){
-            if(this._DEBUG){
+          if (!(this.geoLocate && true === this.geoLocate._canDestroy)) {
+            if (this._DEBUG) {
               console.log("==>block click1");
             }
             return;
           }
 
-
           this._destroyGeoLocate();//this._clearGeoLocate();
           this._tryToCleanCompass();
         } else {
-          if(!(!this.geoLocate || (this.geoLocate && true === this.geoLocate._canDestroy))){
-            if(this._DEBUG){
+          if (!(!this.geoLocate || (this.geoLocate && true === this.geoLocate._canDestroy))) {
+            if (this._DEBUG) {
               console.log("==>block click2");
             }
             return;
@@ -103,7 +126,7 @@ define([
 
       //create & async-locate
       _createGeoLocateAndLocate: function () {
-        if(this._DEBUG){
+        if (this._DEBUG) {
           console.log("==>_createGeoLocateAndLocate");
         }
         this.getGeoLocateInstance().then(lang.hitch(this, function () {
@@ -159,9 +182,9 @@ define([
       //events handler
       //there is no "locate-error" event in 2d-api
       onLocateOrError: function (evt) {
-        this.publishData({'geoLocationResult': evt});
+        this._publishLocationAction(evt);
 
-        if(this.geoLocate){
+        if (this.geoLocate) {
           setTimeout(lang.hitch(this, function () {
             this.geoLocate._canDestroy = true;
 
@@ -177,16 +200,12 @@ define([
         html.removeClass(this.placehoder, "locating");
         if (this.geoLocate.useTracking) {
           html.addClass(this.placehoder, "tracking");
+          this._locateAction.cacheLatestTracking = parameters;
         }
 
-        if (parameters.error) {
-          this.onLocateError(parameters);
-        } else {
-          html.addClass(this.domNode, "onCenter");
-          this.neverLocate = false;
-
-          this._tryToShowCompass(parameters);
-        }
+        html.addClass(this.domNode, "onCenter");
+        this.neverLocate = false;
+        this._tryToShowCompass(parameters);
       },
       onLocateError: function (evt) {
         console.error(evt.error);
@@ -207,12 +226,8 @@ define([
 
       //compass
       _tryToShowCompass: function (parameters) {
-        if (true !== this.config.locateButton.highlightLocation ||
-          true !== this.config.locateButton.useTracking) {
-          return;//1 or all false
-        }
-        if (true !== this.config.useCompass && true !== this.config.useAccCircle) {
-          return;//all false
+        if (false === Compass.needCompass(this.config)) {
+          return;
         }
 
         this.compass = Compass.getInstance({ folderUrl: this.folderUrl, map: this.map, config: this.config });
@@ -228,8 +243,6 @@ define([
           this.compass.destroy();
         }
       },
-
-
       // _clearGeoLocate: function () {
       //   if (this.geoLocate){
       //     this.geoLocate.clear();
@@ -242,19 +255,22 @@ define([
       //   return html.hasClass(this.geoLocate._locateNode, this.geoLocate._css.loading);
       // },
       _destroyGeoLocate: function () {
-        if(this._DEBUG){
+        if (this._DEBUG) {
           console.log("==>_destroyGeoLocate");
         }
 
-        if(this._graphicsLayer){
+        if (this._graphicsLayer) {
           this._graphicsLayer.clear();
         }
 
         if (this.geoLocate && this.geoLocate._canDestroy) {
           if (this.geoLocate) {
+            //console.log("==> !!! _destroyGeoLocate");
             this.geoLocate.clear();
             this.geoLocate.destroy();
             this.geoLocate = null;
+
+            this._locateAction.cacheLatestTracking = null;
           }
           //this._destroyAPIBugLocate();
           html.removeClass(this.domNode, "onCenter");
@@ -286,12 +302,105 @@ define([
 
         this._destroyGeoLocate();
 
-        if(this._graphicsLayer){
+        if (this._graphicsLayer) {
           this.map.removeLayer(this._graphicsLayer);
           this._graphicsLayer = null;
         }
 
+        this._destroyHiddenLocator();
+
         this.inherited(arguments);
+      },
+
+
+      //message
+      _isWidgetLocatorLoaded: function () {
+        return !!(this.geoLocate && this.geoLocate.loaded);
+      },
+      _isWidgetLocatorTracking: function () {
+        return !!(this._isWidgetLocatorLoaded() && this.geoLocate.tracking);
+      },
+      _isWidgetLocatorLocating: function () {
+        return !!(!this._isWidgetLocatorTracking() && html.hasClass(this.placehoder, "locating"));
+      },
+      onReceiveData: function (name, widgetId, data, historyData) {
+        if (!(data && "getCurrentLocation" === data.type)) {
+          return;
+        }
+
+        //this._TESTCASE_FLAG = 0;
+        if (!this._isWidgetLocatorLoaded()) {
+          //this._TESTCASE_FLAG = 1;
+          //1. WidgetLocator in MyLocationWidget can't do locate (e.g. unloaded, inactive)
+          //_actionLocator do a locate, then _actionLocator publish location msg
+          this._triggerHiddenLocatorLocate();
+        } else {
+          //2. WidgetLocator can locate
+          var isWidgetLocatorTracking = this._isWidgetLocatorTracking();
+          if (!isWidgetLocatorTracking) {
+            //2.1. when MyLocationWidget not in Tracking(watching)
+            var isWidgetLocatorLocating = this._isWidgetLocatorLocating();
+            if (!isWidgetLocatorLocating) {
+              //this._TESTCASE_FLAG = "2.1.1";
+              //2.1.1. widget is not locating: _actionLocator do a locate, then _actionLocator publish location msg (case 1)
+              this._triggerHiddenLocatorLocate();
+            } else {
+              //2.1.2. widget is locating: waiting for MyLocationWidget finish location, then WidgetLocator publish location msg
+              //this._TESTCASE_FLAG = "2.1.2";
+            }
+          } else {
+            //2.2. MyLocationWidget is in Tracking(watching), cache latest location in widget(before Tracking update it)
+            if (this._locateAction.cacheLatestTracking) {
+              //this._TESTCASE_FLAG = "2.2.1";
+              //2.2.1. there is cachedTrackingLocation: widget publish the cached location msg
+              this._publishLocationAction(this._locateAction.cacheLatestTracking);
+            } else {
+              //2.2.2. there is no cachedTrackingLocation: waiting for MyLocationWidget finish location, then WidgetLocator publish location msg (case 2.1.2)
+              //this._TESTCASE_FLAG = "2.2.2";
+            }
+          }
+        }
+      },
+      _publishLocationAction: function (evt) {
+        this.publishData({ 'type': 'publishCurrentLocation', 'geoLocationResult': evt });
+
+        // if (this._TESTCASE_FLAG) {
+        //   alert("==>_TESTCASE_FLAG_" + this._TESTCASE_FLAG);
+        // }
+      },
+
+      _createHiddenLocator: function () {
+        this._locateAction = {
+          locator: null,
+          cacheLatestTracking: null//for case 2.2.1 of _publishLocationAction
+        };
+
+        this._locateAction.locator = new LocateButton({
+          map: this.map,
+          highlightLocation: false,
+          setScale: false,
+          centerAt: false,
+          geolocationOptions: { enableHighAccuracy: true }
+        });
+        this._locateAction.locator.startup();
+      },
+      _destroyHiddenLocator: function () {
+        this._locateAction.locator.clear();
+        this._locateAction.locator.destroy();
+        this._locateAction.locator = null;
+
+        this._locateAction = {
+          locator: null,
+          cacheLatestTracking: null
+        };
+      },
+
+      _triggerHiddenLocatorLocate: function () {
+        this.own(on.once(this._locateAction.locator, "locate", lang.hitch(this, this._onHiddenLocatorLocate)));
+        this._locateAction.locator.locate();
+      },
+      _onHiddenLocatorLocate: function (evt) {
+        this._publishLocationAction(evt);
       }
     });
     clazz.inPanel = false;

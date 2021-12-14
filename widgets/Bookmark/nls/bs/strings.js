@@ -24,7 +24,7 @@ define({
   "notice": "Napomena",
   "changeNoticeTips": "Promjene će se spremiti samo u predmemoriji vašeg preglednika. Sinkronizacija između widgeta i njegova konfiguracija odspajaju se kada unesete izmjene.",
   "syncNoticeTips": "Ovo će izbrisati sve vaše izmjene i vratiti konfigurirane knjižne oznake.",
-  "dontShowAgain": "Ne prikazuj ponovo",
+  "dontShowAgain": "Ne prikazuj ponovno",
   "saveVisibility": "Spremi vidljivost sloja",
   "_widgetLabel": "Knjižna oznaka"
 });

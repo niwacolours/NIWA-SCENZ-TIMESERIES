@@ -24,7 +24,7 @@ define({
   "notice": "Obvestilo",
   "changeNoticeTips": "Spremembe bodo shranjene samo v predpomnilniku vašega brskalnika. Sinhronizacija med pripomočkom in njegovo konfiguracijo se prekine, ko izvedete spremembe.",
   "syncNoticeTips": "To bo izbrisalo vse vaše spremembe in obnovilo konfigurirane zaznamke.",
-  "dontShowAgain": "Ne prikaži znova",
+  "dontShowAgain": "Ne prikaži več",
   "saveVisibility": "Shrani vidnost sloja",
   "_widgetLabel": "Zaznamek"
 });

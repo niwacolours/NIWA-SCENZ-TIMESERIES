@@ -121,7 +121,7 @@ define({
     "map": "Jätka kaardist",
     "sidePanel": "Jätka külgpaneelist",
     "attributeTable": "Jätka atribuuditabelist",
-    "tabAway": "Jätkamiseks ja rakendusest lahkumiseks vajutage tabeldusklahvi; tagasi kuvale ${value} liikumiseks vajutage tõstuklahvi (Shift) koos tabeldusklahviga"
+    "tabAway": "Jätkamiseks ja rakendusest lahkumiseks vajutage tabeldusklahvi; tagasi kuvale ${value} liikumiseks vajutage tõstuklahvi (Shift) koos tabeldusklahviga."
   },
   "panelHeader": {
     "foldWindow": "Sule aken",
@@ -622,7 +622,7 @@ define({
   "widgetManager": {
     "createWidgetError": "Vidina loomise viga",
     "createWidgetSettingPageError": "Vidina seadistuslehe loomise viga",
-    "loadWidgetResourceError": "Vidina ressursi laadimise viga"
+    "loadWidgetResourceError": "Vidina ressursi laadimise tõrge"
   },
   "shareOptions": {
     "shareMap": "Valige, kes saavad seda rakendust vaadata",

@@ -22,9 +22,9 @@ define({
   "bookmarksFromConfig": "Sākotnēji konfigurētas grāmatzīmes",
   "bookmarksFromCache": "Lokālās pagaidu grāmatzīmes",
   "notice": "Paziņot",
-  "changeNoticeTips": "Izmaiņas tiks saglabātas tikai jūsu pārlūka kešatmiņā. Logrīka un tā konfigurācijas sinhronizēšana tiek atvienota, tiklīdz veicat izmaiņas.",
+  "changeNoticeTips": "Izmaiņas tiks saglabātas tikai pārlūka kešatmiņā. Veicot izmaiņas, sinhronizācija starp logrīku un tā konfigurāciju tiek atspējota.",
   "syncNoticeTips": "Šādi tiks izdzēstas visas izmaiņas un restaurētas konfigurētās grāmatzīmes.",
-  "dontShowAgain": "Turpmāk nerādīt",
+  "dontShowAgain": "Vairs nerādīt",
   "saveVisibility": "Saglabāt slāņu redzamību",
   "_widgetLabel": "Grāmatzīme"
 });

@@ -17,6 +17,7 @@
 define([
   'dojo/_base/declare',
   'dojo/_base/lang',
+  'dojo/Deferred',
   //'dojo/_base/html',
   'jimu/BaseWidget',
   'dojo/on',
@@ -29,7 +30,7 @@ define([
   "esri/Color",
   "esri/geometry/Circle"
 ],
-  function (declare, lang, /*html,*/ BaseWidget, on,// query, utils,
+  function (declare, lang, Deferred,/*html,*/ BaseWidget, on,/*query, utils,*/
     PictureMarkerSymbol, SimpleFillSymbol, SimpleLineSymbol, Graphic, Color, Circle) {
 
     var instance = null, clazz;
@@ -65,15 +66,21 @@ define([
       _showDirection: function (geoLocate) {
         if (geoLocate.useTracking) {
           this._destroyDirectionHandler();
-
           var directionEvent;
+
+          //var _flag1;
           if ('ondeviceorientationabsolute' in window) {
-            directionEvent = "deviceorientationabsolute";// Chrome 50+ specific
-            //this._flag1 = "1";//TODO // this.own(on(window, 'deviceorientationabsolute', lang.hitch(this, this._watchMobileLocation)));
+            directionEvent = "deviceorientationabsolute";// Chrome 50+ specific, "deviceorientationabsolute"
+          //  _flag1 = "1";
           } else if ('ondeviceorientation' in window) {
             directionEvent = "deviceorientation";//Safari/iOS
-            //this._flag1 = "2";//TODO //this.own(on(window, 'deviceorientation', lang.hitch(this, this._watchMobileLocation)));
+          //  _flag1 = "2";
+          } else if (DeviceOrientationEvent) {
+            directionEvent = "deviceorientation";//FF
+          //  _flag1 = "3";
           }
+          //document.querySelector(".jimu-subtitle").innerText = this._flag1;
+
           this._directionHandler = on(window, directionEvent, lang.hitch(this, this._watchMobileLocation, geoLocate));
         }
       },
@@ -84,37 +91,25 @@ define([
         }
 
         var alpha;
-        if (event.absolute &&
-          null !== event.alpha && "undefined" !== typeof event.alpha) {
-          alpha = event.alpha;
-          //this._flag2 = "a"; //TODO
-        } else if (event.webkitCompassHeading) {// get absolute orientation for Safari/iOS
-          alpha = 360 - event.webkitCompassHeading; // conversion taken from a comment on Google Documentation, not tested
-          //this._flag2 = "b"; //TODO
-        } else {
-          console.log('Could not retrieve absolute orientation');
-          //this._flag2 = "c"; //TODO
-          if (this._debug) {
-            alpha = 0;
-          }
+        if (event.webkitCompassHeading || event.alpha) {
+          alpha = event.webkitCompassHeading || Math.abs(event.alpha - 360);
         }
-        //console.log('Absolute orientation: ' + alpha);
-        if (this._debug) {
-          document.querySelector(".jimu-title").innerText = this._flag1 + this._flag2 + "_alpha=" + alpha;//TODO
-        }
+        var displayOrientation = window.orientation || 0;//Landscape: 90(head to left)/-90, Portrait: 0/180(head to bottom)
+        //if (this._debug) {
+        //  document.querySelector(".jimu-title").innerText = "==>"+this._flag1 +parseInt(alpha)+"==>"+displayOrientation;
+        //}
 
         if ("undefined" !== typeof alpha) {
+          var angle = -alpha - displayOrientation;
           var symbolOption = {
             url: this.folderUrl + "/images/compass.png",
             width: 36,
             height: 36,
-            angle: alpha
+            angle: angle
           };
           var highlightGraphic = geoLocate.highlightGraphic;
 
-          //setTimeout(lang.hitch(this, function(){
           highlightGraphic.setSymbol(new PictureMarkerSymbol(symbolOption));
-          //}), 200);
         }
       },
 
@@ -129,7 +124,7 @@ define([
           var accCircleR = accuracy / this.map.getResolution();//px
           var circle = new Circle({
             center: centerPt,
-            radius: accCircleR//TODO r is too small or too large
+            radius: accCircleR
           });
 
           var g = new Graphic(circle, new SimpleFillSymbol(
@@ -175,6 +170,42 @@ define([
         instance = new clazz(folderUrl, map, config);
       }
       return instance;
+    };
+    clazz.needCompass = function (config) {
+      if (true !== config.locateButton.highlightLocation || true !== config.locateButton.useTracking) {
+        return false;//1 or all false
+      }
+      if (true !== config.useCompass && true !== config.useAccCircle) {
+        return false;//all false
+      }
+
+      return true;
+    };
+    //https://developer.apple.com/documentation/safari-release-notes/safari-13-release-notes#3314664
+    clazz.checkPermission = function () {
+      var def = new Deferred();
+      //var ua = utils.detectUserAgent();
+      //var isIos = utils.isIosUa(),
+      //    isSafari = ua.browser.safari;
+      //alert("isSafari==> " + isSafari)
+
+      //ios don't support def in requestPermission, so request directly
+      if (/*isIos && isSafari &&*/DeviceOrientationEvent && DeviceOrientationEvent.requestPermission) {
+        DeviceOrientationEvent.requestPermission()
+          .then(lang.hitch(this, function (response) {
+            if (response == "granted") {
+              def.resolve(true);
+            } else {
+              def.resolve(false);
+            }
+          }))
+          .catch(function (error) {
+            def.resolve(false);
+          });
+      } else {
+        def.resolve(false);
+      }
+      return def;
     };
     return clazz;
   });

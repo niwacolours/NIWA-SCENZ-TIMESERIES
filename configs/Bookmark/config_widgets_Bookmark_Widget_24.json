@@ -20,7 +20,7 @@
           "selected": true
         }
       },
-      "_uID": 25,
+      "_uID": 0,
       "isSaveExtent": true
     },
     {
@@ -43,7 +43,7 @@
           "selected": true
         }
       },
-      "_uID": 26,
+      "_uID": 1,
       "isSaveExtent": true
     },
     {
@@ -66,7 +66,7 @@
           "selected": true
         }
       },
-      "_uID": 27,
+      "_uID": 2,
       "isSaveExtent": true
     },
     {
@@ -89,7 +89,7 @@
           "selected": true
         }
       },
-      "_uID": 28,
+      "_uID": 3,
       "isSaveExtent": true
     },
     {
@@ -112,7 +112,7 @@
           "selected": true
         }
       },
-      "_uID": 29,
+      "_uID": 4,
       "isSaveExtent": true
     },
     {
@@ -135,7 +135,7 @@
           "selected": true
         }
       },
-      "_uID": 30,
+      "_uID": 5,
       "isSaveExtent": true
     },
     {
@@ -158,7 +158,7 @@
           "selected": true
         }
       },
-      "_uID": 31,
+      "_uID": 6,
       "isSaveExtent": true
     },
     {
@@ -181,7 +181,7 @@
           "selected": true
         }
       },
-      "_uID": 32,
+      "_uID": 7,
       "isSaveExtent": true
     },
     {
@@ -197,7 +197,6 @@
           "latestWkid": 2193
         }
       },
-      "thumbnail": "/webappbuilder/apps/20/widgets/Bookmark/images/thumbnail_default.png",
       "isInWebmap": false,
       "isSaveLayers": false,
       "layerOptions": {
@@ -205,7 +204,8 @@
           "selected": true
         }
       },
-      "_uID": 33
+      "_uID": 8,
+      "isSaveExtent": true
     }
   ],
   "bookmarks3D": [],

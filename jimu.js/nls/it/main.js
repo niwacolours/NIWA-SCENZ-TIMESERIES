@@ -121,7 +121,7 @@ define({
     "map": "Salta a Mappa",
     "sidePanel": "Salta a Pannello laterale",
     "attributeTable": "Salta a Tabella attributi",
-    "tabAway": "Premere Tab per continuare e uscire dall'app, premere Maiusc e Tab per tornare a ${value} al suo interno"
+    "tabAway": "Premere Tab per continuare e uscire dall'app, premere Shift e Tab per tornare all'interno ${value}."
   },
   "panelHeader": {
     "foldWindow": "Riduci finestra",

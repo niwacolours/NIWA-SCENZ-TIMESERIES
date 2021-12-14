@@ -26,7 +26,7 @@ define({
   "importTitle": "Uvezi knjižne oznake",
   "importFromWeb": "Uvezi knjižne oznake iz trenutačne web-karte",
   "selectAll": "Odaberi sve",
-  "noBookmarkInConfig": "Kliknite na â€œUveziâ€ ili â€œStvori novoâ€ za dodavanje knjižnih oznaka.",
+  "noBookmarkInConfig": "Kliknite \"Uvezi\" ili \"Izradi novo\" da biste dodali knjižne oznake.",
   "noBookmarkInWebMap": "Nema konfiguriranih knjižnih oznaka na ovoj karti.",
   "extent": "Obuhvat",
   "saveExtent": "Spremi obuhvat karte u ovu knjižnu oznaku",

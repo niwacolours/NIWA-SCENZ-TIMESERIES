@@ -121,7 +121,7 @@ define({
     "map": "Bỏ qua đến Bản đồ",
     "sidePanel": "Bỏ qua đến Bảng điều khiển bên",
     "attributeTable": "Bỏ qua đến Bảng thuộc tính",
-    "tabAway": "Nhấn Tab để tiếp tục và ra khỏi ứng dụng, nhấn Shift và Tab để quay lại ${value} trong"
+    "tabAway": "Nhấn Tab để tiếp tục và ra khỏi ứng dụng, nhấn Shift và Tab để quay lại ${value} bên trong."
   },
   "panelHeader": {
     "foldWindow": "Thu nhỏ cửa sổ",

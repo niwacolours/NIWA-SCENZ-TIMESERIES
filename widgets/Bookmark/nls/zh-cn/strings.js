@@ -22,7 +22,7 @@ define({
   "bookmarksFromConfig": "预配置书签",
   "bookmarksFromCache": "本地临时书签",
   "notice": "通知",
-  "changeNoticeTips": "更改仅会保存到浏览器的缓存中。进行修改后微件和配置之间的同步将断开连接。",
+  "changeNoticeTips": "更改仅会保存到浏览器的缓存中。 进行修改后微件和配置之间的同步将断开连接。",
   "syncNoticeTips": "该操作将清除所有修改并恢复配置的书签。",
   "dontShowAgain": "不再显示",
   "saveVisibility": "保存图层可见性",

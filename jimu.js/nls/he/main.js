@@ -121,7 +121,7 @@ define({
     "map": "דלג למפה",
     "sidePanel": "דלג ללוח הצדי",
     "attributeTable": "דלג לטבלת המאפיינים",
-    "tabAway": "לחץ על Tab כדי להמשיך ולצאת מהאפליקציה, לחץ על Shift ועל Tab כדי לחזור ל-T${value} בתוך"
+    "tabAway": "לחץ על Tab להמשך וליציאה מהאפליקציה, לחץ על Shift ו-Tab לחזרה ${value} לאפליקציה."
   },
   "panelHeader": {
     "foldWindow": "קפל חלון",

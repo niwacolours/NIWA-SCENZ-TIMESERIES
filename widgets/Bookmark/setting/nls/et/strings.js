@@ -26,7 +26,7 @@ define({
   "importTitle": "Impordi järjehoidjad",
   "importFromWeb": "Kuva järjehoidjad praeguselt veebikaardilt",
   "selectAll": "Vali kõik",
-  "noBookmarkInConfig": "Järjehoidjate lisamiseks valige impordi või loo uus.",
+  "noBookmarkInConfig": "Järjehoidjate lisamiseks klõpsake nuppu “Impordi” või “Loo uus”.",
   "noBookmarkInWebMap": "Kaardil pole ühtegi järjehoidjat konfigureeritud.",
   "extent": "Kuvaulatus",
   "saveExtent": "Salvesta kaardi ulatus sellesse järjehoidjasse",

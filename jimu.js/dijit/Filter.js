@@ -534,6 +534,32 @@ function(on, a11yclick, Evented, declare, _WidgetBase, _TemplatedMixin, _Widgets
       }
     },
 
+    // For custom filters at runtime, it should always return a valid json.
+    toValidJson:function(){
+      var json = {
+        logicalOperator: this.allAnySelect.value,
+        parts: []
+      };
+      var filters = this._getAllSingleFiltersAndFilterSets();
+      if(filters.length === 0){
+        json.expr = '1=1';
+        return json;
+      }
+      array.forEach(filters, lang.hitch(this, function(filter){
+        var part = filter.toJson();
+        if(part){
+          json.parts.push(part);
+        }
+      }));
+      if(json.parts.length > 0){
+        json.expr = this.getExprByFilterObj(json);
+        return json;
+      } else{
+        json.expr = '1=1';
+        return json;
+      }
+    },
+
     /**************************************************/
     /****  lists                                   ****/
     /**************************************************/
@@ -626,7 +652,7 @@ function(on, a11yclick, Evented, declare, _WidgetBase, _TemplatedMixin, _Widgets
         }
       }));
       //reset all/any operator from config
-      this.allAnySelect.value = partsObj.logicalOperator;
+      this._setValutForAllAnySelect(partsObj.logicalOperator);
       this._setFilterMsgUI(partsObj.parts.length);
     },
 
@@ -732,10 +758,14 @@ function(on, a11yclick, Evented, declare, _WidgetBase, _TemplatedMixin, _Widgets
       return filters;
     },
 
+    _setValutForAllAnySelect: function(value){
+      this.allAnySelect.set('value', value); //instead of select.value=''
+    },
+
     _setFilterMsgUI: function(filterLength){
       if(filterLength < 2){
         //this default value need to set before config's value
-        this.allAnySelect.value = 'AND';
+        this._setValutForAllAnySelect('AND');
         html.setStyle(this.allAnySelect.domNode, 'display', 'none');
         html.setStyle(this.oneOrZeroMsg, 'display', 'block');
       }else{

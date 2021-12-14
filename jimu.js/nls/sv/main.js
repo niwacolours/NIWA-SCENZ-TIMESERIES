@@ -121,7 +121,7 @@ define({
     "map": "Hoppa till karta",
     "sidePanel": "Hoppa till sidopanel",
     "attributeTable": "Hoppa till attributtabell",
-    "tabAway": "Tryck på Tabb om du vill fortsätta och lämna appen, eller tryck på Skift och Tabb om du vill gå tillbaka till ${value} i den"
+    "tabAway": "Tryck på Tabb om du vill fortsätta och lämna appen, eller tryck på Skift och Tabb om du vill gå tillbaka in ${value} i den."
   },
   "panelHeader": {
     "foldWindow": "Dölj fönster",

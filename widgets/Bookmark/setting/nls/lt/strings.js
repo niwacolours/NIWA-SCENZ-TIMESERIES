@@ -26,7 +26,7 @@ define({
   "importTitle": "Importuoti žymas",
   "importFromWeb": "Importuoti žymas iš esamo internetinio žemėlapio",
   "selectAll": "Žymėti viską",
-  "noBookmarkInConfig": "Norėdami pridėti žymų, spustelėkite â€œImportuotiâ€ arba â€œKurti naująâ€.",
+  "noBookmarkInConfig": "Norėdami importuoti žymas, spustelėkite „Importuoti“ arba „Kurti naują“.",
   "noBookmarkInWebMap": "Žemėlapyje sukonfigūruotų žymų nėra.",
   "extent": "Aprėptis",
   "saveExtent": "Įrašyti žemėlapio aprėptį į šią žymą",

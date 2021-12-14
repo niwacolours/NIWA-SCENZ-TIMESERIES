@@ -26,7 +26,7 @@ define({
   "importTitle": "Importovat záložky",
   "importFromWeb": "Importovat záložky z aktuální webové mapy",
   "selectAll": "Vybrat vše",
-  "noBookmarkInConfig": "Pro přidání záložek klikněte na Importovat nebo Vytvořit novou.",
+  "noBookmarkInConfig": "Pro vytvoření záložek klikněte na \"Importovat\" nebo \"Vytvořit záložku\".",
   "noBookmarkInWebMap": "V mapě není nakonfigurovaná žádná záložka.",
   "extent": "Rozsah",
   "saveExtent": "Uložit rozsah mapy do této záložky",

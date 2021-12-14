@@ -22,7 +22,7 @@ define({
   "bookmarksFromConfig": "Wstępnie skonfigurowane zakładki",
   "bookmarksFromCache": "Lokalne zakładki tymczasowe",
   "notice": "Uwaga",
-  "changeNoticeTips": "Zmiany zostaną zapisane tylko w pamięci podręcznej przeglądarki. Po wprowadzeniu modyfikacji synchronizacja między widżetem a jego konfiguracją zostanie wyłączona.",
+  "changeNoticeTips": "Zmiany zostaną zapisane tylko w pamięci podręcznej przeglądarki. Po wprowadzeniu modyfikacji synchronizacja między widżetem i jego konfiguracją zostanie wyłączona.",
   "syncNoticeTips": "Spowoduje to usunięcie wszystkich zmian i przywrócenie skonfigurowanych zakładek.",
   "dontShowAgain": "Nie pokazuj ponownie",
   "saveVisibility": "Zapisz widoczność warstwy",

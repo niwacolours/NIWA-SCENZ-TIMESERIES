@@ -26,7 +26,7 @@ define({
   "importTitle": "Uvozi zaznamke",
   "importFromWeb": "Uvozi zaznamke iz trenutne spletne karte",
   "selectAll": "Izberi vse",
-  "noBookmarkInConfig": "Kliknite Uvozi ali Ustvari novo, da dodate nove zaznamke.",
+  "noBookmarkInConfig": "Kliknite \"Uvozi\" ali \"Ustvari novo\", da dodate zaznamke.",
   "noBookmarkInWebMap": "Noben zaznamek ni konfiguriran na karti.",
   "extent": "Obseg",
   "saveExtent": "Shrani obseg karte k temu zaznamku",

@@ -8,6 +8,7 @@
 }
 
 .jimu-widget-filter-setting .content{
+  min-height: 350px;
   position: absolute;
   left: 0;
   right: 2px;
@@ -67,7 +68,7 @@
   max-width: 100%;
   width: 99%;
 }
-  
+
 .jimu-widget-filter-setting .items-list-content{
   position: absolute;
   left: 0;

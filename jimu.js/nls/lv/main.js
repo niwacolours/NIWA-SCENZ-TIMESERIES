@@ -121,7 +121,7 @@ define({
     "map": "Izlaist līdz kartei",
     "sidePanel": "Izlaist līdz sānu panelim",
     "attributeTable": "Izlaist līdz atribūtu tabulai",
-    "tabAway": "Lai turpinātu un izietu no lietotnes, nospiediet taustiņu Tab; lai atgrieztos pie vērtības ${value} lietotnē, nospiediet taustiņu Shift un Tab"
+    "tabAway": "Lai turpinātu un izietu no lietotnes, nospiediet taustiņu Tab; lai atgrieztos pie ${value} lietotnē, nospiediet taustiņu Shift un Tab."
   },
   "panelHeader": {
     "foldWindow": "Aizvērt logu",

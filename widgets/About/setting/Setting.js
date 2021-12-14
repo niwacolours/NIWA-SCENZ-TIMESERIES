@@ -108,7 +108,7 @@ define([
           style: "font-family:Verdana;"
         }, this.editor);
         html.setStyle(this.editor.domNode, {
-          width: '100%',
+          width: '200%',
           height: '100%'
         });
         this.editor.startup();

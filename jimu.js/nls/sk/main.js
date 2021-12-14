@@ -121,7 +121,7 @@ define({
     "map": "Preskočiť na mapu",
     "sidePanel": "Preskočiť na bočný panel",
     "attributeTable": "Preskočiť na tabuľku atribútov",
-    "tabAway": "Stlačením klávesu Tab pokračujete a presuniete sa z aplikácie. Stlačením klávesov Shift a Tab sa vrátite do ${value} v rámci"
+    "tabAway": "Stlačením Tab pokračujete a presuniete sa z aplikácie. Stlačením Shift a Tab sa vrátite do ${value} vnútri."
   },
   "panelHeader": {
     "foldWindow": "Sklopiť okno",

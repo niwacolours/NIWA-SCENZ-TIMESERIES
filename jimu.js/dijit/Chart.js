@@ -56,7 +56,9 @@ define([
       //     type: 'int' | 'float' | 'string',
       //     places: number,
       //     digitSeparator: boolean
-      //   }
+      //   },
+      //   min: number,
+      //   max: number,
       // }
       // "dataLabel":{show:true,textStyle:{}},
       // tooltip: {
@@ -198,7 +200,8 @@ define([
         if (config.type === 'gauge') {
           return this._resetGaugePosition(config);
         }
-        var position = this.chartUtils.getAxisZeroPosition();
+        var type = config.type
+        var position = this.chartUtils.getAxisZeroPosition(type);
         config.layout = this.chartUtils.calcDefaultLayout(config);
         if (this.chartUtils.isAxisChart(config)) {
           option = this.chartUtils.settingGrid(option, config);
@@ -308,7 +311,8 @@ define([
         if (!option || !config) {
           return;
         }
-        var position = this.chartUtils.getAxisZeroPosition();
+        var type = config.type
+        var position = this.chartUtils.getAxisZeroPosition(type);
         option = this.chartUtils.settingDataZoom(option, config, position);
         this.chart.setOption(option);
       },

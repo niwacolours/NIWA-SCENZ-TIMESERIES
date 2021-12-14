@@ -993,12 +993,19 @@ function (declare, lang, array, html, dojoConfig, cookie,
               def.resolve();
             }));
           } else {
+            window.postMessageToSw({type: 'to_sw_credential', credential: credential.toJson()});
             def.resolve();
           }
         }), lang.hitch(this, function() {
+          window.postMessageToSw({type: 'to_sw_no_credential'});
+          window.isCredentialSettled = true;
           def.resolve();
         }));
       }else{
+        // do not support online custom widget for DE
+        window.postMessageToSw({type: 'to_sw_no_credential'});
+        window.isCredentialSettled = true;
+
         if (!tokenUtils.isInBuilderWindow() && !tokenUtils.isInConfigOrPreviewWindow() &&
           this.portalSelf.supportsOAuth && this.rawAppConfig && this.rawAppConfig.appId && !isWebTier) {
           tokenUtils.registerOAuthInfo(portalUrl, this.rawAppConfig.appId);
@@ -1126,7 +1133,7 @@ function (declare, lang, array, html, dojoConfig, cookie,
                 this._addNeedValuesForManifest(manifests[e.uri], e.uri);
                 jimuUtils.widgetJson.addManifest2WidgetJson(e, manifests[e.uri]);
               }else{
-                defs.push(loadWidgetManifest(this.widgetManager, e, config.portalUrl));
+                defs.push(loadWidgetManifest(this.widgetManager, e));
               }
             }
           }));
@@ -1137,7 +1144,7 @@ function (declare, lang, array, html, dojoConfig, cookie,
       }else{
         sharedUtils.visitElement(config, lang.hitch(this, function(e){
           if(!e.widgets && (e.uri || e.itemId)){
-            defs.push(loadWidgetManifest(this.widgetManager, e, config.portalUrl));
+            defs.push(loadWidgetManifest(this.widgetManager, e));
           }
         }));
         all(defs).then(function(){
@@ -1145,58 +1152,20 @@ function (declare, lang, array, html, dojoConfig, cookie,
         });
       }
 
-      function loadWidgetManifest(widgetManager, e, portalUrl){
-        function _doLoadWidgetManifest(e){
-          return widgetManager.loadWidgetManifest(e).then(function(manifest){
-            return manifest;
-          }, function(err){
-            console.log('Widget failed to load, it is removed.', e.name);
+      function loadWidgetManifest(widgetManager, e){
+        return widgetManager.loadWidgetManifest(e).then(function(manifest){
+          return manifest;
+        }, function(err){
+          console.log('Widget failed to load, it is removed.', e.name);
 
-            if(err.stack){
-              console.error(err.stack);
-            }else{
-              //TODO err.code === 400, err.code === 403
-              console.log(err);
-            }
-            deleteUnloadedWidgets(config, e);
-          });
-        }
-
-        if(e.itemId){
-          return portalUtils.getPortal(portalUrl).getItemById(e.itemId).then(function(item){
-            if(isWidgetUsable(item.url)){
-              e.uri = jimuUtils.widgetJson.getUriFromItem(item);
-              return _doLoadWidgetManifest(e);
-            }else{
-              console.log('Widget is not useable, it is removed.', e.name);
-              deleteUnloadedWidgets(config, e);
-            }
-          }, function(err){
-            console.log('Widget is not loaded, it is removed.', e.name, err);
-            deleteUnloadedWidgets(config, e);
-          });
-        }else{
-          return _doLoadWidgetManifest(e);
-        }
-      }
-
-      function isWidgetUsable(/*widgetUrl*/){
-        // if(jimuUtils.isEsriDomain(widgetUrl)){
-        //   return true;
-        // }
-
-        // var credential = tokenUtils.getPortalCredential(config.portalUrl);
-        // if(!credential){
-        //   return false;
-        // }
-
-        // //if user has signed in, because we use the config.portalUrl to get credential, so the user MUST be in this org.
-        // return true;
-
-        //this is for portal only. in portal, as long as user can access the item, use can use the widget.
-        //so return true here.
-        //When online support custom widget, we'll review this code. 20170907
-        return true;
+          if(err.stack){
+            console.error(err.stack);
+          }else{
+            //TODO err.code === 400, err.code === 403
+            console.log(err);
+          }
+          deleteUnloadedWidgets(config, e);
+        });
       }
 
       function deleteUnloadedWidgets(config, e){

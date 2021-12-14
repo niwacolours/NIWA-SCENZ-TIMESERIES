@@ -26,7 +26,7 @@ define({
   "importTitle": "Importa marcadors",
   "importFromWeb": "Importa els marcadors del mapa web actual",
   "selectAll": "Selecciona-ho tot",
-  "noBookmarkInConfig": "Feu clic a \"Importa\" o a \"Crea'n un de nou\" per afegir marcadors.",
+  "noBookmarkInConfig": "Feu clic a “Importa” o “Crea'n un de nou” per afegir marcadors.",
   "noBookmarkInWebMap": "No hi ha cap marcador configurat al mapa.",
   "extent": "Extensió",
   "saveExtent": "Desa l'extensió de mapa en aquest marcador",

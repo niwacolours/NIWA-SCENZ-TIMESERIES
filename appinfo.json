@@ -1,7 +1,7 @@
 {
   "name": "NIWA-SCENZ-TIMESERIES-V02",
   "description": "NIWA-SCENZ timeseries imagery service with all timestep averaging (week, month, season and year) and rendering options for all products.",
-  "createdTime": 1621895227815,
-  "lastUpdated": 1624476590057,
+  "createdTime": 1638990698522,
+  "lastUpdated": 1639340397753,
   "creator": "Mark.Gall@niwa.co.nz"
 }

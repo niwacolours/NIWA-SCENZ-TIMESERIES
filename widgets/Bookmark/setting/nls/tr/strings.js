@@ -26,7 +26,7 @@ define({
   "importTitle": "Yer imlerini içeri aktar",
   "importFromWeb": "Mevcut web haritasından yer imlerini içeri aktar",
   "selectAll": "Tümünü Seç",
-  "noBookmarkInConfig": "Yer imleri eklemek için 'İçeri Aktar' veya 'Oluştur' öğesini tıklat.",
+  "noBookmarkInConfig": "Yer işaretleri eklemek için \"İçe Aktar\" veya \"Yeni Oluştur\" seçeneğine tıklayın.",
   "noBookmarkInWebMap": "Haritada yer imi yapılandırılmadı.",
   "extent": "Yayılım",
   "saveExtent": "Harita uzantısını bu yer imine kaydet",

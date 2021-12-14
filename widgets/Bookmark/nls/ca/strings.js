@@ -22,7 +22,7 @@ define({
   "bookmarksFromConfig": "Marcadors preconfigurats",
   "bookmarksFromCache": "Marcadors temporals locals",
   "notice": "Avís",
-  "changeNoticeTips": "Els canvis es desaran només a la memòria cau del navegador. La sincronització entre el widget i la seva configuració es desconnecta quan feu canvis.",
+  "changeNoticeTips": "Els canvis només es desaran a la memòria cau del navegador. La sincronització entre el widget i la seva configuració es desconnecta quan feu canvis.",
   "syncNoticeTips": "S'esborraran totes les vostres modificacions i es restauraran els marcadors configurats.",
   "dontShowAgain": "No ho tornis a mostrar",
   "saveVisibility": "Desa la visibilitat de la capa",

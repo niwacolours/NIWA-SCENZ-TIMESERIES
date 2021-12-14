@@ -121,7 +121,7 @@ define({
     "map": "Omitere la hartă",
     "sidePanel": "Omitere la panoul lateral",
     "attributeTable": "Omitere la tabel de atribute",
-    "tabAway": "Apăsați tasta Tab pentru a continua și ieși din aplicație, apăsați tastele Shift și Tab pentru a reveni la ${value} din cadrul intervalului"
+    "tabAway": "Apăsați tasta Tab pentru a continua și a ieși din aplicație, apăsați Shift și Tab pentru a reveni în interiorul ${value}."
   },
   "panelHeader": {
     "foldWindow": "Pliere fereastră",

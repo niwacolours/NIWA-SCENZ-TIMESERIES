@@ -113,7 +113,7 @@ domClass, focusUtil, jimuUtils, Search) {
       return this.isValid && this.layerInfoIsExpandStatus[layerInfo.id];
     },
 
-    cancelFilter: function() {
+    cancelFilter: function(needToFocusOnNextDom) {
       this.isValid = false;
       if(this.layerFilterInput.inputSearch.value) {
         this.layerFilterInput.inputSearch.value = "";
@@ -122,7 +122,9 @@ domClass, focusUtil, jimuUtils, Search) {
       domClass.remove(this.searchButton, 'invalid');
       domClass.add(this.searchInputNode, 'invalid');
       domClass.add(this.cancelButton, 'invalid');
-      focusUtil.focus(this.searchButton);
+      if(needToFocusOnNextDom) {
+        focusUtil.focus(this.searchButton);
+      }
     },
 
     hideFilter: function() {
@@ -152,7 +154,7 @@ domClass, focusUtil, jimuUtils, Search) {
     },
 
     _onCancelBtnClick: function() {
-      this.cancelFilter();
+      this.cancelFilter(true);
     },
 
     _onClearInputButton: function() {

@@ -121,7 +121,7 @@ define({
     "map": "Pular para Mapa",
     "sidePanel": "Pular para Painel Lateral",
     "attributeTable": "Pular para Tabela de Atributos",
-    "tabAway": "Pressione Tab para continuar e sair do aplicativo, pressione Shift e Tab para voltar para ${value} em"
+    "tabAway": "Pressione Tab para continuar e sair do aplicativo, pressione Shift e Tab para voltar ao interior ${value}."
   },
   "panelHeader": {
     "foldWindow": "Dobrar janela",
@@ -622,7 +622,7 @@ define({
   "widgetManager": {
     "createWidgetError": "Erro ao Criar widget",
     "createWidgetSettingPageError": "Erro da página de configuração Criar widget",
-    "loadWidgetResourceError": "Erro do recurso Carregar widget"
+    "loadWidgetResourceError": "Carregar erro de recurso do widget"
   },
   "shareOptions": {
     "shareMap": "Escolha quem pode visualizar este aplicativo",
