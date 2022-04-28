@@ -3,16 +3,16 @@
   "displayName": "SCENZ_Timeseries_MO_Export",
   "description": "SCENZ_Timeseries_SE_Export using all Input Parameters: uses the Sampling tool on a Multidimensional CRF raster for monthly timeseries (Seasonal) to export a table for an input area of pixels",
   "category": "",
-  "helpUrl": "https://gis.niwa.co.nz/raster/rest/directories/arcgisoutput/SCENZ/SCENZ_Timeseries_Export_GPServer/SCENZ_SCENZ_Timeseries_Export/SCENZTimeseriesMOExport.htm",
+  "helpUrl": "https://gistest.niwa.co.nz/rasteranalytics/rest/directories/arcgisoutput/SCENZ/SCENZTimeseriesMOExport_GPServer/SCENZ_SCENZTimeseriesMOExport/SCENZTimeseriesMOExport.htm",
   "serverInfo": {
-    "currentVersion": 10.81,
-    "url": "https://gis.niwa.co.nz/raster/rest/services/SCENZ/SCENZ_Timeseries_Export/GPServer/",
+    "currentVersion": 10.91,
+    "url": "https://gistest.niwa.co.nz/rasteranalytics/rest/services/SCENZ/SCENZTimeseriesMOExport/GPServer",
     "hasResultMapServer": false,
     "resultMapServerName": "",
     "supportsUpload": false
   },
   "useResultMapServer": false,
-  "taskUrl": "https://gis.niwa.co.nz/raster/rest/services/SCENZ/SCENZ_Timeseries_Export/GPServer/SCENZ_Timeseries_MO_Export",
+  "taskUrl": "https://gistest.niwa.co.nz/rasteranalytics/rest/services/SCENZ/SCENZTimeseriesMOExport/GPServer/SCENZTimeseriesMOExport",
   "isSynchronous": false,
   "inputParams": [
     {
