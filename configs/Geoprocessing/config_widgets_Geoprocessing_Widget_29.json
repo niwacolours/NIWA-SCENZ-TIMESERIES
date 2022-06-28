@@ -19,7 +19,17 @@
       "name": "PolygonInput",
       "dataType": "GPFeatureRecordSetLayer",
       "description": "Input Polygon",
-      "defaultValue": {},
+      "defaultValue": {
+        "displayFieldName": "",
+        "hasZ": false,
+        "geometryType": "esriGeometryPolygon",
+        "spatialReference": {
+          "wkid": 2193,
+          "latestWkid": 2193
+        },
+        "features": [],
+        "exceededTransferLimit": false
+      },
       "category": "",
       "label": "Use eDraw widget (highlight polygon - turns blue; select three dots for input)",
       "visible": true,
