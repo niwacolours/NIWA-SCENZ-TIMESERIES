@@ -16,7 +16,7 @@
   "isSynchronous": false,
   "inputParams": [
     {
-      "name": "PolygonInput",
+      "name": "inputAreaPolygon",
       "dataType": "GPFeatureRecordSetLayer",
       "description": "Input Polygon",
       "defaultValue": {
