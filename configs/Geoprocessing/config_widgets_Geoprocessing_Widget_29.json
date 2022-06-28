@@ -21,11 +21,11 @@
       "description": "input Area - user to draw on screen",
       "defaultValue": {},
       "category": "",
-      "label": "inputAreaPolygon",
-      "visible": true,
-      "required": true,
-      "featureSetMode": "draw",
-      "tooltip": "inputAreaPolygon"
+      "label": "Use eDraw widget (highlight polygon - turns blue; select three dots for input)",
+        "visible": true,
+        "required": true,
+        "featureSetMode": "layers",
+        "tooltip": "PolygonInput"
     }
   ],
   "outputParams": [
