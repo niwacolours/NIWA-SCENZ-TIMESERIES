@@ -1,7 +1,7 @@
 {
-  "name": "TEST2ExportTimeSeriesMOwInputviaPythonScriptB2",
-  "displayName": "TEST2ExportTimeSeriesMOwInputviaPythonScript_B2",
-  "description": "",
+  "name": "SCENZTimeseriesMOExport",
+  "displayName": "SCENZ_Timeseries_MO_Export",
+  "description": "SCENZ_Timeseries_MO_Export using all Input Parameters: uses the Sampling tool on a Multidimensional CRF raster for monthly timeseries (Seasonal) to export a table for an input area of pixels",
   "category": "",
   "helpUrl": "https://gistest.niwa.co.nz/rasteranalytics/rest/directories/arcgisoutput/15_SCENZ/SCENZ_pixel_export_June22_GISTEST_L_GPServer/15_SCENZ_SCENZ_pixel_export_June22_GISTEST_L/TEST2ExportTimeSeriesMOwInputviaPythonScriptB2.htm",
   "serverInfo": {
