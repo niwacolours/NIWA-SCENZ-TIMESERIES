@@ -29,9 +29,9 @@
         },
         "fields": [
           {
-            "name": "OBJECTID",
+            "name": "OID",
             "type": "esriFieldTypeOID",
-            "alias": "OBJECTID"
+            "alias": "OID"
           }
         ],
         "features": [],
