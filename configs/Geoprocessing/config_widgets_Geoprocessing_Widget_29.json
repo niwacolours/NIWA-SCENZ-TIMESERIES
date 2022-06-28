@@ -1,51 +1,114 @@
 {
   "name": "SCENZTimeseriesMOExport",
   "displayName": "SCENZ_Timeseries_MO_Export",
-  "description": "SCENZ_Timeseries_MO_Export using all Input Parameters: uses the Sampling tool on a Multidimensional CRF raster for monthly timeseries (Seasonal) to export a table for an input area of pixels",
+  "description": "SCENZ_Timeseries_SE_Export using all Input Parameters: uses the Sampling tool on a Multidimensional CRF raster for monthly timeseries (Seasonal) to export a table for an input area of pixels",
   "category": "",
-  "helpUrl": "https://gistest.niwa.co.nz/rasteranalytics/rest/directories/arcgisoutput/15_SCENZ/SCENZ_pixel_export_June22_GISTEST_L_GPServer/15_SCENZ_SCENZ_pixel_export_June22_GISTEST_L/TEST2ExportTimeSeriesMOwInputviaPythonScriptB2.htm",
+  "helpUrl": "https://gis.niwa.co.nz/raster/rest/directories/arcgisoutput/SCENZ/SCENZ_Timeseries_Export_GPServer/SCENZ_SCENZ_Timeseries_Export/SCENZTimeseriesMOExport.htm",
   "serverInfo": {
-    "currentVersion": 10.91,
-    "url": "https://gistest.niwa.co.nz/rasteranalytics/rest/services/15_SCENZ/SCENZ_pixel_export_June22_GISTEST_L/GPServer/",
+    "currentVersion": 10.81,
+    "url": "https://gis.niwa.co.nz/raster/rest/services/SCENZ/SCENZ_Timeseries_Export/GPServer/",
     "hasResultMapServer": false,
     "resultMapServerName": "",
     "supportsUpload": false
   },
   "useResultMapServer": false,
-  "taskUrl": "https://gistest.niwa.co.nz/rasteranalytics/rest/services/15_SCENZ/SCENZ_pixel_export_June22_GISTEST_L/GPServer/TEST2ExportTimeSeriesMOwInputviaPythonScript_B2",
+  "taskUrl": "https://gis.niwa.co.nz/raster/rest/services/SCENZ/SCENZ_Timeseries_Export/GPServer/SCENZ_Timeseries_MO_Export",
   "isSynchronous": false,
   "inputParams": [
     {
-      "name": "inputAreaPolygon",
+      "name": "PolygonInput",
       "dataType": "GPFeatureRecordSetLayer",
-      "description": "input Area - user to draw on screen",
-      "defaultValue": {},
+      "description": "Input Polygon",
+      "defaultValue": {
+        "displayFieldName": "",
+        "hasZ": true,
+        "geometryType": "esriGeometryPolygon",
+        "spatialReference": {
+          "wkid": 2193,
+          "latestWkid": 2193
+        },
+        "fields": [
+          {
+            "name": "OBJECTID",
+            "type": "esriFieldTypeOID",
+            "alias": "OBJECTID"
+          },
+          {
+            "name": "Name",
+            "type": "esriFieldTypeString",
+            "alias": "Name",
+            "length": 255
+          },
+          {
+            "name": "Text",
+            "type": "esriFieldTypeString",
+            "alias": "Text",
+            "length": 255
+          },
+          {
+            "name": "IntegerValue",
+            "type": "esriFieldTypeInteger",
+            "alias": "IntegerValue"
+          },
+          {
+            "name": "DoubleValue",
+            "type": "esriFieldTypeDouble",
+            "alias": "DoubleValue"
+          },
+          {
+            "name": "DateTime",
+            "type": "esriFieldTypeDate",
+            "alias": "DateTime",
+            "length": 8
+          },
+          {
+            "name": "Shape_Length",
+            "type": "esriFieldTypeDouble",
+            "alias": "Shape_Length"
+          },
+          {
+            "name": "Shape_Area",
+            "type": "esriFieldTypeDouble",
+            "alias": "Shape_Area"
+          }
+        ],
+        "features": [],
+        "exceededTransferLimit": false
+      },
       "category": "",
       "label": "Use eDraw widget (highlight polygon - turns blue; select three dots for input)",
-        "visible": true,
-        "required": true,
-        "featureSetMode": "layers",
-        "tooltip": "PolygonInput"
+      "visible": true,
+      "required": true,
+      "featureSetMode": "layers",
+      "tooltip": "PolygonInput"
+    },
+    {
+      "name": "esri_out_feature_service_name",
+      "dataType": "GPString",
+      "description": "The name of the optional feature service to create on the federated server containing the result of this tool. If no name is specified an output feature service will not be created.",
+      "defaultValue": null,
+      "category": "",
+      "label": "Output Feature Service Name",
+      "visible": false,
+      "required": false,
+      "tooltip": "Output Feature Service Name"
     }
   ],
   "outputParams": [
     {
-      "name": "outputFile",
+      "name": "Name_for_CSV_file",
       "dataType": "GPDataFile",
       "description": "",
       "defaultValue": null,
       "category": "",
-      "label": "outputFile",
+      "label": "Name_for_CSV_file",
       "visible": true,
-      "required": false,
-      "tooltip": "outputFile",
-      "ignore": false,
-      "layerInvisible": true
+      "required": false
     }
   ],
   "shareResults": false,
   "layerOrder": [
-    "inputAreaPolygon"
+    "PolygonInput"
   ],
   "showExportButton": false
 }
