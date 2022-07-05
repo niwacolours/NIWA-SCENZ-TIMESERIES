@@ -2,7 +2,7 @@
   "name": "SCENZTimeseriesMOExport",
   "displayName": "SCENZ_Timeseries_MO_Export",
   "description": "SCENZ_Timeseries_MO_Export using all Input Parameters: uses the Sampling tool on a Multidimensional CRF raster for monthly timeseries  to export a table for an input area of pixels",
-  "category": "oceans",
+  "category": "Oceans",
   "helpUrl": "https://gis.niwa.co.nz/rasteranalytics/rest/directories/arcgisoutput/15_SCENZ/SCENZ_export_multiTime_MO_GIS_GPServer/15_SCENZ_SCENZ_export_multiTime_MO_GIS/ExportTimeseriesMOwInputviaPythonScriptB2.htm",
   "serverInfo": {
     "currentVersion": 10.91,

@@ -2,7 +2,7 @@
   "name": "SCENZTimeseriesSEExport",
   "displayName": "SCENZ_Timeseries_SE_Export",
   "description": "SCENZTestModel2 using all Input Parameters: uses the Sampling tool on a Multidimensional CRF raster for seasonal tiemseries to export a table for an input area of pixels",
-  "category": "oceans",
+  "category": "Oceans",
   "helpUrl": "https://gis.niwa.co.nz/rasteranalytics/rest/directories/arcgisoutput/15_SCENZ/SCENZ_export_multiTime_MO_GIS_GPServer/15_SCENZ_SCENZ_export_multiTime_MO_GIS/ExportTimeseriesSEwInputviaPythonScriptB2.htm",
   "serverInfo": {
     "currentVersion": 10.91,
