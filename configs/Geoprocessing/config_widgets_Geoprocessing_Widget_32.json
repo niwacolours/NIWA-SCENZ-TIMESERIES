@@ -1,18 +1,18 @@
 {
-  "name": "SCENZTimeseriesYRExport2",
+  "name": "SCENZTimeseriesYRExport",
   "displayName": "SCENZ_Timeseries_YR_Export",
   "description": "SCENZTestModel2 using all Input Parameters: uses the Sampling tool on a Multidimensional CRF raster for monthly climatologies to export a table for an input area of pixels",
   "category": "",
-  "helpUrl": "https://gistest.niwa.co.nz/rasteranalytics/rest/directories/arcgisoutput/15_SCENZ/SCENZ_export_multiTime_MO_GISTEST_GPServer/15_SCENZ_SCENZ_export_multiTime_MO_GISTEST/ExportTimeseriesYRwInputviaPythonScriptB2.htm",
+  "helpUrl": "https://gistest.niwa.co.nz/rasteranalytics/rest/directories/arcgisoutput/15_SCENZ/SCENZ_export_multiTime_MO_V3_GISTEST_GPServer/15_SCENZ_SCENZ_export_multiTime_MO_V3_GISTEST/ExportTimeseriesYRwInputviaPythonScriptB2.htm",
   "serverInfo": {
-    "currentVersion": 10.81,
-    "url": "https://gistest.niwa.co.nz/rasteranalytics/rest/services/15_SCENZ/SCENZ_export_multiTime_MO_GISTEST/GPServer",
+    "currentVersion": 10.91,
+    "url": "https://gistest.niwa.co.nz/rasteranalytics/rest/services/15_SCENZ/SCENZ_export_multiTime_MO_V3_GISTEST/GPServer",
     "hasResultMapServer": false,
     "resultMapServerName": "",
     "supportsUpload": false
   },
   "useResultMapServer": false,
-  "taskUrl": "https://gistest.niwa.co.nz/rasteranalytics/rest/services/15_SCENZ/SCENZ_export_multiTime_MO_GISTEST/GPServer/ExportTimeseriesYRwInputviaPythonScriptB2",
+  "taskUrl": "https://gistest.niwa.co.nz/rasteranalytics/rest/services/15_SCENZ/SCENZ_export_multiTime_MO_V3_GISTEST/GPServer/ExportTimeseriesYRwInputviaPythonScriptB2",
   "isSynchronous": false,
   "inputParams": [
     {
