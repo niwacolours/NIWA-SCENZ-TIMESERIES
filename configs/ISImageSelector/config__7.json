@@ -2,7 +2,7 @@
   "display": "slider",
   "zoomLevel": 0,
   "searchExtent": 75,
-  "autoRefresh": false,
+  "autoRefresh": true,
   "listImagesSeparate": "off",
   "NIWA_SCENZ_TIMESERIES_V02_1878": {
     "imageField": "StdTime",
