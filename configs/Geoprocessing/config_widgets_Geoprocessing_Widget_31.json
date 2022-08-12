@@ -1,18 +1,18 @@
 {
   "name": "SCENZTimeseriesSEExport",
   "displayName": "SCENZ_Timeseries_SE_Export",
-  "description": "SCENZTestModel2 using all Input Parameters: uses the Sampling tool on a Multidimensional CRF raster for seasonal tiemseries to export a table for an input area of pixels",
-  "category": "Oceans",
-  "helpUrl": "https://gis.niwa.co.nz/rasteranalytics/rest/directories/arcgisoutput/15_SCENZ/SCENZ_export_multiTime_MO_GIS_GPServer/15_SCENZ_SCENZ_export_multiTime_MO_GIS/ExportTimeseriesSEwInputviaPythonScriptB2.htm",
+  "description": "SCENZ Timeseries SE Export using all Input Parameters: uses the Sampling tool on a Multidimensional CRF raster for seasonal climatologies to export a table for an input area of pixels",
+  "category": "",
+  "helpUrl": "https://gis.niwa.co.nz/rasteranalytics/rest/directories/arcgisoutput/15_SCENZ/SCENZ_export_multiTime_MO_V3_GIS_GPServer/15_SCENZ_SCENZ_export_multiTime_MO_V3_GIS/ExportTimeseriesSEwInputviaPythonScriptB2.htm",
   "serverInfo": {
     "currentVersion": 10.91,
-    "url": "https://gis.niwa.co.nz/rasteranalytics/rest/services/15_SCENZ/SCENZ_export_multiTime_MO_GIS/GPServer",
+    "url": "https://gis.niwa.co.nz/rasteranalytics/rest/services/15_SCENZ/SCENZ_export_multiTime_MO_V3_GIS/GPServer",
     "hasResultMapServer": false,
     "resultMapServerName": "",
     "supportsUpload": false
   },
   "useResultMapServer": false,
-  "taskUrl": "https://gis.niwa.co.nz/rasteranalytics/rest/services/15_SCENZ/SCENZ_export_multiTime_MO_GIS/GPServer/ExportTimeseriesSEwInputviaPythonScriptB2",
+  "taskUrl": "https://gis.niwa.co.nz/rasteranalytics/rest/services/15_SCENZ/SCENZ_export_multiTime_MO_V3_GIS/GPServer/ExportTimeseriesSEwInputviaPythonScriptB2",
   "isSynchronous": false,
   "inputParams": [
     {
