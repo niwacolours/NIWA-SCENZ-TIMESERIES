@@ -374,7 +374,7 @@
     ],
     "groups": [
       {
-        "label": "Export (polygon input from eDraw):  A series of geo-processing tools which extract all products, from all layers (dates from mid-2002 - present), for all pixels within the polygon input area (eDraw). “Run” for appropriate timestep. When completed a link appears in the output tab. Selecting the link will download a file “*.csv” to your computer. Rename the file and use for further analysis in other software. Monthly timestep extractions can be analysed further on the Shiny-SCENZ (Monthly) tab on the main NIWA-SCENZ website.  The time to download will depend on the size of the polygon and may “fail” if too large. Be patient.",
+        "label": " Export (polygon input from eDraw):  A series of geo-processing tools which extract all products, from all layers (dates from mid-2002 - present), for all pixels within the polygon input area (eDraw). “Run” for appropriate timestep. When completed a link appears in the output tab. Selecting the link will download a file “*.csv” to your computer by opening a browser. If this dosn't happen automatically and says \"about:blank\", go to the address bar, select and hit enter. Rename the file and use for further analysis in other software. Monthly timestep extractions can be analysed further on the Shiny-SCENZ (Monthly) tab on the main NIWA-SCENZ website.  The time to download will depend on the size of the polygon and may “fail” if too large. Be patient.",
         "widgets": [
           {
             "name": "Geoprocessing",
