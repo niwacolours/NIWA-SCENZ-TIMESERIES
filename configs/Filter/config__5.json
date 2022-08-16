@@ -9,7 +9,7 @@
   "filters": [
     {
       "layerId": "NIWA_SCENZ_TIMESERIES_V02_6935",
-      "url": "https://gis.niwa.co.nz/raster/rest/services/SCENZ/NIWA_SCENZ_TIMESERIES_V02/ImageServer",
+      "url": "https://gis.niwa.co.nz/raster/rest/services//SCENZ/PROD_V3_All_TIMESERIES_ref/ImageServer",
       "name": "Product (toggle on/off if no image)",
       "filter": {
         "logicalOperator": "AND",
@@ -56,6 +56,11 @@
                 {
                   "value": "KPAR",
                   "alias": "KPAR",
+                  "isChecked": false
+                },
+                {
+                  "value": "PAR",
+                  "alias": "PAR",
                   "isChecked": false
                 },
                 {
@@ -127,7 +132,7 @@
     },
     {
       "layerId": "NIWA_SCENZ_TIMESERIES_V02_6935",
-      "url": "https://gis.niwa.co.nz/raster/rest/services/SCENZ/NIWA_SCENZ_TIMESERIES_V02/ImageServer",
+      "url": "https://gis.niwa.co.nz/raster/rest/services//SCENZ/PROD_V3_All_TIMESERIES_ref/ImageServer",
       "name": "Timestep",
       "filter": {
         "logicalOperator": "AND",
@@ -147,8 +152,8 @@
               "type": "uniquePredefined",
               "value": [
                 {
-                  "value": "7DTimeseries",
-                  "alias": "7DTimeseries",
+                  "value": "7DayTimeseries",
+                  "alias": "7DayTimeseries",
                   "isChecked": false
                 },
                 {
@@ -215,7 +220,7 @@
     },
     {
       "layerId": "NIWA_SCENZ_TIMESERIES_V02_6935",
-      "url": "https://gis.niwa.co.nz/raster/rest/services/SCENZ/NIWA_SCENZ_TIMESERIES_V02/ImageServer",
+      "url": "https://gis.niwa.co.nz/raster/rest/services//SCENZ/PROD_V3_All_TIMESERIES_ref/ImageServer",
       "name": "Year",
       "filter": {
         "logicalOperator": "AND",
@@ -232,7 +237,7 @@
             "valueObj": {
               "isValid": true,
               "type": "value",
-              "value": "2021"
+              "value": "2022"
             },
             "interactiveObj": {
               "prompt": "Year is",
@@ -240,12 +245,12 @@
               "cascade": "none"
             },
             "caseSensitive": false,
-            "displaySQL": "UPPER(Year) = '2021'",
-            "expr": "UPPER(Year) = '2021'"
+            "displaySQL": "UPPER(Year) = '2022'",
+            "expr": "UPPER(Year) = '2022'"
           }
         ],
-        "expr": "UPPER(Year) = '2021'",
-        "displaySQL": "UPPER(Year) = '2021'"
+        "expr": "UPPER(Year) = '2022'",
+        "displaySQL": "UPPER(Year) = '2022'"
       },
       "icon": null,
       "enableMapFilter": true,
@@ -279,7 +284,7 @@
     },
     {
       "layerId": "NIWA_SCENZ_TIMESERIES_V02_6935",
-      "url": "https://gis.niwa.co.nz/raster/rest/services/SCENZ/NIWA_SCENZ_TIMESERIES_V02/ImageServer",
+      "url": "https://gis.niwa.co.nz/raster/rest/services//SCENZ/PROD_V3_All_TIMESERIES_ref/ImageServer",
       "name": "Month",
       "filter": {
         "logicalOperator": "AND",
