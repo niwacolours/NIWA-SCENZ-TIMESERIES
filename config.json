@@ -29,7 +29,8 @@
     "niwa.maps.arcgis.com",
     "gistest.niwa.co.nz",
     "arcedevportal.niwa.local",
-    "services.arcgis.com"
+    "services.arcgis.com",
+    "utility.arcgisonline.com"
   ],
   "title": "NIWA-SCENZ-TIMESERIES",
   "subtitle": "<div class=\"attribute-custom-style\"><br></div>",
@@ -270,7 +271,7 @@
       "right": 0,
       "bottom": 0
     },
-    "itemId": "d03abfb000b341af9a73c8e5b5404e7d",
+    "itemId": "83e807ae77ec46a0807067a6892678ed",
     "mapOptions": {},
     "id": "map",
     "portalUrl": "https://gis.niwa.co.nz/portal",
