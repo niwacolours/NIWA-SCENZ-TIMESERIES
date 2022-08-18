@@ -1,5 +1,5 @@
 {
-  "display": "slider",
+  "display": "both",
   "zoomLevel": 0,
   "searchExtent": 75,
   "autoRefresh": true,

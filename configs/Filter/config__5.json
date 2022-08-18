@@ -237,7 +237,7 @@
             "valueObj": {
               "isValid": true,
               "type": "value",
-              "value": "2022"
+              "value": "2021"
             },
             "interactiveObj": {
               "prompt": "Year is",
@@ -245,12 +245,12 @@
               "cascade": "none"
             },
             "caseSensitive": false,
-            "displaySQL": "UPPER(Year) = '2022'",
-            "expr": "UPPER(Year) = '2022'"
+            "displaySQL": "UPPER(Year) = '2021'",
+            "expr": "UPPER(Year) = '2021'"
           }
         ],
-        "expr": "UPPER(Year) = '2022'",
-        "displaySQL": "UPPER(Year) = '2022'"
+        "expr": "UPPER(Year) = '2021'",
+        "displaySQL": "UPPER(Year) = '2021'"
       },
       "icon": null,
       "enableMapFilter": true,
