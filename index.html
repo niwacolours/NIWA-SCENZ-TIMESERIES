@@ -1,5 +1,6 @@
 <!DOCTYPE HTML>
 <html>
+
 <head>
   <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
@@ -14,6 +15,7 @@
     * {
       box-sizing: border-box;
     }
+
     body,
     html {
       width: 100%;
@@ -22,103 +24,118 @@
       padding: 0;
       overflow: hidden;
     }
+
     #main-loading {
       width: 100%;
       height: 100%;
       text-align: center;
       overflow: hidden;
     }
+
     #main-page {
       display: none;
       width: 100%;
       height: 100%;
       position: relative;
     }
+
     #jimu-layout-manager {
       width: 100%;
       height: 100%;
       position: absolute;
     }
 
-    #unsupported-browser-message{
-        width: 100%;
-        height: 100%;
-        position: absolute;
-        left: 0;
-        top: 0;
-        background: rgba(0,0,0,0.6);
+    #unsupported-browser-message {
+      width: 100%;
+      height: 100%;
+      position: absolute;
+      left: 0;
+      top: 0;
+      background: rgba(0, 0, 0, 0.6);
 
-        display: none;
-        align-items: center;
-        justify-content: center;
-        z-index: 1000;
-      }
+      display: none;
+      align-items: center;
+      justify-content: center;
+      z-index: 1000;
+    }
 
-      .browser-message {
-        width: 700px;
-        max-width: 100%;
-        max-height: 100%;
-        overflow-y: auto;
-        background: #fff;
-        color: #333;
-        text-align: center;
-        padding: 1rem;
-      }
+    .browser-message {
+      width: 700px;
+      max-width: 100%;
+      max-height: 100%;
+      overflow-y: auto;
+      background: #fff;
+      color: #333;
+      text-align: center;
+      padding: 1rem;
+    }
 
-      .browser-button-container {
-        display: flex;
-        justify-content: flex-end;
-      }
-      .browser-button-container button{
-        cursor: pointer;
-        border: none;
-        background: transparent;
-      }
+    .browser-button-container {
+      display: flex;
+      justify-content: flex-end;
+    }
 
-      .browser-button-container img{
-        width: 20px;
-        height: 20px;
-      }
+    .browser-button-container button {
+      cursor: pointer;
+      border: none;
+      background: transparent;
+    }
 
-      .browser-message-title {
-        color: #002625;
-        font-weight: 300;
-        margin: 1.5rem auto;
-        font-size: 2.5rem;
-        line-height: 2rem;
-      }
+    .browser-button-container img {
+      width: 20px;
+      height: 20px;
+    }
 
-      .browser-message-content {
-        color: #3d6665;
-        font-weight: 400;
-        font-size: 1.1rem;
-        line-height: 2rem;
-      }
+    .browser-message-title {
+      color: #002625;
+      font-weight: 300;
+      margin: 1.5rem auto;
+      font-size: 2.5rem;
+      line-height: 2rem;
+    }
 
-      #browser-logo-list {
-        display: flex;
-        align-items: center;
-        margin: 2rem 1rem 0 1rem;
-        padding: 0;
-      }
+    .browser-message-content {
+      color: #3d6665;
+      font-weight: 400;
+      font-size: 1.1rem;
+      line-height: 2rem;
+    }
 
-      .browser-logo {
-        display: inline-block;
-        margin: 0 auto;
-      }
+    #browser-logo-list {
+      display: flex;
+      align-items: center;
+      margin: 2rem 1rem 0 1rem;
+      padding: 0;
+    }
 
+    .browser-logo {
+      display: inline-block;
+      margin: 0 auto;
+    }
+
+    .browser-logo img {
+      width: 3rem;
+      height: auto;
+    }
+
+    @media (min-width:700px) {
       .browser-logo img {
-        width: 3rem;
-        height: auto;
+        width: 4rem;
       }
-
-      @media (min-width:700px) {
-        .browser-logo img {
-          width: 4rem;
-        }
-      }
+    }
   </style>
   <link rel="stylesheet" type="text/css" href="configs/loading/loading.css" />
+
+  <!-- Google tag (gtag.js) -->
+  <script async src="https://www.googletagmanager.com/gtag/js?id=G-KW4GRLDHNK"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag() { dataLayer.push(arguments); }
+    gtag('js', new Date());
+
+    gtag('config', 'G-KW4GRLDHNK');
+  </script>
+
   <script>
     /*******************************
      * This is the function you can modify to customize the loading page
@@ -184,10 +201,14 @@
       <p class="browser-message-content" id="message-content-2"></p>
       <p class="browser-message-content" id="message-content-3"></p>
       <ul id="browser-logo-list">
-        <li class="browser-logo"><a href="https://www.google.com/chrome/"><img alt="Chrome" src="./browser-message/chrome.png"></a></li>
-        <li class="browser-logo"><a href="https://www.mozilla.org/firefox/"><img alt="Firefox" src="./browser-message/firefox.png"></a></li>
-        <li class="browser-logo"><a href="https://www.apple.com/safari/"><img alt="Safari" src="./browser-message/safari.png"></a></li>
-        <li class="browser-logo"><a href="https://www.microsoft.com/edge"><img alt="Edge" src="./browser-message/edge.png"></a></li>
+        <li class="browser-logo"><a href="https://www.google.com/chrome/"><img alt="Chrome"
+              src="./browser-message/chrome.png"></a></li>
+        <li class="browser-logo"><a href="https://www.mozilla.org/firefox/"><img alt="Firefox"
+              src="./browser-message/firefox.png"></a></li>
+        <li class="browser-logo"><a href="https://www.apple.com/safari/"><img alt="Safari"
+              src="./browser-message/safari.png"></a></li>
+        <li class="browser-logo"><a href="https://www.microsoft.com/edge"><img alt="Edge"
+              src="./browser-message/edge.png"></a></li>
       </ul>
     </div>
   </div>
