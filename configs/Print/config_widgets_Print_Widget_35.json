@@ -1,9 +1,0 @@
-{
-  "serviceURL": "https://utility.arcgisonline.com/arcgis/rest/services/Utilities/PrintingTools/GPServer/Export%20Web%20Map%20Task",
-  "defaultTitle": "NIWA-SCENZ-TIMESERIES",
-  "defaultAuthor": "NIWA",
-  "defaultCopyright": "Copyright, NIWA. All rights reserved.",
-  "defaultFormat": "PDF",
-  "defaultLayout": "MAP_ONLY",
-  "copyrightEditable": true
-}
