@@ -1,25 +1,79 @@
 {
   "display": "both",
-  "zoomLevel": 0,
+  "zoomLevel": 1,
   "searchExtent": 75,
-  "autoRefresh": true,
-  "listImagesSeparate": "off",
-  "NIWA_SCENZ_TIMESERIES_V02_1878": {
+  "autoRefresh": false,
+  "listImagesSeparate": true,
+  "NIWA_SCENZ_CLIMATOLOGIES_V02_5742": {
     "imageField": "StdTime",
     "objectID": "OBJECTID",
     "category": "Category",
-    "title": "Product"
+    "title": "HVIS Climatology"
   },
-  "secondaryLayer": {
-    "imageField": "",
+  "PROD_V3_All_TIMESERIES_ref_129_5782_9129_8335_7188_5564_7179_275_9912_912_9856": {
+    "imageField": "ProductName",
     "objectID": "OBJECTID",
     "category": "Category",
-    "title": "Product"
+    "title": "TSS (g/m3)"
   },
-  "NIWA_SCENZ_TIMESERIES_V02_6935": {
-    "imageField": "StdTime",
+  "PROD_V3_All_TIMESERIES_ref_129_5782_9129_8335_7188_5564_7179_275_9912_912": {
+    "imageField": "ProductName",
     "objectID": "OBJECTID",
     "category": "Category",
-    "title": "Product"
+    "title": "SST (dC)"
+  },
+  "PROD_V3_All_TIMESERIES_ref_129_5782_9129_8335_7188_5564_7179_275_9912": {
+    "imageField": "ProductName",
+    "objectID": "OBJECTID",
+    "category": "Category",
+    "title": "SEC (m)"
+  },
+  "PROD_V3_All_TIMESERIES_ref_129_5782_9129_8335_7188_5564_7179_275": {
+    "imageField": "ProductName",
+    "objectID": "OBJECTID",
+    "category": "Category",
+    "title": "POB (0-1)"
+  },
+  "PROD_V3_All_TIMESERIES_ref_129_5782_9129_8335_7188_5564_7179": {
+    "imageField": "ProductName",
+    "objectID": "OBJECTID",
+    "category": "Category",
+    "title": "PAR (M/m2/day)"
+  },
+  "PROD_V3_All_TIMESERIES_ref_129_5782_9129_8335_7188_5564": {
+    "imageField": "ProductName",
+    "objectID": "OBJECTID",
+    "category": "Category",
+    "title": "KPAR (M/m2/day)"
+  },
+  "PROD_V3_All_TIMESERIES_ref_129_5782_9129_8335_7188": {
+    "imageField": "ProductName",
+    "objectID": "OBJECTID",
+    "category": "Category",
+    "title": "HVIS (/m)"
+  },
+  "PROD_V3_All_TIMESERIES_ref_129_5782_9129_8335": {
+    "imageField": "ProductName",
+    "objectID": "OBJECTID",
+    "category": "Category",
+    "title": "EBED (M/m2/day)"
+  },
+  "PROD_V3_All_TIMESERIES_ref_129_5782_9129": {
+    "imageField": "ProductName",
+    "objectID": "OBJECTID",
+    "category": "Category",
+    "title": "CHL (mg/m3)"
+  },
+  "PROD_V3_All_TIMESERIES_ref_129_5782": {
+    "imageField": "ProductName",
+    "objectID": "OBJECTID",
+    "category": "Category",
+    "title": "BBP (/m)"
+  },
+  "PROD_V3_All_TIMESERIES_ref_129": {
+    "imageField": "ProductName",
+    "objectID": "OBJECTID",
+    "category": "Category",
+    "title": "ADET (/m)"
   }
 }

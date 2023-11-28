@@ -21,10 +21,10 @@
     "defaultScope": "MyOrganization"
   },
   "addFromUrl": {
-    "allow": true
+    "allow": false
   },
   "addFromFile": {
-    "allow": true,
+    "allow": false,
     "maxRecordCount": 1000
   }
 }

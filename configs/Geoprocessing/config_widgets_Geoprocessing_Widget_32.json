@@ -1,12 +1,12 @@
 {
-  "name": "SCENZTimeseriesYRExport",
-  "displayName": "SCENZ_Timeseries_YR_Export",
-  "description": "SCENZ Timeseries YR Export using all Input Parameters: uses the Sampling tool on a Multidimensional CRF raster for monthly climatologies to export a table for an input area of pixels",
+  "name": "ExportTimeseriesYRwInputviaPythonScriptB2",
+  "displayName": "ExportTimeseriesYRwInputviaPythonScriptB2",
+  "description": "Export Pixels from Annual Timeseries Rasters (in Transposed-CRF format) into a CSV output file. User to provide polygon input.",
   "category": "",
   "helpUrl": "https://gis.niwa.co.nz/rasteranalytics/rest/directories/arcgisoutput/15_SCENZ/SCENZ_export_multiTime_MO_V3_GIS_GPServer/15_SCENZ_SCENZ_export_multiTime_MO_V3_GIS/ExportTimeseriesYRwInputviaPythonScriptB2.htm",
   "serverInfo": {
-    "currentVersion": 10.91,
-    "url": "https://gis.niwa.co.nz/rasteranalytics/rest/services/15_SCENZ/SCENZ_export_multiTime_MO_V3_GIS/GPServer",
+    "currentVersion": 11.1,
+    "url": "https://gis.niwa.co.nz/rasteranalytics/rest/services/15_SCENZ/SCENZ_export_multiTime_MO_V3_GIS/GPServer/",
     "hasResultMapServer": false,
     "resultMapServerName": "",
     "supportsUpload": false
@@ -31,7 +31,7 @@
         "exceededTransferLimit": false
       },
       "category": "",
-      "label": "Use eDraw widget (highlight polygon - turns blue; select three dots for input)",
+      "label": "Use eDraw widget or select a polygon from a layer of interest (highlight polygon - turns blue; select three dots for input)",
       "visible": true,
       "required": true,
       "featureSetMode": "layers",
@@ -63,7 +63,7 @@
   ],
   "shareResults": false,
   "layerOrder": [
-    "PolygonInput"
+    "inputAreaPolygon"
   ],
-  "showExportButton": false
+  "showExportButton": true
 }

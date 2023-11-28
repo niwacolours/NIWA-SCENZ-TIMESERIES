@@ -1,11 +1,56 @@
 {
   "style": "vertical",
   "layerState": {
-    "NIWA_SCENZ_TIMESERIES_V02_6935": {
+    "18acda8779a-layer-16": {
+      "selected": false
+    },
+    "18acd946ff0-layer-15": {
+      "selected": false
+    },
+    "189ddc61003-layer-16": {
+      "selected": false
+    },
+    "189ddc3e5e8-layer-12": {
+      "selected": false
+    },
+    "189ddc4b97a-layer-14": {
+      "selected": false
+    },
+    "PROD_V3_All_TIMESERIES_ref_129": {
+      "selected": true
+    },
+    "PROD_V3_All_TIMESERIES_ref_129_5782": {
+      "selected": true
+    },
+    "PROD_V3_All_TIMESERIES_ref_129_5782_9129": {
+      "selected": true
+    },
+    "PROD_V3_All_TIMESERIES_ref_129_5782_9129_8335": {
+      "selected": true
+    },
+    "PROD_V3_All_TIMESERIES_ref_129_5782_9129_8335_7188": {
+      "selected": true
+    },
+    "PROD_V3_All_TIMESERIES_ref_129_5782_9129_8335_7188_5564": {
+      "selected": true
+    },
+    "PROD_V3_All_TIMESERIES_ref_129_5782_9129_8335_7188_5564_7179": {
+      "selected": true
+    },
+    "PROD_V3_All_TIMESERIES_ref_129_5782_9129_8335_7188_5564_7179_275": {
+      "selected": true
+    },
+    "PROD_V3_All_TIMESERIES_ref_129_5782_9129_8335_7188_5564_7179_275_9912": {
+      "selected": true
+    },
+    "PROD_V3_All_TIMESERIES_ref_129_5782_9129_8335_7188_5564_7179_275_9912_912": {
+      "selected": true
+    },
+    "PROD_V3_All_TIMESERIES_ref_129_5782_9129_8335_7188_5564_7179_275_9912_912_9856": {
       "selected": true
     }
   },
-  "layer": "NIWA_SCENZ_TIMESERIES_V02_6935",
+  "layer": "PROD_V3_All_TIMESERIES_ref_129",
   "isZoom": false,
   "handleColor": "#dadada",
   "layerMode": "single",

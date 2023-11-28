@@ -1,5 +1,5 @@
 {
-  "gis.niwa.co.nz/raster/rest/services/SCENZ/PROD_V3_All_TIMESERIES_ref/ImageServer": {
+  "gis.niwa.co.nz/raster/rest/services/SCENZ/SCENZ_All_TIMESERIES_NZTM_Ref/ImageServer": {
     "hasOverlap": true,
     "hasNDVI": false,
     "ndvi": false,

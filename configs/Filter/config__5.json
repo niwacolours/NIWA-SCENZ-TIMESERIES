@@ -1,5 +1,5 @@
 {
-  "taskOper": "AND",
+  "taskOper": "OR",
   "groupByLayer": false,
   "zoomto": false,
   "zoombackto": false,
@@ -8,132 +8,9 @@
   "allowTurnOffAll": false,
   "filters": [
     {
-      "layerId": "NIWA_SCENZ_TIMESERIES_V02_6935",
-      "url": "https://gis.niwa.co.nz/raster/rest/services//SCENZ/PROD_V3_All_TIMESERIES_ref/ImageServer",
-      "name": "Product (toggle on/off if no image)",
-      "filter": {
-        "logicalOperator": "AND",
-        "parts": [
-          {
-            "fieldObj": {
-              "name": "Variable",
-              "label": "Variable",
-              "dateFormat": "",
-              "shortType": "string",
-              "type": "esriFieldTypeString"
-            },
-            "operator": "stringOperatorIs",
-            "valueObj": {
-              "isValid": true,
-              "selectUI": "dropdown",
-              "type": "uniquePredefined",
-              "value": [
-                {
-                  "value": "ADET",
-                  "alias": "ADET",
-                  "isChecked": false
-                },
-                {
-                  "value": "BBP",
-                  "alias": "BBP",
-                  "isChecked": false
-                },
-                {
-                  "value": "CHL",
-                  "alias": "CHL",
-                  "isChecked": true
-                },
-                {
-                  "value": "EBED",
-                  "alias": "EBED",
-                  "isChecked": false
-                },
-                {
-                  "value": "HVIS",
-                  "alias": "HVIS",
-                  "isChecked": false
-                },
-                {
-                  "value": "KPAR",
-                  "alias": "KPAR",
-                  "isChecked": false
-                },
-                {
-                  "value": "PAR",
-                  "alias": "PAR",
-                  "isChecked": false
-                },
-                {
-                  "value": "POB",
-                  "alias": "POB",
-                  "isChecked": false
-                },
-                {
-                  "value": "SEC",
-                  "alias": "SEC",
-                  "isChecked": false
-                },
-                {
-                  "value": "SST",
-                  "alias": "SST",
-                  "isChecked": false
-                },
-                {
-                  "value": "TSS",
-                  "alias": "TSS",
-                  "isChecked": false
-                }
-              ],
-              "emptyLabel": "- empty -",
-              "enableEmpty": false
-            },
-            "interactiveObj": {
-              "prompt": "Product is (select  \"Renderer\" first or put on \"stretch\")",
-              "hint": "",
-              "cascade": "none"
-            },
-            "caseSensitive": false,
-            "displaySQL": "UPPER(Variable) = 'CHL'",
-            "expr": "UPPER(Variable) = 'CHL'"
-          }
-        ],
-        "expr": "UPPER(Variable) = 'CHL'",
-        "displaySQL": "UPPER(Variable) = 'CHL'"
-      },
-      "icon": null,
-      "enableMapFilter": true,
-      "autoApplyWhenWidgetOpen": true,
-      "collapse": false,
-      "symbol": {
-        "color": [
-          0,
-          0,
-          128,
-          128
-        ],
-        "size": 18,
-        "angle": 0,
-        "xoffset": 0,
-        "yoffset": 0,
-        "type": "esriSMS",
-        "style": "esriSMSCircle",
-        "outline": {
-          "color": [
-            0,
-            0,
-            128,
-            255
-          ],
-          "width": 0.75,
-          "type": "esriSLS",
-          "style": "esriSLSSolid"
-        }
-      }
-    },
-    {
-      "layerId": "NIWA_SCENZ_TIMESERIES_V02_6935",
-      "url": "https://gis.niwa.co.nz/raster/rest/services//SCENZ/PROD_V3_All_TIMESERIES_ref/ImageServer",
-      "name": "Timestep",
+      "layerId": "PROD_V3_All_TIMESERIES_ref_129",
+      "url": "https://gis.niwa.co.nz/raster/rest/services/SCENZ/SCENZ_All_TIMESERIES_NZTM_Ref/ImageServer",
+      "name": "ADET (/m)",
       "filter": {
         "logicalOperator": "AND",
         "parts": [
@@ -148,83 +25,18 @@
             "operator": "stringOperatorIs",
             "valueObj": {
               "isValid": true,
-              "selectUI": "dropdown",
-              "type": "uniquePredefined",
-              "value": [
-                {
-                  "value": "7DayTimeseries",
-                  "alias": "7DayTimeseries",
-                  "isChecked": false
-                },
-                {
-                  "value": "MonthlyTimeseries",
-                  "alias": "MonthlyTimeseries",
-                  "isChecked": true
-                },
-                {
-                  "value": "SeasonalTimeseries",
-                  "alias": "SeasonalTimeseries",
-                  "isChecked": false
-                },
-                {
-                  "value": "AnnualTimeseries",
-                  "alias": "AnnualTimeseries",
-                  "isChecked": false
-                }
-              ],
-              "emptyLabel": "- empty -",
-              "enableEmpty": false
+              "type": "unique",
+              "value": "MonthlyTimeseries"
             },
             "interactiveObj": {
               "prompt": "Timestep is",
               "hint": "",
-              "cascade": "none"
+              "cascade": "previous"
             },
             "caseSensitive": false,
             "displaySQL": "UPPER(GroupName) = 'MONTHLYTIMESERIES'",
             "expr": "UPPER(GroupName) = 'MONTHLYTIMESERIES'"
-          }
-        ],
-        "expr": "UPPER(GroupName) = 'MONTHLYTIMESERIES'",
-        "displaySQL": "UPPER(GroupName) = 'MONTHLYTIMESERIES'"
-      },
-      "icon": null,
-      "enableMapFilter": true,
-      "autoApplyWhenWidgetOpen": true,
-      "collapse": false,
-      "symbol": {
-        "color": [
-          0,
-          0,
-          128,
-          128
-        ],
-        "size": 18,
-        "angle": 0,
-        "xoffset": 0,
-        "yoffset": 0,
-        "type": "esriSMS",
-        "style": "esriSMSCircle",
-        "outline": {
-          "color": [
-            0,
-            0,
-            128,
-            255
-          ],
-          "width": 0.75,
-          "type": "esriSLS",
-          "style": "esriSLSSolid"
-        }
-      }
-    },
-    {
-      "layerId": "NIWA_SCENZ_TIMESERIES_V02_6935",
-      "url": "https://gis.niwa.co.nz/raster/rest/services//SCENZ/PROD_V3_All_TIMESERIES_ref/ImageServer",
-      "name": "Year",
-      "filter": {
-        "logicalOperator": "AND",
-        "parts": [
+          },
           {
             "fieldObj": {
               "name": "Year",
@@ -236,21 +48,264 @@
             "operator": "stringOperatorIs",
             "valueObj": {
               "isValid": true,
-              "type": "value",
-              "value": "2021"
+              "type": "unique",
+              "value": "2002"
             },
             "interactiveObj": {
               "prompt": "Year is",
               "hint": "",
-              "cascade": "none"
+              "cascade": "previous"
             },
             "caseSensitive": false,
-            "displaySQL": "UPPER(Year) = '2021'",
-            "expr": "UPPER(Year) = '2021'"
+            "displaySQL": "UPPER(Year) = '2002'",
+            "expr": "UPPER(Year) = '2002'"
+          },
+          {
+            "fieldObj": {
+              "name": "Month",
+              "label": "Month",
+              "dateFormat": "",
+              "shortType": "string",
+              "type": "esriFieldTypeString"
+            },
+            "operator": "stringOperatorIs",
+            "valueObj": {
+              "isValid": true,
+              "type": "unique",
+              "value": "07"
+            },
+            "interactiveObj": {
+              "prompt": "Month is",
+              "hint": "",
+              "cascade": "previous"
+            },
+            "caseSensitive": false,
+            "displaySQL": "UPPER(Month) = '07'",
+            "expr": "UPPER(Month) = '07'"
           }
         ],
-        "expr": "UPPER(Year) = '2021'",
-        "displaySQL": "UPPER(Year) = '2021'"
+        "expr": "(UPPER(GroupName) = 'MONTHLYTIMESERIES') AND (UPPER(Year) = '2002') AND (UPPER(Month) = '07')",
+        "displaySQL": "(UPPER(GroupName) = 'MONTHLYTIMESERIES') AND (UPPER(Year) = '2002') AND (UPPER(Month) = '07')"
+      },
+      "icon": null,
+      "enableMapFilter": true,
+      "autoApplyWhenWidgetOpen": true,
+      "collapse": true,
+      "symbol": {
+        "color": [
+          0,
+          0,
+          128,
+          128
+        ],
+        "size": 18,
+        "angle": 0,
+        "xoffset": 0,
+        "yoffset": 0,
+        "type": "esriSMS",
+        "style": "esriSMSCircle",
+        "outline": {
+          "color": [
+            0,
+            0,
+            128,
+            255
+          ],
+          "width": 0.75,
+          "type": "esriSLS",
+          "style": "esriSLSSolid"
+        }
+      }
+    },
+    {
+      "layerId": "PROD_V3_All_TIMESERIES_ref_129_5782",
+      "url": "https://gis.niwa.co.nz/raster/rest/services/SCENZ/SCENZ_All_TIMESERIES_NZTM_Ref/ImageServer",
+      "name": "BBP (/m)",
+      "filter": {
+        "logicalOperator": "AND",
+        "parts": [
+          {
+            "fieldObj": {
+              "name": "GroupName",
+              "label": "GroupName",
+              "dateFormat": "",
+              "shortType": "string",
+              "type": "esriFieldTypeString"
+            },
+            "operator": "stringOperatorIs",
+            "valueObj": {
+              "isValid": true,
+              "type": "unique",
+              "value": "MonthlyTimeseries"
+            },
+            "interactiveObj": {
+              "prompt": "Timestep is",
+              "hint": "",
+              "cascade": "previous"
+            },
+            "caseSensitive": false,
+            "displaySQL": "UPPER(GroupName) = 'MONTHLYTIMESERIES'",
+            "expr": "UPPER(GroupName) = 'MONTHLYTIMESERIES'"
+          },
+          {
+            "fieldObj": {
+              "name": "Year",
+              "label": "Year",
+              "dateFormat": "",
+              "shortType": "string",
+              "type": "esriFieldTypeString"
+            },
+            "operator": "stringOperatorIs",
+            "valueObj": {
+              "isValid": true,
+              "type": "unique",
+              "value": "2002"
+            },
+            "interactiveObj": {
+              "prompt": "Year is",
+              "hint": "",
+              "cascade": "previous"
+            },
+            "caseSensitive": false,
+            "displaySQL": "UPPER(Year) = '2002'",
+            "expr": "UPPER(Year) = '2002'"
+          },
+          {
+            "fieldObj": {
+              "name": "Month",
+              "label": "Month",
+              "dateFormat": "",
+              "shortType": "string",
+              "type": "esriFieldTypeString"
+            },
+            "operator": "stringOperatorIs",
+            "valueObj": {
+              "isValid": true,
+              "type": "unique",
+              "value": "07"
+            },
+            "interactiveObj": {
+              "prompt": "Month is",
+              "hint": "",
+              "cascade": "previous"
+            },
+            "caseSensitive": false,
+            "displaySQL": "UPPER(Month) = '07'",
+            "expr": "UPPER(Month) = '07'"
+          }
+        ],
+        "expr": "(UPPER(GroupName) = 'MONTHLYTIMESERIES') AND (UPPER(Year) = '2002') AND (UPPER(Month) = '07')",
+        "displaySQL": "(UPPER(GroupName) = 'MONTHLYTIMESERIES') AND (UPPER(Year) = '2002') AND (UPPER(Month) = '07')"
+      },
+      "icon": null,
+      "enableMapFilter": true,
+      "autoApplyWhenWidgetOpen": true,
+      "collapse": true,
+      "symbol": {
+        "color": [
+          0,
+          0,
+          128,
+          128
+        ],
+        "size": 18,
+        "angle": 0,
+        "xoffset": 0,
+        "yoffset": 0,
+        "type": "esriSMS",
+        "style": "esriSMSCircle",
+        "outline": {
+          "color": [
+            0,
+            0,
+            128,
+            255
+          ],
+          "width": 0.75,
+          "type": "esriSLS",
+          "style": "esriSLSSolid"
+        }
+      }
+    },
+    {
+      "layerId": "PROD_V3_All_TIMESERIES_ref_129_5782_9129",
+      "url": "https://gis.niwa.co.nz/raster/rest/services/SCENZ/SCENZ_All_TIMESERIES_NZTM_Ref/ImageServer",
+      "name": "CHL (mg/m3)",
+      "filter": {
+        "logicalOperator": "AND",
+        "parts": [
+          {
+            "fieldObj": {
+              "name": "GroupName",
+              "label": "GroupName",
+              "dateFormat": "",
+              "shortType": "string",
+              "type": "esriFieldTypeString"
+            },
+            "operator": "stringOperatorIs",
+            "valueObj": {
+              "isValid": true,
+              "type": "unique",
+              "value": "MonthlyTimeseries"
+            },
+            "interactiveObj": {
+              "prompt": "Timestep is",
+              "hint": "",
+              "cascade": "previous"
+            },
+            "caseSensitive": false,
+            "displaySQL": "UPPER(GroupName) = 'MONTHLYTIMESERIES'",
+            "expr": "UPPER(GroupName) = 'MONTHLYTIMESERIES'"
+          },
+          {
+            "fieldObj": {
+              "name": "Year",
+              "label": "Year",
+              "dateFormat": "",
+              "shortType": "string",
+              "type": "esriFieldTypeString"
+            },
+            "operator": "stringOperatorIs",
+            "valueObj": {
+              "isValid": true,
+              "type": "unique",
+              "value": "2002"
+            },
+            "interactiveObj": {
+              "prompt": "Year is",
+              "hint": "",
+              "cascade": "previous"
+            },
+            "caseSensitive": false,
+            "displaySQL": "UPPER(Year) = '2002'",
+            "expr": "UPPER(Year) = '2002'"
+          },
+          {
+            "fieldObj": {
+              "name": "Month",
+              "label": "Month",
+              "dateFormat": "",
+              "shortType": "string",
+              "type": "esriFieldTypeString"
+            },
+            "operator": "stringOperatorIs",
+            "valueObj": {
+              "isValid": true,
+              "type": "unique",
+              "value": "07"
+            },
+            "interactiveObj": {
+              "prompt": "Month is",
+              "hint": "",
+              "cascade": "previous"
+            },
+            "caseSensitive": false,
+            "displaySQL": "UPPER(Month) = '07'",
+            "expr": "UPPER(Month) = '07'"
+          }
+        ],
+        "expr": "(UPPER(GroupName) = 'MONTHLYTIMESERIES') AND (UPPER(Year) = '2002') AND (UPPER(Month) = '07')",
+        "displaySQL": "(UPPER(GroupName) = 'MONTHLYTIMESERIES') AND (UPPER(Year) = '2002') AND (UPPER(Month) = '07')"
       },
       "icon": null,
       "enableMapFilter": true,
@@ -283,12 +338,58 @@
       }
     },
     {
-      "layerId": "NIWA_SCENZ_TIMESERIES_V02_6935",
-      "url": "https://gis.niwa.co.nz/raster/rest/services//SCENZ/PROD_V3_All_TIMESERIES_ref/ImageServer",
-      "name": "Month",
+      "layerId": "PROD_V3_All_TIMESERIES_ref_129_5782_9129_8335",
+      "url": "https://gis.niwa.co.nz/raster/rest/services/SCENZ/SCENZ_All_TIMESERIES_NZTM_Ref/ImageServer",
+      "name": "EBED (M/m2/day)",
       "filter": {
         "logicalOperator": "AND",
         "parts": [
+          {
+            "fieldObj": {
+              "name": "GroupName",
+              "label": "GroupName",
+              "dateFormat": "",
+              "shortType": "string",
+              "type": "esriFieldTypeString"
+            },
+            "operator": "stringOperatorIs",
+            "valueObj": {
+              "isValid": true,
+              "type": "unique",
+              "value": "MonthlyTimeseries"
+            },
+            "interactiveObj": {
+              "prompt": "Timestep is",
+              "hint": "",
+              "cascade": "previous"
+            },
+            "caseSensitive": false,
+            "displaySQL": "UPPER(GroupName) = 'MONTHLYTIMESERIES'",
+            "expr": "UPPER(GroupName) = 'MONTHLYTIMESERIES'"
+          },
+          {
+            "fieldObj": {
+              "name": "Year",
+              "label": "Year",
+              "dateFormat": "",
+              "shortType": "string",
+              "type": "esriFieldTypeString"
+            },
+            "operator": "stringOperatorIs",
+            "valueObj": {
+              "isValid": true,
+              "type": "unique",
+              "value": "2002"
+            },
+            "interactiveObj": {
+              "prompt": "Year is",
+              "hint": "",
+              "cascade": "previous"
+            },
+            "caseSensitive": false,
+            "displaySQL": "UPPER(Year) = '2002'",
+            "expr": "UPPER(Year) = '2002'"
+          },
           {
             "fieldObj": {
               "name": "Month",
@@ -300,26 +401,796 @@
             "operator": "stringOperatorIs",
             "valueObj": {
               "isValid": true,
-              "type": "value",
-              "value": "01"
+              "type": "unique",
+              "value": "07"
             },
             "interactiveObj": {
               "prompt": "Month is",
               "hint": "",
-              "cascade": "none"
+              "cascade": "previous"
             },
             "caseSensitive": false,
-            "displaySQL": "UPPER(Month) = '01'",
-            "expr": "UPPER(Month) = '01'"
+            "displaySQL": "UPPER(Month) = '07'",
+            "expr": "UPPER(Month) = '07'"
           }
         ],
-        "expr": "UPPER(Month) = '01'",
-        "displaySQL": "UPPER(Month) = '01'"
+        "expr": "(UPPER(GroupName) = 'MONTHLYTIMESERIES') AND (UPPER(Year) = '2002') AND (UPPER(Month) = '07')",
+        "displaySQL": "(UPPER(GroupName) = 'MONTHLYTIMESERIES') AND (UPPER(Year) = '2002') AND (UPPER(Month) = '07')"
       },
       "icon": null,
       "enableMapFilter": true,
       "autoApplyWhenWidgetOpen": true,
-      "collapse": false,
+      "collapse": true,
+      "symbol": {
+        "color": [
+          0,
+          0,
+          128,
+          128
+        ],
+        "size": 18,
+        "angle": 0,
+        "xoffset": 0,
+        "yoffset": 0,
+        "type": "esriSMS",
+        "style": "esriSMSCircle",
+        "outline": {
+          "color": [
+            0,
+            0,
+            128,
+            255
+          ],
+          "width": 0.75,
+          "type": "esriSLS",
+          "style": "esriSLSSolid"
+        }
+      }
+    },
+    {
+      "layerId": "PROD_V3_All_TIMESERIES_ref_129_5782_9129_8335_7188",
+      "url": "https://gis.niwa.co.nz/raster/rest/services/SCENZ/SCENZ_All_TIMESERIES_NZTM_Ref/ImageServer",
+      "name": "HVIS (/m)",
+      "filter": {
+        "logicalOperator": "AND",
+        "parts": [
+          {
+            "fieldObj": {
+              "name": "GroupName",
+              "label": "GroupName",
+              "dateFormat": "",
+              "shortType": "string",
+              "type": "esriFieldTypeString"
+            },
+            "operator": "stringOperatorIs",
+            "valueObj": {
+              "isValid": true,
+              "type": "unique",
+              "value": "MonthlyTimeseries"
+            },
+            "interactiveObj": {
+              "prompt": "Timestep is",
+              "hint": "",
+              "cascade": "previous"
+            },
+            "caseSensitive": false,
+            "displaySQL": "UPPER(GroupName) = 'MONTHLYTIMESERIES'",
+            "expr": "UPPER(GroupName) = 'MONTHLYTIMESERIES'"
+          },
+          {
+            "fieldObj": {
+              "name": "Year",
+              "label": "Year",
+              "dateFormat": "",
+              "shortType": "string",
+              "type": "esriFieldTypeString"
+            },
+            "operator": "stringOperatorIs",
+            "valueObj": {
+              "isValid": true,
+              "type": "unique",
+              "value": "2002"
+            },
+            "interactiveObj": {
+              "prompt": "Year is",
+              "hint": "",
+              "cascade": "previous"
+            },
+            "caseSensitive": false,
+            "displaySQL": "UPPER(Year) = '2002'",
+            "expr": "UPPER(Year) = '2002'"
+          },
+          {
+            "fieldObj": {
+              "name": "Month",
+              "label": "Month",
+              "dateFormat": "",
+              "shortType": "string",
+              "type": "esriFieldTypeString"
+            },
+            "operator": "stringOperatorIs",
+            "valueObj": {
+              "isValid": true,
+              "type": "unique",
+              "value": "07"
+            },
+            "interactiveObj": {
+              "prompt": "Month is",
+              "hint": "",
+              "cascade": "previous"
+            },
+            "caseSensitive": false,
+            "displaySQL": "UPPER(Month) = '07'",
+            "expr": "UPPER(Month) = '07'"
+          }
+        ],
+        "expr": "(UPPER(GroupName) = 'MONTHLYTIMESERIES') AND (UPPER(Year) = '2002') AND (UPPER(Month) = '07')",
+        "displaySQL": "(UPPER(GroupName) = 'MONTHLYTIMESERIES') AND (UPPER(Year) = '2002') AND (UPPER(Month) = '07')"
+      },
+      "icon": null,
+      "enableMapFilter": true,
+      "autoApplyWhenWidgetOpen": true,
+      "collapse": true,
+      "symbol": {
+        "color": [
+          0,
+          0,
+          128,
+          128
+        ],
+        "size": 18,
+        "angle": 0,
+        "xoffset": 0,
+        "yoffset": 0,
+        "type": "esriSMS",
+        "style": "esriSMSCircle",
+        "outline": {
+          "color": [
+            0,
+            0,
+            128,
+            255
+          ],
+          "width": 0.75,
+          "type": "esriSLS",
+          "style": "esriSLSSolid"
+        }
+      }
+    },
+    {
+      "layerId": "PROD_V3_All_TIMESERIES_ref_129_5782_9129_8335_7188_5564",
+      "url": "https://gis.niwa.co.nz/raster/rest/services/SCENZ/SCENZ_All_TIMESERIES_NZTM_Ref/ImageServer",
+      "name": "KPAR (/m)",
+      "filter": {
+        "logicalOperator": "AND",
+        "parts": [
+          {
+            "fieldObj": {
+              "name": "GroupName",
+              "label": "GroupName",
+              "dateFormat": "",
+              "shortType": "string",
+              "type": "esriFieldTypeString"
+            },
+            "operator": "stringOperatorIs",
+            "valueObj": {
+              "isValid": true,
+              "type": "unique",
+              "value": "MonthlyTimeseries"
+            },
+            "interactiveObj": {
+              "prompt": "Timestep is",
+              "hint": "",
+              "cascade": "previous"
+            },
+            "caseSensitive": false,
+            "displaySQL": "UPPER(GroupName) = 'MONTHLYTIMESERIES'",
+            "expr": "UPPER(GroupName) = 'MONTHLYTIMESERIES'"
+          },
+          {
+            "fieldObj": {
+              "name": "Year",
+              "label": "Year",
+              "dateFormat": "",
+              "shortType": "string",
+              "type": "esriFieldTypeString"
+            },
+            "operator": "stringOperatorIs",
+            "valueObj": {
+              "isValid": true,
+              "type": "unique",
+              "value": "2002"
+            },
+            "interactiveObj": {
+              "prompt": "Year is",
+              "hint": "",
+              "cascade": "previous"
+            },
+            "caseSensitive": false,
+            "displaySQL": "UPPER(Year) = '2002'",
+            "expr": "UPPER(Year) = '2002'"
+          },
+          {
+            "fieldObj": {
+              "name": "Month",
+              "label": "Month",
+              "dateFormat": "",
+              "shortType": "string",
+              "type": "esriFieldTypeString"
+            },
+            "operator": "stringOperatorIs",
+            "valueObj": {
+              "isValid": true,
+              "type": "unique",
+              "value": "07"
+            },
+            "interactiveObj": {
+              "prompt": "Month is",
+              "hint": "",
+              "cascade": "previous"
+            },
+            "caseSensitive": false,
+            "displaySQL": "UPPER(Month) = '07'",
+            "expr": "UPPER(Month) = '07'"
+          }
+        ],
+        "expr": "(UPPER(GroupName) = 'MONTHLYTIMESERIES') AND (UPPER(Year) = '2002') AND (UPPER(Month) = '07')",
+        "displaySQL": "(UPPER(GroupName) = 'MONTHLYTIMESERIES') AND (UPPER(Year) = '2002') AND (UPPER(Month) = '07')"
+      },
+      "icon": null,
+      "enableMapFilter": true,
+      "autoApplyWhenWidgetOpen": true,
+      "collapse": true,
+      "symbol": {
+        "color": [
+          0,
+          0,
+          128,
+          128
+        ],
+        "size": 18,
+        "angle": 0,
+        "xoffset": 0,
+        "yoffset": 0,
+        "type": "esriSMS",
+        "style": "esriSMSCircle",
+        "outline": {
+          "color": [
+            0,
+            0,
+            128,
+            255
+          ],
+          "width": 0.75,
+          "type": "esriSLS",
+          "style": "esriSLSSolid"
+        }
+      }
+    },
+    {
+      "layerId": "PROD_V3_All_TIMESERIES_ref_129_5782_9129_8335_7188_5564_7179",
+      "url": "https://gis.niwa.co.nz/raster/rest/services/SCENZ/SCENZ_All_TIMESERIES_NZTM_Ref/ImageServer",
+      "name": "PAR (M/m2/day)",
+      "filter": {
+        "logicalOperator": "AND",
+        "parts": [
+          {
+            "fieldObj": {
+              "name": "GroupName",
+              "label": "GroupName",
+              "dateFormat": "",
+              "shortType": "string",
+              "type": "esriFieldTypeString"
+            },
+            "operator": "stringOperatorIs",
+            "valueObj": {
+              "isValid": true,
+              "type": "unique",
+              "value": "MonthlyTimeseries"
+            },
+            "interactiveObj": {
+              "prompt": "Timestep is",
+              "hint": "",
+              "cascade": "previous"
+            },
+            "caseSensitive": false,
+            "displaySQL": "UPPER(GroupName) = 'MONTHLYTIMESERIES'",
+            "expr": "UPPER(GroupName) = 'MONTHLYTIMESERIES'"
+          },
+          {
+            "fieldObj": {
+              "name": "Year",
+              "label": "Year",
+              "dateFormat": "",
+              "shortType": "string",
+              "type": "esriFieldTypeString"
+            },
+            "operator": "stringOperatorIs",
+            "valueObj": {
+              "isValid": true,
+              "type": "unique",
+              "value": "2002"
+            },
+            "interactiveObj": {
+              "prompt": "Year is",
+              "hint": "",
+              "cascade": "previous"
+            },
+            "caseSensitive": false,
+            "displaySQL": "UPPER(Year) = '2002'",
+            "expr": "UPPER(Year) = '2002'"
+          },
+          {
+            "fieldObj": {
+              "name": "Month",
+              "label": "Month",
+              "dateFormat": "",
+              "shortType": "string",
+              "type": "esriFieldTypeString"
+            },
+            "operator": "stringOperatorIs",
+            "valueObj": {
+              "isValid": true,
+              "type": "unique",
+              "value": "07"
+            },
+            "interactiveObj": {
+              "prompt": "Month is",
+              "hint": "",
+              "cascade": "previous"
+            },
+            "caseSensitive": false,
+            "displaySQL": "UPPER(Month) = '07'",
+            "expr": "UPPER(Month) = '07'"
+          }
+        ],
+        "expr": "(UPPER(GroupName) = 'MONTHLYTIMESERIES') AND (UPPER(Year) = '2002') AND (UPPER(Month) = '07')",
+        "displaySQL": "(UPPER(GroupName) = 'MONTHLYTIMESERIES') AND (UPPER(Year) = '2002') AND (UPPER(Month) = '07')"
+      },
+      "icon": null,
+      "enableMapFilter": true,
+      "autoApplyWhenWidgetOpen": true,
+      "collapse": true,
+      "symbol": {
+        "color": [
+          0,
+          0,
+          128,
+          128
+        ],
+        "size": 18,
+        "angle": 0,
+        "xoffset": 0,
+        "yoffset": 0,
+        "type": "esriSMS",
+        "style": "esriSMSCircle",
+        "outline": {
+          "color": [
+            0,
+            0,
+            128,
+            255
+          ],
+          "width": 0.75,
+          "type": "esriSLS",
+          "style": "esriSLSSolid"
+        }
+      }
+    },
+    {
+      "layerId": "PROD_V3_All_TIMESERIES_ref_129_5782_9129_8335_7188_5564_7179_275",
+      "url": "https://gis.niwa.co.nz/raster/rest/services/SCENZ/SCENZ_All_TIMESERIES_NZTM_Ref/ImageServer",
+      "name": "POB (0-1)",
+      "filter": {
+        "logicalOperator": "AND",
+        "parts": [
+          {
+            "fieldObj": {
+              "name": "GroupName",
+              "label": "GroupName",
+              "dateFormat": "",
+              "shortType": "string",
+              "type": "esriFieldTypeString"
+            },
+            "operator": "stringOperatorIs",
+            "valueObj": {
+              "isValid": true,
+              "type": "unique",
+              "value": "MonthlyTimeseries"
+            },
+            "interactiveObj": {
+              "prompt": "Timestep is",
+              "hint": "",
+              "cascade": "previous"
+            },
+            "caseSensitive": false,
+            "displaySQL": "UPPER(GroupName) = 'MONTHLYTIMESERIES'",
+            "expr": "UPPER(GroupName) = 'MONTHLYTIMESERIES'"
+          },
+          {
+            "fieldObj": {
+              "name": "Year",
+              "label": "Year",
+              "dateFormat": "",
+              "shortType": "string",
+              "type": "esriFieldTypeString"
+            },
+            "operator": "stringOperatorIs",
+            "valueObj": {
+              "isValid": true,
+              "type": "unique",
+              "value": "2002"
+            },
+            "interactiveObj": {
+              "prompt": "Year is",
+              "hint": "",
+              "cascade": "previous"
+            },
+            "caseSensitive": false,
+            "displaySQL": "UPPER(Year) = '2002'",
+            "expr": "UPPER(Year) = '2002'"
+          },
+          {
+            "fieldObj": {
+              "name": "Month",
+              "label": "Month",
+              "dateFormat": "",
+              "shortType": "string",
+              "type": "esriFieldTypeString"
+            },
+            "operator": "stringOperatorIs",
+            "valueObj": {
+              "isValid": true,
+              "type": "unique",
+              "value": "07"
+            },
+            "interactiveObj": {
+              "prompt": "Month is",
+              "hint": "",
+              "cascade": "previous"
+            },
+            "caseSensitive": false,
+            "displaySQL": "UPPER(Month) = '07'",
+            "expr": "UPPER(Month) = '07'"
+          }
+        ],
+        "expr": "(UPPER(GroupName) = 'MONTHLYTIMESERIES') AND (UPPER(Year) = '2002') AND (UPPER(Month) = '07')",
+        "displaySQL": "(UPPER(GroupName) = 'MONTHLYTIMESERIES') AND (UPPER(Year) = '2002') AND (UPPER(Month) = '07')"
+      },
+      "icon": null,
+      "enableMapFilter": true,
+      "autoApplyWhenWidgetOpen": true,
+      "collapse": true,
+      "symbol": {
+        "color": [
+          0,
+          0,
+          128,
+          128
+        ],
+        "size": 18,
+        "angle": 0,
+        "xoffset": 0,
+        "yoffset": 0,
+        "type": "esriSMS",
+        "style": "esriSMSCircle",
+        "outline": {
+          "color": [
+            0,
+            0,
+            128,
+            255
+          ],
+          "width": 0.75,
+          "type": "esriSLS",
+          "style": "esriSLSSolid"
+        }
+      }
+    },
+    {
+      "layerId": "PROD_V3_All_TIMESERIES_ref_129_5782_9129_8335_7188_5564_7179_275_9912",
+      "url": "https://gis.niwa.co.nz/raster/rest/services/SCENZ/SCENZ_All_TIMESERIES_NZTM_Ref/ImageServer",
+      "name": "SEC (m)",
+      "filter": {
+        "logicalOperator": "AND",
+        "parts": [
+          {
+            "fieldObj": {
+              "name": "GroupName",
+              "label": "GroupName",
+              "dateFormat": "",
+              "shortType": "string",
+              "type": "esriFieldTypeString"
+            },
+            "operator": "stringOperatorIs",
+            "valueObj": {
+              "isValid": true,
+              "type": "unique",
+              "value": "MonthlyTimeseries"
+            },
+            "interactiveObj": {
+              "prompt": "Timestep is",
+              "hint": "",
+              "cascade": "previous"
+            },
+            "caseSensitive": false,
+            "displaySQL": "UPPER(GroupName) = 'MONTHLYTIMESERIES'",
+            "expr": "UPPER(GroupName) = 'MONTHLYTIMESERIES'"
+          },
+          {
+            "fieldObj": {
+              "name": "Year",
+              "label": "Year",
+              "dateFormat": "",
+              "shortType": "string",
+              "type": "esriFieldTypeString"
+            },
+            "operator": "stringOperatorIs",
+            "valueObj": {
+              "isValid": true,
+              "type": "unique",
+              "value": "2002"
+            },
+            "interactiveObj": {
+              "prompt": "Year is",
+              "hint": "",
+              "cascade": "previous"
+            },
+            "caseSensitive": false,
+            "displaySQL": "UPPER(Year) = '2002'",
+            "expr": "UPPER(Year) = '2002'"
+          },
+          {
+            "fieldObj": {
+              "name": "Month",
+              "label": "Month",
+              "dateFormat": "",
+              "shortType": "string",
+              "type": "esriFieldTypeString"
+            },
+            "operator": "stringOperatorIs",
+            "valueObj": {
+              "isValid": true,
+              "type": "unique",
+              "value": "07"
+            },
+            "interactiveObj": {
+              "prompt": "Month is",
+              "hint": "",
+              "cascade": "previous"
+            },
+            "caseSensitive": false,
+            "displaySQL": "UPPER(Month) = '07'",
+            "expr": "UPPER(Month) = '07'"
+          }
+        ],
+        "expr": "(UPPER(GroupName) = 'MONTHLYTIMESERIES') AND (UPPER(Year) = '2002') AND (UPPER(Month) = '07')",
+        "displaySQL": "(UPPER(GroupName) = 'MONTHLYTIMESERIES') AND (UPPER(Year) = '2002') AND (UPPER(Month) = '07')"
+      },
+      "icon": null,
+      "enableMapFilter": true,
+      "autoApplyWhenWidgetOpen": true,
+      "collapse": true,
+      "symbol": {
+        "color": [
+          0,
+          0,
+          128,
+          128
+        ],
+        "size": 18,
+        "angle": 0,
+        "xoffset": 0,
+        "yoffset": 0,
+        "type": "esriSMS",
+        "style": "esriSMSCircle",
+        "outline": {
+          "color": [
+            0,
+            0,
+            128,
+            255
+          ],
+          "width": 0.75,
+          "type": "esriSLS",
+          "style": "esriSLSSolid"
+        }
+      }
+    },
+    {
+      "layerId": "PROD_V3_All_TIMESERIES_ref_129_5782_9129_8335_7188_5564_7179_275_9912_912",
+      "url": "https://gis.niwa.co.nz/raster/rest/services/SCENZ/SCENZ_All_TIMESERIES_NZTM_Ref/ImageServer",
+      "name": "SST (dC)",
+      "filter": {
+        "logicalOperator": "AND",
+        "parts": [
+          {
+            "fieldObj": {
+              "name": "GroupName",
+              "label": "GroupName",
+              "dateFormat": "",
+              "shortType": "string",
+              "type": "esriFieldTypeString"
+            },
+            "operator": "stringOperatorIs",
+            "valueObj": {
+              "isValid": true,
+              "type": "unique",
+              "value": "MonthlyTimeseries"
+            },
+            "interactiveObj": {
+              "prompt": "Timestep is",
+              "hint": "",
+              "cascade": "previous"
+            },
+            "caseSensitive": false,
+            "displaySQL": "UPPER(GroupName) = 'MONTHLYTIMESERIES'",
+            "expr": "UPPER(GroupName) = 'MONTHLYTIMESERIES'"
+          },
+          {
+            "fieldObj": {
+              "name": "Year",
+              "label": "Year",
+              "dateFormat": "",
+              "shortType": "string",
+              "type": "esriFieldTypeString"
+            },
+            "operator": "stringOperatorIs",
+            "valueObj": {
+              "isValid": true,
+              "type": "unique",
+              "value": "2002"
+            },
+            "interactiveObj": {
+              "prompt": "Year is",
+              "hint": "",
+              "cascade": "previous"
+            },
+            "caseSensitive": false,
+            "displaySQL": "UPPER(Year) = '2002'",
+            "expr": "UPPER(Year) = '2002'"
+          },
+          {
+            "fieldObj": {
+              "name": "Month",
+              "label": "Month",
+              "dateFormat": "",
+              "shortType": "string",
+              "type": "esriFieldTypeString"
+            },
+            "operator": "stringOperatorIs",
+            "valueObj": {
+              "isValid": true,
+              "type": "unique",
+              "value": "07"
+            },
+            "interactiveObj": {
+              "prompt": "Month is",
+              "hint": "",
+              "cascade": "previous"
+            },
+            "caseSensitive": false,
+            "displaySQL": "UPPER(Month) = '07'",
+            "expr": "UPPER(Month) = '07'"
+          }
+        ],
+        "expr": "(UPPER(GroupName) = 'MONTHLYTIMESERIES') AND (UPPER(Year) = '2002') AND (UPPER(Month) = '07')",
+        "displaySQL": "(UPPER(GroupName) = 'MONTHLYTIMESERIES') AND (UPPER(Year) = '2002') AND (UPPER(Month) = '07')"
+      },
+      "icon": null,
+      "enableMapFilter": true,
+      "autoApplyWhenWidgetOpen": true,
+      "collapse": true,
+      "symbol": {
+        "color": [
+          0,
+          0,
+          128,
+          128
+        ],
+        "size": 18,
+        "angle": 0,
+        "xoffset": 0,
+        "yoffset": 0,
+        "type": "esriSMS",
+        "style": "esriSMSCircle",
+        "outline": {
+          "color": [
+            0,
+            0,
+            128,
+            255
+          ],
+          "width": 0.75,
+          "type": "esriSLS",
+          "style": "esriSLSSolid"
+        }
+      }
+    },
+    {
+      "layerId": "PROD_V3_All_TIMESERIES_ref_129_5782_9129_8335_7188_5564_7179_275_9912_912_9856",
+      "url": "https://gis.niwa.co.nz/raster/rest/services/SCENZ/SCENZ_All_TIMESERIES_NZTM_Ref/ImageServer",
+      "name": "TSS (g/m3)",
+      "filter": {
+        "logicalOperator": "AND",
+        "parts": [
+          {
+            "fieldObj": {
+              "name": "GroupName",
+              "label": "GroupName",
+              "dateFormat": "",
+              "shortType": "string",
+              "type": "esriFieldTypeString"
+            },
+            "operator": "stringOperatorIs",
+            "valueObj": {
+              "isValid": true,
+              "type": "unique",
+              "value": "MonthlyTimeseries"
+            },
+            "interactiveObj": {
+              "prompt": "Timestep is",
+              "hint": "",
+              "cascade": "previous"
+            },
+            "caseSensitive": false,
+            "displaySQL": "UPPER(GroupName) = 'MONTHLYTIMESERIES'",
+            "expr": "UPPER(GroupName) = 'MONTHLYTIMESERIES'"
+          },
+          {
+            "fieldObj": {
+              "name": "Year",
+              "label": "Year",
+              "dateFormat": "",
+              "shortType": "string",
+              "type": "esriFieldTypeString"
+            },
+            "operator": "stringOperatorIs",
+            "valueObj": {
+              "isValid": true,
+              "type": "unique",
+              "value": "2002"
+            },
+            "interactiveObj": {
+              "prompt": "Year is",
+              "hint": "",
+              "cascade": "previous"
+            },
+            "caseSensitive": false,
+            "displaySQL": "UPPER(Year) = '2002'",
+            "expr": "UPPER(Year) = '2002'"
+          },
+          {
+            "fieldObj": {
+              "name": "Month",
+              "label": "Month",
+              "dateFormat": "",
+              "shortType": "string",
+              "type": "esriFieldTypeString"
+            },
+            "operator": "stringOperatorIs",
+            "valueObj": {
+              "isValid": true,
+              "type": "unique",
+              "value": "07"
+            },
+            "interactiveObj": {
+              "prompt": "Month is",
+              "hint": "",
+              "cascade": "previous"
+            },
+            "caseSensitive": false,
+            "displaySQL": "UPPER(Month) = '07'",
+            "expr": "UPPER(Month) = '07'"
+          }
+        ],
+        "expr": "(UPPER(GroupName) = 'MONTHLYTIMESERIES') AND (UPPER(Year) = '2002') AND (UPPER(Month) = '07')",
+        "displaySQL": "(UPPER(GroupName) = 'MONTHLYTIMESERIES') AND (UPPER(Year) = '2002') AND (UPPER(Month) = '07')"
+      },
+      "icon": null,
+      "enableMapFilter": true,
+      "autoApplyWhenWidgetOpen": true,
+      "collapse": true,
       "symbol": {
         "color": [
           0,

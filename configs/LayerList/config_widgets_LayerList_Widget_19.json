@@ -14,7 +14,67 @@
     "DescriptionOrShowItemDetailsOrDownload": true
   },
   "layerOptions": {
-    "NIWA_SCENZ_TIMESERIES_V02_6935": {
+    "18acda8779a-layer-16": {
+      "display": true
+    },
+    "18acda8779a-layer-16_0": {
+      "display": true
+    },
+    "189ddc61003-layer-16": {
+      "display": true
+    },
+    "189ddc61003-layer-16_0": {
+      "display": true
+    },
+    "18acd946ff0-layer-15": {
+      "display": true
+    },
+    "18acd946ff0-layer-15_0": {
+      "display": true
+    },
+    "189ddc3e5e8-layer-12": {
+      "display": true
+    },
+    "189ddc3e5e8-layer-12_0": {
+      "display": true
+    },
+    "189ddc4b97a-layer-14": {
+      "display": true
+    },
+    "189ddc4b97a-layer-14_1": {
+      "display": true
+    },
+    "PROD_V3_All_TIMESERIES_ref_129": {
+      "display": true
+    },
+    "PROD_V3_All_TIMESERIES_ref_129_5782": {
+      "display": true
+    },
+    "PROD_V3_All_TIMESERIES_ref_129_5782_9129": {
+      "display": true
+    },
+    "PROD_V3_All_TIMESERIES_ref_129_5782_9129_8335": {
+      "display": true
+    },
+    "PROD_V3_All_TIMESERIES_ref_129_5782_9129_8335_7188": {
+      "display": true
+    },
+    "PROD_V3_All_TIMESERIES_ref_129_5782_9129_8335_7188_5564": {
+      "display": true
+    },
+    "PROD_V3_All_TIMESERIES_ref_129_5782_9129_8335_7188_5564_7179": {
+      "display": true
+    },
+    "PROD_V3_All_TIMESERIES_ref_129_5782_9129_8335_7188_5564_7179_275": {
+      "display": true
+    },
+    "PROD_V3_All_TIMESERIES_ref_129_5782_9129_8335_7188_5564_7179_275_9912": {
+      "display": true
+    },
+    "PROD_V3_All_TIMESERIES_ref_129_5782_9129_8335_7188_5564_7179_275_9912_912": {
+      "display": true
+    },
+    "PROD_V3_All_TIMESERIES_ref_129_5782_9129_8335_7188_5564_7179_275_9912_912_9856": {
       "display": true
     }
   }
