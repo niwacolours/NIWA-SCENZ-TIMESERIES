@@ -3,16 +3,16 @@
   "displayName": "ExportTimeseriesSEwInputviaPythonScriptB2",
   "description": "Export Pixels from Seasonal Timeseries Rasters (in Transposed-CRF format) into a CSV output file. User to provide polygon input.",
   "category": "",
-  "helpUrl": "https://gis.niwa.co.nz/rasteranalytics/rest/directories/arcgisoutput/15_SCENZ/SCENZ_export_multiTime_MO_V3_GIS_GPServer/15_SCENZ_SCENZ_export_multiTime_MO_V3_GIS/ExportTimeseriesSEwInputviaPythonScriptB2.htm",
+  "helpUrl": "https://gis.niwa.co.nz/rasteranalytics/rest/directories/arcgisoutput/15_SCENZ/SCENZ_export_multiTime_MO_V5_GIS_GPServer/15_SCENZ_SCENZ_export_multiTime_MO_V5_GIS/ExportTimeseriesSEwInputviaPythonScriptB2.htm",
   "serverInfo": {
     "currentVersion": 11.1,
-    "url": "https://gis.niwa.co.nz/rasteranalytics/rest/services/15_SCENZ/SCENZ_export_multiTime_MO_V3_GIS/GPServer/",
+    "url": "https://gis.niwa.co.nz/rasteranalytics/rest/services/15_SCENZ/SCENZ_export_multiTime_MO_V5_GIS/GPServer/",
     "hasResultMapServer": false,
     "resultMapServerName": "",
     "supportsUpload": false
   },
   "useResultMapServer": false,
-  "taskUrl": "https://gis.niwa.co.nz/rasteranalytics/rest/services/15_SCENZ/SCENZ_export_multiTime_MO_V3_GIS/GPServer/ExportTimeseriesSEwInputviaPythonScriptB2",
+  "taskUrl": "https://gis.niwa.co.nz/rasteranalytics/rest/services/15_SCENZ/SCENZ_export_multiTime_MO_V5_GIS/GPServer/ExportTimeseriesSEwInputviaPythonScriptB2",
   "isSynchronous": false,
   "inputParams": [
     {
@@ -62,8 +62,6 @@
     }
   ],
   "shareResults": false,
-  "layerOrder": [
-    "inputAreaPolygon"
-  ],
+  "layerOrder": ["inputAreaPolygon"],
   "showExportButton": true
 }
